@@ -61,14 +61,14 @@ namespace Server.Items
         {
             get
             {
-                return 255;
+                return 49;
             }
         }
         public override int InitMaxHits
         {
             get
             {
-                return 255;
+                return 49;
             }
         }
         public override void Serialize(GenericWriter writer)

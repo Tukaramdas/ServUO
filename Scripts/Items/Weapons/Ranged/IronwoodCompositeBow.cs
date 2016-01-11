@@ -25,7 +25,23 @@ namespace Server.Items
             : base(serial)
         {
         }
-		
+
+		public override int AosMinDamage
+		{
+			get
+			{
+				return 13;
+			}
+		}
+
+		public override int AosMaxDamage
+		{
+			get
+			{
+				return 17;
+			}
+		}
+
         public override int InitMinHits
         {
             get

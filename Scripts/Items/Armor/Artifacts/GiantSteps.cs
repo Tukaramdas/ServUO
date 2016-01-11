@@ -17,6 +17,8 @@ namespace Server.Items
             this.Attributes.BonusHits = 5;
             this.Attributes.RegenHits = 2;
             this.Attributes.WeaponDamage = 10;
+			this.Weight = 15;
+			this.StrRequirement = 40;
         }
 
         public GiantSteps(Serial serial)

@@ -5,7 +5,7 @@ namespace Server.Items
     public class Boomerang : BaseThrown
     {
         [Constructable]
-        public Boomerang()
+        public Boomerang(int ItemID)
             : base(0x8FF)
         {
             this.Weight = 6.0;

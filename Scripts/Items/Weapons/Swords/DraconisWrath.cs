@@ -23,6 +23,22 @@ namespace Server.Items
         {
         }
 
+		public override int AosMinDamage
+		{
+			get
+			{
+				return 11;
+			}
+		}
+
+		public override int AosMaxDamage
+		{
+			get
+			{
+				return 13;
+			}
+		}
+
         public override int InitMinHits
         {
             get

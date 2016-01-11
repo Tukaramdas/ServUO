@@ -21,7 +21,7 @@ namespace Server.Items
             this.Resistances.Cold = 10;
             this.Resistances.Poison = 3;
             this.Resistances.Energy = 13;
-            //AbsorptionAttribute.CastingFocus = 4; TODO: how this shit works?
+			this.AbsorptionAttributes.CastingFocus = 4;
         }
 
         public ObsidianEarrings(Serial serial)

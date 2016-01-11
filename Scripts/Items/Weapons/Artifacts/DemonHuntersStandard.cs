@@ -14,6 +14,7 @@ namespace Server.Items
             Attributes.CastSpeed = 1;			
             Attributes.WeaponSpeed = 25;
             Attributes.WeaponDamage = 50;
+			AosElementDamages.Chaos = 100;
             WeaponAttributes.HitLeechStam = 50;
             WeaponAttributes.HitLightning = 40;	
             WeaponAttributes.HitLowerDefend = 30;
@@ -24,6 +25,22 @@ namespace Server.Items
             : base(serial)
         {
         }
+
+		public override int AosMinDamage
+		{
+			get
+			{
+				return 13;
+			}
+		}
+
+		public override int AosMaxDamage
+		{
+			get
+			{
+				return 15;
+			}
+		}
 
         public override int InitMinHits
         {

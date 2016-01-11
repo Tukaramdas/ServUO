@@ -6,7 +6,7 @@ namespace Server.Items
     public class Tekagi : BaseKnife
     {
         [Constructable]
-        public Tekagi()
+        public Tekagi(int ItemID)
             : base(0x27AB)
         {
             this.Weight = 5.0;

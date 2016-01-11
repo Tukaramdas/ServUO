@@ -25,13 +25,21 @@ namespace Server.Items
         {
         }
 
+		public override float MlSpeed
+		{
+			get
+			{
+				return 3.0f;
+			}
+		}
+
         public override int MinThrowRange
         {
             get
             {
-                return 4;
+                return 5;
             }
-        }// MaxRange 8
+        }// MaxRange 9
         public override int InitMinHits
         {
             get

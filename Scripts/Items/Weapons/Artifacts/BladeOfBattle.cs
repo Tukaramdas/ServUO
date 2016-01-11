@@ -25,6 +25,14 @@ namespace Server.Items
         {
         }
 
+		public override float MlSpeed
+		{
+			get
+			{
+				return 2.0f;
+			}
+		}
+
         public override int InitMinHits
         {
             get

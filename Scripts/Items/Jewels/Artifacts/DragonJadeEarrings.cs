@@ -23,7 +23,7 @@ namespace Server.Items
             this.Resistances.Cold = 5;
             this.Resistances.Poison = 13;
             this.Resistances.Energy = 3;
-            //AbsorptionAttribute.EaterFire = 10;
+			this.AbsorptionAttributes.EaterFire = 10;
         }
 
         public DragonJadeEarrings(Serial serial)

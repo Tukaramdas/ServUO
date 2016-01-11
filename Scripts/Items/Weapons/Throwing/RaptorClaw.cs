@@ -6,6 +6,7 @@ namespace Server.Items
     {
         [Constructable]
         public RaptorClaw()
+			: base(0x8FF)
         {
             this.Name = ("Raptor Claw");
 
@@ -37,13 +38,13 @@ namespace Server.Items
 			}
 		}
 
-		public override int MaxThrowRange
+		public override int MinThrowRange
 		{
 			get
 			{
-				return 7;
+				return 3;
 			}
-		}
+		}// MaxRange 7
 
 		public override float MlSpeed
 		{

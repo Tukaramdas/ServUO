@@ -13,7 +13,7 @@ namespace Server.Items
             this.Hue = 1165;
 		
             this.Weight = 4.0;
-            this.Attributes.BonusHits = 2;
+            this.Attributes.RegenHits = 2;
             this.Attributes.AttackChance = 10;
             this.Attributes.WeaponDamage = 45;
             this.Attributes.WeaponSpeed = 35;
@@ -25,6 +25,22 @@ namespace Server.Items
             : base(serial)
         {
         }
+
+		public override int AosMinDamage
+		{
+			get
+			{
+				return 14;
+			}
+		}
+
+		public override int AosMaxDamage
+		{
+			get
+			{
+				return 16;
+			}
+		}
 
         public override int InitMinHits
         {

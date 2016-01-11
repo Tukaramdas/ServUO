@@ -36,14 +36,14 @@ namespace Server.Items
         {
             get
             {
-                return 14;
+                return 4; // Gets +10 from red scale material type
             }
         }
         public override int BaseColdResistance
         {
             get
             {
-                return 6;
+                return 9; // Gets -3 from red scale material type
             }
         }
         public override int BasePoisonResistance

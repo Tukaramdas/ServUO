@@ -18,7 +18,8 @@ namespace Server.Items
             this.Attributes.DefendChance = 10;	
             this.Attributes.CastSpeed = 1;	
             this.Attributes.WeaponSpeed = 30;
-            this.Attributes.WeaponDamage = 50;		
+            this.Attributes.WeaponDamage = 50;
+			this.StrRequirement = 80;
         }
 
         public AxeOfAbandon(Serial serial)
@@ -26,18 +27,42 @@ namespace Server.Items
         {
         }
 
+		public override int AosMinDamage
+		{
+			get
+			{
+				return 16;
+			}
+		}
+
+		public override int AosMaxDamage
+		{
+			get
+			{
+				return 17;
+			}
+		}
+
+		public override float MlSpeed
+		{
+			get
+			{
+				return 3.75f;
+			}
+		}
+
         public override int InitMinHits
         {
             get
             {
-                return 31;
+                return 255;
             }
         }
         public override int InitMaxHits
         {
             get
             {
-                return 70;
+                return 255;
             }
         }
         public override void Serialize(GenericWriter writer)
