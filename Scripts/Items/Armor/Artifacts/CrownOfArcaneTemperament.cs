@@ -14,6 +14,8 @@ namespace Server.Items
 			this.Hue = 149; //Hue not exact
 			this.AbsorptionAttributes.CastingFocus = 2;
 			this.Name = ("Crown of Arcane Temperament");
+			this.Weight = 10;
+			this.AbsorptionAttributes.CastingFocus = 2;
         }
 
         public CrownOfArcaneTemperament(Serial serial)

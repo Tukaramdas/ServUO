@@ -1,26 +1,23 @@
-using System;
+﻿using System;
 
 namespace Server.Items
 {
-    public class SummonersKilt : GargishClothKilt
+    public class HumanSignOfOrder : OrderShield
     {
         [Constructable]
-        public SummonersKilt()
+        public HumanSignOfOrder()
+            : base()
         {
-            this.Name = ("Summoner's Kilt");
-		
-            this.Hue = 1266;
-			
-            this.Attributes.BonusMana = 5;
-            this.Attributes.RegenMana = 2;
-            this.Attributes.SpellDamage = 5;
-            this.SAAbsorptionAttributes.CastingFocus = 2;
-            this.Attributes.LowerManaCost = 8;
-            this.Attributes.LowerRegCost = 10;
-			this.StrRequirement = 20;
+            this.Name = "Sign of Order";
+
+            this.SkillBonuses.SetValues(0, SkillName.Chivalry, 10.0);
+            this.Attributes.AttackChance = 5;
+            this.Attributes.DefendChance = 10;
+            this.Attributes.CastSpeed = 1;
+            this.Attributes.CastRecovery = 1;
         }
 
-        public SummonersKilt(Serial serial)
+        public HumanSignOfOrder(Serial serial)
             : base(serial)
         {
         }
@@ -29,35 +26,35 @@ namespace Server.Items
         {
             get
             {
-                return 5;
+                return 1;
             }
         }
         public override int BaseFireResistance
         {
             get
             {
-                return 7;
+                return 0;
             }
         }
         public override int BaseColdResistance
         {
             get
             {
-                return 21;
+                return 5;
             }
         }
         public override int BasePoisonResistance
         {
             get
             {
-                return 6;
+                return 5;
             }
         }
         public override int BaseEnergyResistance
         {
             get
             {
-                return 21;
+                return 0;
             }
         }
         public override int InitMinHits
@@ -74,18 +71,16 @@ namespace Server.Items
                 return 255;
             }
         }
-        public override void Serialize(GenericWriter writer)
-        {
-            base.Serialize(writer);
-
-            writer.Write((int)0);
-        }
-
         public override void Deserialize(GenericReader reader)
         {
             base.Deserialize(reader);
-
             int version = reader.ReadInt();
+        }
+
+        public override void Serialize(GenericWriter writer)
+        {
+            base.Serialize(writer);
+            writer.Write((int)0); //version
         }
     }
 }

@@ -15,7 +15,8 @@ namespace Server.Items
             this.Attributes.RegenStam = 2;
             this.Attributes.WeaponDamage = 10;	
             this.Attributes.ReflectPhysical = 30;
-            //AbsorptionAttributes.EaterKinetic = 10;
+            this.SAAbsorptionAttributes.EaterKinetic = 10;
+			this.StrRequirement = 20;
         }
 
         public SpinedBloodwormBracers(Serial serial)

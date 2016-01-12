@@ -28,17 +28,9 @@ namespace Server.Items
         {
             get
             {
-                return 4;
+                return 5;
             }
-        }
-
-		public override int MaxThrowRange
-		{
-			get
-			{
-				return 9;
-			}
-		}
+        }// Max Range 9
 
 		public override float MlSpeed
 		{

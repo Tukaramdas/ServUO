@@ -2,11 +2,11 @@ using System;
 
 namespace Server.Items
 {
-    [FlipableAttribute(0x904, 0x406D)]
-    public class StandardOfChaosG : DualPointedSpear 
+    [FlipableAttribute(0x26BF, 0x26C9)]
+    public class HumanStandardOfChaos : DoubleBladedStaff 
     {
         [Constructable]
-        public StandardOfChaosG()
+        public HumanStandardOfChaos()
         {
             this.Name = ("Standard Of Chaos");
 		
@@ -19,14 +19,29 @@ namespace Server.Items
             this.Attributes.WeaponSpeed = 30;
             this.Attributes.WeaponDamage = -40;
             this.Attributes.CastSpeed = 1;
-            this.AosElementDamages.Chaos = 100;		
-			this.StrRequirement = 40;
+            this.AosElementDamages.Chaos = 100;
         }
 
-        public StandardOfChaosG(Serial serial)
+        public HumanStandardOfChaos(Serial serial)
             : base(serial)
         {
         }
+
+		public override int AosMinDamage
+		{
+			get
+			{
+				return 12;
+			}
+		}
+
+		public override int AosMaxDamage
+		{
+			get
+			{
+				return 13;
+			}
+		}
 
         //TODO: DoubleBladedSpear
         public override int InitMinHits
@@ -43,10 +58,6 @@ namespace Server.Items
                 return 255;
             }
         }
-        
-        public override Race RequiredRace { get { return Race.Gargoyle; } }
-        public override bool CanBeWornByGargoyles { get { return true; } }
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

@@ -13,7 +13,7 @@ namespace Server.Items
             this.Hue = 91;	
 			
             this.WeaponAttributes.HitDispel = 25;
-            //WeaponAttributes.SplinteringWeapon = 20;
+            this.WeaponAttributes.SplinteringWeapon = 20;
             this.Attributes.WeaponSpeed = 30;	
             this.Attributes.WeaponDamage = 50;			
             this.WeaponAttributes.ResistFireBonus = 15;
@@ -23,6 +23,22 @@ namespace Server.Items
             : base(serial)
         {
         }
+
+		public override int AosMinDamage
+		{
+			get
+			{
+				return 13;
+			}
+		}
+
+		public override int AosMaxDamage
+		{
+			get
+			{
+				return 15;
+			}
+		}
 
         public override int ArtifactRarity
         {

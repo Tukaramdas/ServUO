@@ -6,11 +6,11 @@ namespace Server.Items
     {
         [Constructable]
         public StormCaller()
-            : base()
+			: base(0x8FF)
         {
             this.Name = ("Storm Caller");
 			this.Weight = 4;
-		
+			
             this.Hue = 456;
             this.WeaponAttributes.BattleLust = 1;
             this.Attributes.BonusStr = 5;
@@ -29,6 +29,30 @@ namespace Server.Items
             : base(serial)
         {
         }
+
+		public override int AosMinDamage
+		{
+			get
+			{
+				return 8;
+			}
+		}
+
+		public override int AosMaxDamage
+		{
+			get
+			{
+				return 12;
+			}
+		}
+
+		public override int MinThrowRange
+		{
+			get
+			{
+				return 3;
+			}
+		} // Max Range 7
 
         public override int InitMinHits
         {

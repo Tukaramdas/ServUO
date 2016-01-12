@@ -17,12 +17,29 @@ namespace Server.Items
 			this.Attributes.WeaponDamage = 35;
 			this.Hue = 1072; //Hue not exact
 			this.Name = ("Light in the Void");
+			this.Weight = 10;
         }
 
         public LightInTheVoid(Serial serial)
             : base(serial)
         {
         }
+
+		public override int AosMinDamage
+		{
+			get
+			{
+				return 16;
+			}
+		}
+
+		public override int AosMaxDamage
+		{
+			get
+			{
+				return 18;
+			}
+		}
 
 		public override int ArtifactRarity
         {

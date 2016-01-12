@@ -16,15 +16,16 @@ namespace Server.Items
 			case 4 : this.AbsorptionAttributes.ResonanceKinetic = 20; break;			
 			}
 			this.Attributes.SpellChanneling = 1;
-			this.WeaponAttributes.MageWeapon = 10;
 			this.WeaponAttributes.HitHarm = 50;
 			this.Attributes.DefendChance = 10;
 			this.Attributes.WeaponSpeed = 20;
 			this.Attributes.WeaponDamage = -40;
 			this.Attributes.LowerManaCost = 5;
+			this.WeaponAttributes.MageWeapon = 10;
 			this.AosElementDamages.Poison = 100;
 			this.Hue = 1451; //Hue not exact
 			this.Name = ("Staff of Resonance");
+			this.Weight = 10;
         }
 
         public StaffOfResonance(Serial serial)

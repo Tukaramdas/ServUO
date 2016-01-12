@@ -15,12 +15,37 @@ namespace Server.Items
 			this.Attributes.WeaponDamage = 20;
 			this.Hue = 1651; //Hue not exact
 			this.Name = ("Valkyrie's Glaive");
+			this.Weight = 10;
         }
 
         public ValkyriesGlaive(Serial serial)
             : base(serial)
         {
         }
+
+		public override int AosMinDamage
+		{
+			get
+			{
+				return 18;
+			}
+		}
+
+		public override int AosMaxDamage
+		{
+			get
+			{
+				return 22;
+			}
+		}
+
+		public override int MinThrowRange
+		{
+			get
+			{
+				return 7;
+			}
+		} // Max Range 11
 
 		public override int ArtifactRarity
         {
