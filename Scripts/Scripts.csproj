@@ -2916,9 +2916,6 @@
     <Compile Include="Items\Champion Artifacts\Unique\Subdue.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Clothing\- Misc\Tangle1.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Items\Clothing\Arms.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -2946,9 +2943,12 @@
     <Compile Include="Items\Clothing\Artifacts\ShroudOfTheCondemned.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Items\Clothing\Artifacts\SpinedBloodwormBracers.cs" />
     <Compile Include="Items\Clothing\Artifacts\SpiritOfTheTotem.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Items\Clothing\Artifacts\SummonersKilt.cs" />
+    <Compile Include="Items\Clothing\Artifacts\Tangle1.cs" />
     <Compile Include="Items\Clothing\Cloaks.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -2968,9 +2968,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Clothing\Gargoyle\PlateTalons.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Clothing\Gargoyle\SpinedBloodwormBracers.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Clothing\Hats.cs">
@@ -3417,27 +3414,10 @@
     <Compile Include="Items\Guilds\GuildTeleporter.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Jewels\- Misc\BurningAmber.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Jewels\- Misc\GargishBracelet.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Jewels\- Misc\GargishEarrings.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Jewels\- Misc\GargishNecklace.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Jewels\- Misc\GargishRing.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Jewels\- Misc\ObsidianEarrings.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Items\Jewels\Artifacts\BraceletOfHealth.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Items\Jewels\Artifacts\BurningAmber.cs" />
     <Compile Include="Items\Jewels\Artifacts\Craftable\EssenceOfBattle.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -3450,12 +3430,14 @@
     <Compile Include="Items\Jewels\Artifacts\CrystallineRing.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Items\Jewels\Artifacts\DemonBridleRing.cs" />
     <Compile Include="Items\Jewels\Artifacts\DragonJadeEarrings.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Jewels\Artifacts\Lavaliere.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Items\Jewels\Artifacts\ObsidianEarrings.cs" />
     <Compile Include="Items\Jewels\Artifacts\OrnamentOfTheMagician.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -3468,6 +3450,7 @@
     <Compile Include="Items\Jewels\Artifacts\TorcOfTheGuardians.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Items\Jewels\Artifacts\Venom.cs" />
     <Compile Include="Items\Jewels\Beads.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -3492,6 +3475,10 @@
     <Compile Include="Items\Jewels\FireRubyBracelet.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Items\Jewels\GargishBracelet.cs" />
+    <Compile Include="Items\Jewels\GargishEarrings.cs" />
+    <Compile Include="Items\Jewels\GargishNecklace.cs" />
+    <Compile Include="Items\Jewels\GargishRing.cs" />
     <Compile Include="Items\Jewels\Necklace.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -3998,60 +3985,6 @@
     <Compile Include="Items\Resources\Tailor\YarnsAndThreads.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Shields\- Misc\DragonHideShield.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Shields\- Misc\GargishChaosShield.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Shields\- Misc\GargishKiteShield.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Shields\- Misc\GargishOrderShield.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Shields\- Misc\GargishSignOfChaos.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Shields\- Misc\GargishSignOfOrder.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Shields\- Misc\GargishWoodenShield.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Shields\- Misc\HumanSignOfChaos.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Shields\- Misc\HumanSignOfOrder.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Shields\- Misc\LargePlateShield.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Shields\- Misc\LargeStoneShield.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Shields\- Misc\LordBlackthornsExemplar.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Shields\- Misc\MediumPlateShield.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Shields\- Misc\MysticsGuard.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Shields\- Misc\PillarOfStrength.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Shields\- Misc\SentinelsGuard.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Shields\- Misc\SmallPlateShield.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Shields\- Misc\WallOfHungryMouths.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Items\Shields\Artifacts\Aegis.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -4064,12 +3997,30 @@
     <Compile Include="Items\Shields\Artifacts\DefenderOfTheMagus.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Items\Shields\Artifacts\DragonHideShield.cs" />
+    <Compile Include="Items\Shields\Artifacts\GargishChaosShield.cs" />
+    <Compile Include="Items\Shields\Artifacts\GargishKiteShield.cs" />
+    <Compile Include="Items\Shields\Artifacts\GargishOrderShield.cs" />
+    <Compile Include="Items\Shields\Artifacts\GargishSignOfChaos.cs" />
+    <Compile Include="Items\Shields\Artifacts\GargishSignOfOrder.cs" />
+    <Compile Include="Items\Shields\Artifacts\GargishWoodenShield.cs" />
+    <Compile Include="Items\Shields\Artifacts\HumanSignOfChaos.cs" />
+    <Compile Include="Items\Shields\Artifacts\HumanSignOfOrder.cs" />
+    <Compile Include="Items\Shields\Artifacts\LargePlateShield.cs" />
+    <Compile Include="Items\Shields\Artifacts\LargeStoneShield.cs" />
     <Compile Include="Items\Shields\Artifacts\LightsRampart.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Items\Shields\Artifacts\LordBlackthornsExemplar.cs" />
+    <Compile Include="Items\Shields\Artifacts\MediumPlateShield.cs" />
+    <Compile Include="Items\Shields\Artifacts\MysticsGuard.cs" />
+    <Compile Include="Items\Shields\Artifacts\PillarOfStrength.cs" />
+    <Compile Include="Items\Shields\Artifacts\SentinelsGuard.cs" />
+    <Compile Include="Items\Shields\Artifacts\SmallPlateShield.cs" />
     <Compile Include="Items\Shields\Artifacts\TongueoftheBeast.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Items\Shields\Artifacts\WallOfHungryMouths.cs" />
     <Compile Include="Items\Shields\BronzeShield.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -4655,6 +4606,7 @@
     <Compile Include="Items\Skill Items\Misc\ScrollBinderDeed.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Items\Skill Items\Musical Instruments\Artifacts\DreadFlute.cs" />
     <Compile Include="Items\Skill Items\Musical Instruments\BambooFlute.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -4968,9 +4920,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Special\Bulk Order Rewards\Blacksmithy\PowderOfTemperament.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Special\Community Collection\JesterHatofChuckles.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Special\Evil Home Decor Collection\AwesomeDisturbingPortrait.cs">
@@ -5832,24 +5781,15 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Items\Talismans\ConjurersTrinket.cs" />
-    <Compile Include="Items\Talismans\Items\EnchantedSwitch.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Talismans\Items\HollowPrism.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Talismans\Items\JeweledFiligree.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Talismans\Items\RunedPrism.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Talismans\Items\RunedSwitch.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Items\Talismans\EnchantedSwitch.cs" />
+    <Compile Include="Items\Talismans\HollowPrism.cs" />
+    <Compile Include="Items\Talismans\JeweledFiligree.cs" />
     <Compile Include="Items\Talismans\RandomTalisman.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Items\Talismans\RunedPrism.cs" />
+    <Compile Include="Items\Talismans\RunedSwitch.cs" />
+    <Compile Include="Items\Talismans\Slither.cs" />
     <Compile Include="Items\Talismans\TalismanAttribute.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -6084,9 +6024,8 @@
     <Compile Include="Items\Weapons\Artifacts\Frostbringer.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Weapons\Artifacts\GiantSteps.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Items\Weapons\Artifacts\GargoyleStandardOfChaos.cs" />
+    <Compile Include="Items\Weapons\Artifacts\HumanStandardOfChaos.cs" />
     <Compile Include="Items\Weapons\Artifacts\LegacyOfDespair.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -6102,6 +6041,7 @@
     <Compile Include="Items\Weapons\Artifacts\MischiefMaker.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Items\Weapons\Artifacts\PetrifiedSnake.cs" />
     <Compile Include="Items\Weapons\Artifacts\RunedDriftwoodBow.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -6120,12 +6060,7 @@
     <Compile Include="Items\Weapons\Artifacts\StaffOfTheMagi.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Items\Weapons\Artifacts\StandardOfChaos.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Items\Weapons\Artifacts\StandardOfChaosG.cs">
-      <SubType>Code</SubType>
-    </Compile>
+    <Compile Include="Items\Weapons\Artifacts\StoneDragonsTooth.cs" />
     <Compile Include="Items\Weapons\Artifacts\StormCaller.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -6399,6 +6334,7 @@
     <Compile Include="Items\Weapons\Ranged\HeavyCrossbow.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Items\Weapons\Ranged\IronwoodCompositeBow.cs" />
     <Compile Include="Items\Weapons\Ranged\JukaBow.cs">
       <SubType>Code</SubType>
     </Compile>
@@ -12150,16 +12086,10 @@
     <Compile Include="Services\Quests\Peerless System\MasterKey.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Services\Quests\Peerless System\Medusa%27s Lair\DemonBridleRing.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Services\Quests\Peerless System\Medusa%27s Lair\GorgonLens.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Services\Quests\Peerless System\Medusa%27s Lair\IFreezable.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Services\Quests\Peerless System\Medusa%27s Lair\IronwoodCompositeBow.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Services\Quests\Peerless System\Medusa%27s Lair\Medusa.cs">
@@ -12186,25 +12116,10 @@
     <Compile Include="Services\Quests\Peerless System\Medusa%27s Lair\MedusaStatue.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Services\Quests\Peerless System\Medusa%27s Lair\PetrifiedSnake.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Services\Quests\Peerless System\Medusa%27s Lair\RareSerpentEgg.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Services\Quests\Peerless System\Medusa%27s Lair\Slither.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Services\Quests\Peerless System\Medusa%27s Lair\StoneDragonsTooth.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Services\Quests\Peerless System\Medusa%27s Lair\StoneMonster.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Services\Quests\Peerless System\Medusa%27s Lair\SummonersKilt.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Services\Quests\Peerless System\Medusa%27s Lair\Venom.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Services\Quests\Peerless System\Palace of Paroxysmus\Altar.cs">
@@ -12322,9 +12237,6 @@
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Services\Quests\Peerless System\Twisted Weald\BlightedCotton.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Services\Quests\Peerless System\Twisted Weald\DreadFlute.cs">
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="Services\Quests\Peerless System\Twisted Weald\DreadHorn.cs">
