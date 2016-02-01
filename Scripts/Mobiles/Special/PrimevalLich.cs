@@ -1,7 +1,7 @@
 /* Based on Neira, still to get detailed information on the Primeval Lich */
 using System;
 using System.Collections;
-using Server.Engines.CannedEvil;
+using Server.Services.ChampionSystem;
 using Server.Items;
 
 namespace Server.Mobiles

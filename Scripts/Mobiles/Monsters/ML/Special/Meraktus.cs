@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
-using Server.Engines.CannedEvil;
 using Server.Items;
+using Server.Services.ChampionSystem;
 
 namespace Server.Mobiles
 {

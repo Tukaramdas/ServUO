@@ -1,16 +1,17 @@
 using System;
+using Server;
 
-namespace Server.Engines.CannedEvil
+namespace Server.Services.ChampionSystem
 {
-    public enum ChampionSkullType
-    {
-        Power,
-        Enlightenment,
-        Venom,
-        Pain,
-        Greed,
-        Death,
-        Terror,
-        Infuse
-    }
+	public enum ChampionSkullType
+	{
+		Power,
+		Enlightenment,
+		Venom,
+		Pain,
+		Greed,
+		Death,
+		Terror,
+		Infuse,
+	}
 }

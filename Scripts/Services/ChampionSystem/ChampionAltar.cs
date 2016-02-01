@@ -1,56 +1,58 @@
 using System;
+using System.Collections;
+using Server;
 using Server.Items;
 
-namespace Server.Engines.CannedEvil
+namespace Server.Services.ChampionSystem
 {
-    public class ChampionAltar : PentagramAddon
-    {
-        private ChampionSpawn m_Spawn;
-        public ChampionAltar(ChampionSpawn spawn)
-        {
-            this.m_Spawn = spawn;
-        }
+	public class ChampionAltar : PentagramAddon
+	{
+		private ChampionSpawn m_Spawn;
 
-        public ChampionAltar(Serial serial)
-            : base(serial)
-        {
-        }
+		public ChampionAltar( ChampionSpawn spawn )
+		{
+			m_Spawn = spawn;
+		}
 
-        public override void OnAfterDelete()
-        {
-            base.OnAfterDelete();
+		public override void OnAfterDelete()
+		{
+			base.OnAfterDelete();
 
-            if (this.m_Spawn != null)
-                this.m_Spawn.Delete();
-        }
+			if ( m_Spawn != null )
+				m_Spawn.Delete();
+		}
 
-        public override void Serialize(GenericWriter writer)
-        {
-            base.Serialize(writer);
+		public ChampionAltar( Serial serial ) : base( serial )
+		{
+		}
 
-            writer.Write((int)0); // version
+		public override void Serialize( GenericWriter writer )
+		{
+			base.Serialize( writer );
 
-            writer.Write(this.m_Spawn);
-        }
+			writer.Write( (int) 0 ); // version
 
-        public override void Deserialize(GenericReader reader)
-        {
-            base.Deserialize(reader);
+			writer.Write( m_Spawn );
+		}
 
-            int version = reader.ReadInt();
+		public override void Deserialize( GenericReader reader )
+		{
+			base.Deserialize( reader );
 
-            switch ( version )
-            {
-                case 0:
-                    {
-                        this.m_Spawn = reader.ReadItem() as ChampionSpawn;
+			int version = reader.ReadInt();
 
-                        if (this.m_Spawn == null)
-                            this.Delete();
+			switch ( version )
+			{
+				case 0:
+				{
+					m_Spawn = reader.ReadItem() as ChampionSpawn;
 
-                        break;
-                    }
-            }
-        }
-    }
+					if ( m_Spawn == null )
+						Delete();
+
+					break;
+				}
+			}
+		}
+	}
 }

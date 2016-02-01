@@ -1,7 +1,7 @@
 using System;
-using Server.Engines.CannedEvil;
 using Server.Regions;
 using Server.Targeting;
+using Server.Services.ChampionSystem;
 
 namespace Server.Multis
 {

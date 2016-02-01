@@ -10954,15 +10954,10 @@
     <Compile Include="Services\ChampionSystem\ChampionSpawn.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Services\ChampionSystem\ChampionSpawnController\ChampionSpawnController.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="Services\ChampionSystem\ChampionSpawnController\RandomizeTimer.cs">
-      <SubType>Code</SubType>
-    </Compile>
     <Compile Include="Services\ChampionSystem\ChampionSpawnType.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="Services\ChampionSystem\ChampionSystem.cs" />
     <Compile Include="Services\ChampionSystem\HarrowerGate.cs">
       <SubType>Code</SubType>
     </Compile>

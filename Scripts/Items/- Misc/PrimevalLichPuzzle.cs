@@ -19,7 +19,7 @@ using Server.Items;
 // The "key" property on the puzzle controller shows the solution levers,
 // numbered (west to east) as 1 thru 8 for testing purposes.
 //
-namespace Server.Engines.CannedEvil
+namespace Server.Services.ChampionSystem
 {
     public class PrimevalLichPuzzleLever : Item
     {

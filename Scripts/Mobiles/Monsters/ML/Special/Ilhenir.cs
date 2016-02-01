@@ -1,7 +1,7 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
-using Server.Engines.CannedEvil;
+using Server.Services.ChampionSystem;
 using Server.Items;
 using Server.Network;
 

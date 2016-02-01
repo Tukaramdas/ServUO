@@ -1,7 +1,7 @@
 /* 	Based on Rikktor, still to get detailed information on the Abyssal Infernal */
 using System;
 using System.Collections;
-using Server.Engines.CannedEvil;
+using Server.Services.ChampionSystem;
 using Server.Items;
 
 namespace Server.Mobiles

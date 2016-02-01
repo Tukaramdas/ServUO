@@ -1,8 +1,8 @@
 using System;
 using System.Text;
-using Server.Engines.CannedEvil;
 using Server.Items;
 using Server.Mobiles;
+using Server.Services.ChampionSystem;
 
 namespace Server.Misc
 {

@@ -1,5 +1,5 @@
 using System;
-using Server.Engines.CannedEvil;
+using Server.Services.ChampionSystem;
 using Server.Items;
 
 namespace Server.Mobiles

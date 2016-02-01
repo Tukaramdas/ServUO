@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using Server.Engines.CannedEvil;
+using Server.Services.ChampionSystem;
 using Server.Engines.PartySystem;
 using Server.Factions;
 using Server.Guilds;

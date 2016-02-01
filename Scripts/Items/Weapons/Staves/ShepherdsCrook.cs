@@ -1,8 +1,8 @@
 using System;
-using Server.Engines.CannedEvil;
 using Server.Mobiles;
 using Server.Network;
 using Server.Targeting;
+using Server.Services.ChampionSystem;
 
 namespace Server.Items
 {

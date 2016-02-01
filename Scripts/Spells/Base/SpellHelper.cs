@@ -12,6 +12,7 @@ using Server.Spells.Necromancy;
 using Server.Spells.Ninjitsu;
 using Server.Spells.Seventh;
 using Server.Targeting;
+using Server.Services.ChampionSystem;
 
 namespace Server
 {
@@ -811,7 +812,7 @@ namespace Server.Spells
 
         public static bool IsChampionSpawn(Map map, Point3D loc)
         {
-            return (Region.Find(loc, map).IsPartOf(typeof(Engines.CannedEvil.ChampionSpawnRegion)));
+            return (Region.Find(loc, map).IsPartOf(typeof(ChampionSpawnRegion)));
         }
 
         public static bool IsDoomFerry(Map map, Point3D loc)
