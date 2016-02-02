@@ -1207,7 +1207,7 @@ namespace Server.Services.ChampionSystem
 
 		public void SendGump(Mobile mob)
 		{
-
+			mob.SendGump(new ChampionSpawnInfoGump(this));
 		}
 
 		private class ChampionSpawnInfoGump : Gump

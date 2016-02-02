@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.IO;
 using Server.Gumps;
+using Server.Commands;
 
 namespace Server.Services.ChampionSystem
 {
@@ -59,6 +60,8 @@ namespace Server.Services.ChampionSystem
 
 		private static void Initialize()
 		{
+			CommandSystem.Register("ChampionInfo", AccessLevel.GameMaster, new CommandEventHandler(ChampionInfo_OnCommand));
+
 			if (!m_Enabled)
 			{
 				foreach (ChampionSpawn s in m_AllSpawns)
@@ -281,6 +284,23 @@ namespace Server.Services.ChampionSystem
 			Rotate();
 
 			m_Initialized = true;
+		}
+
+		[Usage("ChampionInfo")]
+		[Description("Opens a UI that displays information about the champion system")]
+		private static void ChampionInfo_OnCommand(CommandEventArgs e)
+		{
+			if (!m_Enabled)
+			{
+				e.Mobile.SendMessage("The champion system is not enabled.");
+				return;
+			}
+			if (m_AllSpawns.Count <= 0)
+			{
+				e.Mobile.SendMessage("The champion system is enabled but no altars exist");
+				return;
+			}
+			e.Mobile.SendGump(new ChampionSystemGump());
 		}
 
 		private static void Rotate()
