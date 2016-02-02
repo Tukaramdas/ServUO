@@ -19,11 +19,24 @@ namespace Server.Services.ChampionSystem
 		private static List<ChampionSpawn> m_DungeonSpawns = new List<ChampionSpawn>();
 		private static List<ChampionSpawn> m_LostLandsSpawns = new List<ChampionSpawn>();
 		private static InternalTimer m_Timer;
+		private static int m_GoldShowerPiles;
+		private static int m_GoldShowerMinAmount;
+		private static int m_GoldShowerMaxAmount;
+		private static int m_PowerScrollAmount;
+
+		public static int GoldShowerPiles { get { return m_GoldShowerPiles; } }
+		public static int GoldShowerMinAmount { get { return m_GoldShowerMinAmount; } }
+		public static int GoldShowerMaxAmount { get { return m_GoldShowerMaxAmount; } }
+		public static int PowerScrollAmount { get { return m_PowerScrollAmount; } }
 
 		private static void Configure()
 		{
 			m_Enabled = Config.Get("Champions.Enabled", true);
 			m_RotateDelay = Config.Get("Champions.RotateDelay", TimeSpan.FromDays(1.0d));
+			m_GoldShowerPiles = Config.Get("Champions.GoldPiles", 50);
+			m_GoldShowerMinAmount = Config.Get("Champions.GoldMin", 2500);
+			m_GoldShowerMaxAmount = Config.Get("Champions.GoldMax", 7500);
+			m_PowerScrollAmount = Config.Get("Champions.PowerScrolls", 6);
 			EventSink.WorldLoad += EventSink_WorldLoad;
 			EventSink.WorldSave += EventSink_WorldSave;
 		}

@@ -194,7 +194,7 @@ namespace Server.Mobiles
                 toGive[rand] = hold;
             }
 
-            for (int i = 0; i < 6; ++i)
+            for (int i = 0; i < ChampionSystem.PowerScrollAmount; ++i)
             {
                 Mobile m = toGive[i % toGive.Count];
 
@@ -211,25 +211,42 @@ namespace Server.Mobiles
                 if (this.NoGoodies)
                     return base.OnBeforeDeath();
 
-                Map map = this.Map;
-
-                if (map != null)
-                {
-                    for (int x = -12; x <= 12; ++x)
-                    {
-                        for (int y = -12; y <= 12; ++y)
-                        {
-                            double dist = Math.Sqrt(x * x + y * y);
-
-                            if (dist <= 12)
-                                new GoodiesTimer(map, this.X + x, this.Y + y).Start();
-                        }
-                    }
-                }
+				for (int i = 0; i < ChampionSystem.GoldShowerPiles; ++i)
+				{
+					Point3D p = FindGoldLocation(Map, Location, 12);
+					new GoodiesTimer(Map, p);
+				}
             }
 
             return base.OnBeforeDeath();
         }
+
+		private Point3D FindGoldLocation(Map map, Point3D center, int radius)
+		{
+			Point3D ret = center;
+
+			// Try 20 times to find a location
+			for (int i = 0; i < 20; ++i)
+			{
+				int x = center.X + Utility.Random(radius * 2) - radius;
+				int y = center.X + Utility.Random(radius * 2) - radius;
+
+				// Check the distance without using SQRT
+				int dist = (center.X - x) * (center.X - x) + (center.Y - y) * (center.Y - y);
+				if (dist > radius * radius)
+					continue;
+
+				// Check height
+				int z = map.GetAverageZ(x, y);
+				for (int j = -3; j <= 3; ++j)
+				{
+					if (map.CanFit(x, y, z + j, 6, false, false))
+						return new Point3D(x, y, z + j);
+				}
+			}
+
+			return center;
+		}
 
         public override void OnDeath(Container c)
         {
@@ -274,35 +291,18 @@ namespace Server.Mobiles
         private class GoodiesTimer : Timer
         {
             private readonly Map m_Map;
-            private readonly int m_X;
-            private readonly int m_Y;
-            public GoodiesTimer(Map map, int x, int y)
+			private readonly Point3D m_Location;
+            public GoodiesTimer(Map map, Point3D p)
                 : base(TimeSpan.FromSeconds(Utility.RandomDouble() * 10.0))
             {
                 this.m_Map = map;
-                this.m_X = x;
-                this.m_Y = y;
+				this.m_Location = p;
             }
 
             protected override void OnTick()
             {
-                int z = this.m_Map.GetAverageZ(this.m_X, this.m_Y);
-                bool canFit = this.m_Map.CanFit(this.m_X, this.m_Y, z, 6, false, false);
-
-                for (int i = -3; !canFit && i <= 3; ++i)
-                {
-                    canFit = this.m_Map.CanFit(this.m_X, this.m_Y, z + i, 6, false, false);
-
-                    if (canFit)
-                        z += i;
-                }
-
-                if (!canFit)
-                    return;
-
-                Gold g = new Gold(500, 1000);
-				
-                g.MoveToWorld(new Point3D(this.m_X, this.m_Y, z), this.m_Map);
+                Gold g = new Gold(ChampionSystem.GoldShowerMinAmount, ChampionSystem.GoldShowerMaxAmount);		
+                g.MoveToWorld(m_Location);
 
                 if (0.5 >= Utility.RandomDouble())
                 {
