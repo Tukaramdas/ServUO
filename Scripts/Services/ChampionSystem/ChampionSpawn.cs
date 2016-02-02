@@ -25,6 +25,7 @@ namespace Server.Services.ChampionSystem
 		private bool m_AutoRestart = false;
 
 		private Rectangle2D m_SpawnArea;
+		private Rectangle2D m_SpawnBounds;
 		private ChampionSpawnRegion m_Region;
 
 		private TimeSpan m_ExpireDelay;
@@ -88,9 +89,15 @@ namespace Server.Services.ChampionSystem
 			Timer.DelayCall( TimeSpan.Zero, new TimerCallback( SetInitialSpawnArea ) );
 		}
 
+		private Rectangle2D Rect(int radius)
+		{
+			return new Rectangle2D(new Point2D(X - radius, Y - radius), new Point2D(X + radius, Y + radius));
+		}
+
 		public void SetInitialSpawnArea()
 		{
-			SpawnArea = new Rectangle2D( new Point2D( X - 24, Y - 24 ), new Point2D( X + 24, Y + 24 ) );
+			SpawnArea = Rect(24);
+			m_SpawnBounds = Rect(24);
 		}
 
 		public void UpdateRegion()
@@ -277,6 +284,14 @@ namespace Server.Services.ChampionSystem
 			}
 		}
 
+		private int[] m_SpawnBoundsRadiusTable = { 24, 18, 12, 6, 4, };
+		private void SetSpawnBoundsForRank(int rank)
+		{
+			if (rank < 0 || rank >= m_SpawnBoundsRadiusTable.Length)
+				m_SpawnBounds = Rect(m_SpawnBoundsRadiusTable[0]);
+			else
+				m_SpawnBounds = Rect(m_SpawnBoundsRadiusTable[rank]);
+		}
 		public bool IsChampionSpawn( Mobile m )
 		{
 			return m_Creatures.Contains( m );
@@ -313,6 +328,7 @@ namespace Server.Services.ChampionSystem
 
 			m_Active = true;
 			m_HasBeenAdvanced = false;
+			SetSpawnBoundsForRank(0);
 
 			if( m_Timer != null )
 				m_Timer.Stop();
@@ -618,6 +634,7 @@ namespace Server.Services.ChampionSystem
 			{
 				m_Kills = 0;
 				++Level;
+				SetSpawnBoundsForRank(Rank);
 				InvalidateProperties();
 				SetWhiteSkullCount( 0 );
 
@@ -714,13 +731,8 @@ namespace Server.Services.ChampionSystem
 			// Try 20 times to find a spawnable location.
 			for( int i = 0; i < 20; i++ )
 			{
-				/*
-				int x = Location.X + (Utility.Random( (m_SpawnRange * 2) + 1 ) - m_SpawnRange);
-				int y = Location.Y + (Utility.Random( (m_SpawnRange * 2) + 1 ) - m_SpawnRange);
-				*/
-
-				int x = Utility.Random( m_SpawnArea.X, m_SpawnArea.Width );
-				int y = Utility.Random( m_SpawnArea.Y, m_SpawnArea.Height );
+				int x = Utility.Random(m_SpawnBounds.X, m_SpawnBounds.Width);
+				int y = Utility.Random(m_SpawnBounds.Y, m_SpawnBounds.Height);
 
 				int z = Map.GetAverageZ( x, y );
 
@@ -1105,6 +1117,7 @@ namespace Server.Services.ChampionSystem
 			writer.WriteItem<IdolOfTheChampion>( m_Idol );
 			writer.Write( m_HasBeenAdvanced );
 			writer.Write( m_SpawnArea );
+			writer.Write(m_SpawnBounds);
 
 			writer.Write( m_RandomizeType );
 
@@ -1157,6 +1170,7 @@ namespace Server.Services.ChampionSystem
 					m_Idol = reader.ReadItem<IdolOfTheChampion>();
 					m_HasBeenAdvanced = reader.ReadBool();
 					m_SpawnArea = reader.ReadRect2D();
+					m_SpawnBounds = reader.ReadRect2D();
 					m_RandomizeType = reader.ReadBool();
 					
 					m_Kills = reader.ReadInt();
