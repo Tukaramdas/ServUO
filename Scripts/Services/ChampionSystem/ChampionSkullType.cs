@@ -11,7 +11,7 @@ namespace Server.Services.ChampionSystem
 		Pain,
 		Greed,
 		Death,
-		Terror,
 		Infuse,
+		Terror,
 	}
 }

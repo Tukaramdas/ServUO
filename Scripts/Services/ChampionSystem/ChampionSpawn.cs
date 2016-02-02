@@ -11,20 +11,6 @@ namespace Server.Services.ChampionSystem
 {
 	public class ChampionSpawn : Item
 	{
-		[CommandProperty( AccessLevel.GameMaster )]
-		public int SpawnSzMod
-		{
-			get
-			{
-				return ( m_SPawnSzMod < 1 || m_SPawnSzMod > 12 ) ? 12 : m_SPawnSzMod;
-			}
-			set
-			{
-				m_SPawnSzMod = ( value < 1 || value > 12 ) ? 12 : value;
-			}
-		}
-		private int m_SPawnSzMod;
-
 		private bool m_Active;
 		private bool m_RandomizeType;
 		private ChampionSpawnType m_Type;
@@ -35,8 +21,8 @@ namespace Server.Services.ChampionSystem
 		private ChampionAltar m_Altar;
 		private int m_Kills;
 		private Mobile m_Champion;
+		private bool m_AutoRestart = false;
 
-		//private int m_SpawnRange;
 		private Rectangle2D m_SpawnArea;
 		private ChampionSpawnRegion m_Region;
 
@@ -54,6 +40,13 @@ namespace Server.Services.ChampionSystem
 		private bool m_ConfinedRoaming;
 
 		private Dictionary<Mobile, int> m_DamageEntries;
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public bool AutoRestart
+		{
+			get { return m_AutoRestart; }
+			set { m_AutoRestart = value; }
+		}
 
 		[CommandProperty( AccessLevel.GameMaster )]
 		public bool ConfinedRoaming
@@ -78,7 +71,6 @@ namespace Server.Services.ChampionSystem
 			m_Creatures = new List<Mobile>();
 			m_RedSkulls = new List<Item>();
 			m_WhiteSkulls = new List<Item>();
-			m_SPawnSzMod = 12;
 
 			m_Platform = new ChampionPlatform( this );
 			m_Altar = new ChampionAltar( this );
@@ -94,7 +86,6 @@ namespace Server.Services.ChampionSystem
 
 		public void SetInitialSpawnArea()
 		{
-			//Previous default used to be 24;
 			SpawnArea = new Rectangle2D( new Point2D( X - 24, Y - 24 ), new Point2D( X + 24, Y + 24 ) );
 		}
 
@@ -108,26 +99,6 @@ namespace Server.Services.ChampionSystem
 				m_Region = new ChampionSpawnRegion( this );
 				m_Region.Register();
 			}
-
-			/*
-			if( m_Region == null )
-			{
-				m_Region = new ChampionSpawnRegion( this );
-			}
-			else
-			{
-				m_Region.Unregister();
-				//Why doesn't Region allow me to set it's map/Area meself? ><
-				m_Region = new ChampionSpawnRegion( this );
-			}
-			*/
-		}
-
-		[CommandProperty( AccessLevel.GameMaster )]
-		public bool RandomizeType
-		{
-			get { return m_RandomizeType; }
-			set { m_RandomizeType = value; }
 		}
 
 		[CommandProperty( AccessLevel.GameMaster )]
@@ -284,6 +255,15 @@ namespace Server.Services.ChampionSystem
 			}
 		}
 
+		public ChampionSpawnType[] PossibleTypes =
+		{
+			ChampionSpawnType.VerminHorde,
+			ChampionSpawnType.UnholyTerror,
+			ChampionSpawnType.ColdBlood,
+			ChampionSpawnType.Abyss,
+			ChampionSpawnType.Arachnid,
+		};
+
 		private int[] m_MaxKillsTable = { 256, 128, 64, 32, 8, };
 		public int MaxKills
 		{
@@ -391,18 +371,7 @@ namespace Server.Services.ChampionSystem
 
 		public void EndRestart()
 		{
-			if( RandomizeType )
-			{
-				switch( Utility.Random( 5 ) )
-				{
-					case 0: Type = ChampionSpawnType.VerminHorde; break;
-					case 1: Type = ChampionSpawnType.UnholyTerror; break;
-					case 2: Type = ChampionSpawnType.ColdBlood; break;
-					case 3: Type = ChampionSpawnType.Abyss; break;
-					case 4: Type = ChampionSpawnType.Arachnid; break;
-				}
-			}
-
+			Type = PossibleTypes[Utility.Random(PossibleTypes.Length)];
 			m_HasBeenAdvanced = false;
 
 			Start();
@@ -510,11 +479,19 @@ namespace Server.Services.ChampionSystem
 					m_Champion = null;
 					Stop();
 
-					BeginRestart( m_RestartDelay );
+					if(m_AutoRestart)
+						BeginRestart( m_RestartDelay );
 				}
 			}
 			else
 			{
+				Type[][] types = ChampionSpawnInfo.GetInfo(m_Type).SpawnTypes;
+				Type[] spawnTypes;
+				if (Rank > types.Length)
+					spawnTypes = new Type[0] { };
+				else
+					spawnTypes = types[Rank];
+
 				int kills = m_Kills;
 
 				for ( int i = 0; i < m_Creatures.Count; ++i )
@@ -529,7 +506,16 @@ namespace Server.Services.ChampionSystem
 						}
 						m_Creatures.RemoveAt( i );
 						--i;
-						++m_Kills;
+
+						// Only award kills for mobs that spawn for the current rank
+						foreach(Type type in spawnTypes)
+						{
+							if(m.GetType() == type)
+							{
+								++m_Kills;
+								break;
+							}
+						}
 
 						Mobile killer = m.FindMostRecentDamager( false );
 
@@ -671,7 +657,7 @@ namespace Server.Services.ChampionSystem
 			if( !m_Active || Deleted || m_Champion != null )
 				return;
 
-			while( m_Creatures.Count < MaxKills / 4 )
+			while ( m_Creatures.Count < MaxKills / 4 )
 			{
 				Mobile m = Spawn();
 
@@ -1102,9 +1088,8 @@ namespace Server.Services.ChampionSystem
 		{
 			base.Serialize( writer );
 
-			writer.Write( (int)6 ); // version
+			writer.Write( (int)0 ); // version
 
-			writer.Write( ( int ) m_SPawnSzMod );
 			writer.Write( m_DamageEntries.Count );
 			foreach (KeyValuePair<Mobile, int> kvp in m_DamageEntries)
 			{
@@ -1119,7 +1104,6 @@ namespace Server.Services.ChampionSystem
 
 			writer.Write( m_RandomizeType );
 
-			//			writer.Write( m_SpawnRange );
 			writer.Write( m_Kills );
 
 			writer.Write( (bool)m_Active );
@@ -1150,12 +1134,7 @@ namespace Server.Services.ChampionSystem
 
 			switch( version )
 			{
-				case 6:
-				{
-					m_SPawnSzMod = reader.ReadInt();
-					goto case 5;
-				}
-				case 5:
+				case 0:
 				{
 					int entries = reader.ReadInt();
 					Mobile m;
@@ -1170,47 +1149,14 @@ namespace Server.Services.ChampionSystem
 
 						m_DamageEntries.Add( m, damage );
 					}
-
-					goto case 4;
-				}
-				case 4:
-				{
 					m_ConfinedRoaming = reader.ReadBool();
 					m_Idol = reader.ReadItem<IdolOfTheChampion>();
 					m_HasBeenAdvanced = reader.ReadBool();
-
-					goto case 3;
-				}
-				case 3:
-				{
 					m_SpawnArea = reader.ReadRect2D();
-
-					goto case 2;
-				}
-				case 2:
-				{
 					m_RandomizeType = reader.ReadBool();
-
-					goto case 1;
-				}
-				case 1:
-				{
-					if( version < 3 )
-					{
-						int oldRange = reader.ReadInt();
-
-						m_SpawnArea = new Rectangle2D( new Point2D( X - oldRange, Y - oldRange ), new Point2D( X + oldRange, Y + oldRange ) );
-					}
-
+					
 					m_Kills = reader.ReadInt();
-
-					goto case 0;
-				}
-				case 0:
-				{
-					if( version < 1 )
-						m_SpawnArea = new Rectangle2D( new Point2D( X - 24, Y - 24 ), new Point2D( X + 24, Y + 24 ) );	//Default was 24
-
+					
 					bool active = reader.ReadBool();
 					m_Type = (ChampionSpawnType)reader.ReadInt();
 					m_Creatures = reader.ReadStrongMobileList();
@@ -1227,12 +1173,6 @@ namespace Server.Services.ChampionSystem
 					{
 						m_RestartTime = reader.ReadDeltaTime();
 						BeginRestart( m_RestartTime - DateTime.UtcNow );
-					}
-
-					if( version < 4 )
-					{
-						m_Idol = new IdolOfTheChampion( this );
-						m_Idol.MoveToWorld( new Point3D( X, Y, Z - 15 ), Map );
 					}
 
 					if( m_Platform == null || m_Altar == null || m_Idol == null )

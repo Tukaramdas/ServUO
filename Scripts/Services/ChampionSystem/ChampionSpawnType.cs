@@ -14,9 +14,9 @@ namespace Server.Services.ChampionSystem
 		UnholyTerror,
 		SleepingDragon,
 		Glade,
-		Pestilence,
-		Infuse,
 		Corrupt,
+		Terror,
+		Infuse,
 	}
 
 	public class ChampionSpawnInfo
@@ -108,7 +108,21 @@ namespace Server.Services.ChampionSystem
 					new Type[]{ typeof( PlagueBeast ), typeof( BogThing ) },
 					new Type[]{ typeof( PlagueBeastLord ), typeof( InterredGrizzle ) },
 					new Type[]{ typeof( FetidEssence ), typeof( PestilentBandage ) }
-				} )
+				} ),
+				new ChampionSpawnInfo( "Abyssal Terror", typeof( PrimevalLich ), new string[]{ "", "", "" } , new Type[][]
+				{																											// Infuse
+					new Type[]{ typeof( HordeMinionFamiliar ), typeof( ChaosDaemon ) },
+					new Type[]{ typeof( StoneHarpy ), typeof( ArcaneDaemon ) },
+					new Type[]{ typeof( PitFiend ), typeof( Moloch ) },
+					new Type[]{ typeof( ArchDaemon ), typeof( AbyssalAbomination ) }
+				} ),
+				new ChampionSpawnInfo( "Primeval Lich", typeof( PrimevalLich ), new string[]{ "", "", "" } , new Type[][]
+				{																											// Infuse
+					new Type[]{ typeof( GoreFiend ), typeof( VampireBat ) },
+					new Type[]{ typeof( FleshGolem ), typeof( DarkWisp ) },
+					new Type[]{ typeof( UndeadGargoyle ), typeof( Wight ) },
+					new Type[]{ typeof( SkeletalDrake ), typeof( DreamWraith ) }
+				} ),
 			};
 
 		public static ChampionSpawnInfo GetInfo( ChampionSpawnType type )
