@@ -1,5 +1,6 @@
 using System;
 using System.Collections;
+using System.Linq;
 using Server;
 using Server.Gumps;
 using Server.Items;
@@ -40,6 +41,9 @@ namespace Server.Services.ChampionSystem
 		private bool m_ConfinedRoaming;
 
 		private Dictionary<Mobile, int> m_DamageEntries;
+
+		[CommandProperty(AccessLevel.GameMaster)]
+		public string SpawnName { get; set; }
 
 		[CommandProperty(AccessLevel.GameMaster)]
 		public bool AutoRestart
@@ -1185,6 +1189,103 @@ namespace Server.Services.ChampionSystem
 			}
 
 			Timer.DelayCall( TimeSpan.Zero, new TimerCallback( UpdateRegion ) );
+		}
+
+		public void SendGump(Mobile mob)
+		{
+
+		}
+
+		private class ChampionSpawnInfoGump : Gump
+		{
+			private class Damager
+			{
+				public Mobile Mobile;
+				public int Damage;
+				public Damager(Mobile mob, int dmg)
+				{
+					Mobile = mob;
+					Damage = dmg;
+				}
+
+			}
+			private const int gBoarder = 20;
+			private const int gRowHeight = 25;
+			private const int gFontHue = 0;
+			private const int gWidth = 220;
+
+			private ChampionSpawn m_Spawn;
+
+			public ChampionSpawnInfoGump(ChampionSpawn spawn)
+				: base(40, 40)
+			{
+				/*
+				 * 20      100      80    20      = 220
+				 * Boarder Property Value Boarder
+				 * Kills MaxKills Level Rank Active AutoRestart
+				 * m_DamageEntries
+				 * Refresh []
+				 */
+
+				m_Spawn = spawn;
+
+				AddBackground(0, 0, gWidth, gBoarder * 2 + gRowHeight * (8 + spawn.m_DamageEntries.Count), 0x13BE);
+
+				int top = gBoarder;
+				AddLabel(gBoarder, top, gFontHue, "Champion Spawn Info Gump");
+				top += gRowHeight;
+
+				AddLabel(gBoarder + 0, top, gFontHue, "Kills");
+				AddLabel(gBoarder + 100, top, gFontHue, spawn.Kills.ToString());
+				top += gRowHeight;
+
+				AddLabel(gBoarder + 0, top, gFontHue, "Max Kills");
+				AddLabel(gBoarder + 100, top, gFontHue, spawn.MaxKills.ToString());
+				top += gRowHeight;
+
+				AddLabel(gBoarder + 0, top, gFontHue, "Level");
+				AddLabel(gBoarder + 100, top, gFontHue, spawn.Level.ToString());
+				top += gRowHeight;
+
+				AddLabel(gBoarder + 0, top, gFontHue, "Rank");
+				AddLabel(gBoarder + 100, top, gFontHue, spawn.Rank.ToString());
+				top += gRowHeight;
+
+				AddLabel(gBoarder + 0, top, gFontHue, "Active");
+				AddLabel(gBoarder + 100, top, gFontHue, spawn.Active.ToString());
+				top += gRowHeight;
+
+				AddLabel(gBoarder + 0, top, gFontHue, "Auto Restart");
+				AddLabel(gBoarder + 100, top, gFontHue, spawn.AutoRestart.ToString());
+				top += gRowHeight;
+
+				List<Damager> damagers = new List<Damager>();
+				foreach (Mobile mob in spawn.m_DamageEntries.Keys)
+				{
+					damagers.Add(new Damager(mob, spawn.m_DamageEntries[mob]));
+				}
+				damagers = damagers.OrderByDescending(x => x.Damage).ToList<Damager>();
+
+				foreach (Damager damager in damagers)
+				{
+					AddLabelCropped(gBoarder + 0, top, 100, gRowHeight, gFontHue, damager.Mobile.RawName);
+					AddLabelCropped(gBoarder + 100, top, 80, gRowHeight, gFontHue, damager.Damage.ToString());
+					top += gRowHeight;
+				}
+
+				AddButton(gWidth - (gBoarder + 30), top, 0xFA5, 0xFA7, 1, GumpButtonType.Reply, 0);
+				AddLabel(gWidth - (gBoarder + 70), top, gFontHue, "Refresh");
+			}
+
+			public override void OnResponse(Network.NetState sender, RelayInfo info)
+			{
+				switch (info.ButtonID)
+				{
+					case 1:
+						m_Spawn.SendGump(sender.Mobile);
+						break;
+				}
+			}
 		}
 	}
 
