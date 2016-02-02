@@ -34,10 +34,12 @@ namespace Server.Mobiles
                 return false;
             }
         }
-        public static void GivePowerScrollTo(Mobile m, PowerScroll ps)
+        public static void GivePowerScrollTo(Mobile m)
         {
-            if (ps == null || m == null)	//sanity
+            if (m == null)	//sanity
                 return;
+
+			PowerScroll ps = CreateRandomPowerScroll();
 
             m.SendLocalizedMessage(1049524); // You have received a scroll of power!
 
@@ -79,7 +81,7 @@ namespace Server.Mobiles
 
                     if (chance > Utility.Random(100))
                     {
-                        PowerScroll powerScroll = new PowerScroll(ps.Skill, ps.Value);
+						PowerScroll powerScroll = CreateRandomPowerScroll();
 
                         prot.SendLocalizedMessage(1049368); // You have been rewarded for your dedication to Justice!
 
@@ -196,9 +198,7 @@ namespace Server.Mobiles
             {
                 Mobile m = toGive[i % toGive.Count];
 
-                PowerScroll ps = this.CreateRandomPowerScroll();
-
-                GivePowerScrollTo(m, ps);
+                GivePowerScrollTo(m);
             }
         }
 
@@ -256,7 +256,7 @@ namespace Server.Mobiles
             base.OnDeath(c);
         }
 
-        private PowerScroll CreateRandomPowerScroll()
+        private static PowerScroll CreateRandomPowerScroll()
         {
             int level;
             double random = Utility.RandomDouble();

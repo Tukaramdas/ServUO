@@ -296,8 +296,15 @@ namespace Server.Services.ChampionSystem
 				spawn.AutoRestart = false;
 			}
 
-			m_DungeonSpawns[Utility.Random(m_DungeonSpawns.Count)].AutoRestart = true;
-			m_LostLandsSpawns[Utility.Random(m_LostLandsSpawns.Count)].AutoRestart = true;
+			ChampionSpawn s;
+			s = m_DungeonSpawns[Utility.Random(m_DungeonSpawns.Count)];
+			s.AutoRestart = true;
+			if (!s.Active)
+				s.Active = true;
+			s = m_LostLandsSpawns[Utility.Random(m_LostLandsSpawns.Count)];
+			s.AutoRestart = true;
+			if (!s.Active)
+				s.Active = true;
 		}
 
 		private static void OnSlice()
