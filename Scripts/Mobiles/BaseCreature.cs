@@ -5553,7 +5553,8 @@ namespace Server.Mobiles
                         #region Alpha Gold Ledger Edit 1
                         GiveGold.GoldTransfer(ds.m_Mobile, c, this);
                         #endregion
-						if (!givenFactionKill)
+
+                        if (!givenFactionKill)
 						{
 							givenFactionKill = true;
 							Faction.HandleDeath(this, ds.m_Mobile);
