@@ -54,10 +54,40 @@ namespace Server.Misc
                 m.AddItem(pack);
             }
 
-            PackItem(new RedBook("a book", m.Name, 20, true));
-            PackItem(new Gold(Config.Get("CharacterCreation.StartingGold", 0)));
-            PackItem(new Candle());
 
+            PackItem(new RedBook("a book", m.Name, 20, true));
+            PackItem(new Gold(10000)); // Starting gold can be customized here
+            PackItem(new Scissors());
+            PackItem(new Welcometotheshard());
+            PackItem(new LetterofApprenticeship());
+            PackItem(new Backpack());
+            PackItem(new SkillBallPlus());
+            PackItem(new StatBall());
+            PackItem(new BookOfTravel());
+            PackItem(new SeaNavigator());
+            PackItem(new BankStoneDeed());
+            PackItem(new StonePlasterHouseDeed());
+            PackItem(new EtherealHorse());
+            PackItem(new MasterLooterBackpack());
+            PackItem(new TokenLedger());
+            PackItem(new GoldLedger());
+            PackItem(new Trash4TokensBackpack());
+            PackItem(new Spellbook(UInt64.MaxValue));
+            PackItem(new NecromancerSpellbook((UInt64)0xFFFF));
+            PackItem(new BookOfChivalry((UInt64)0x3FF));
+            PackItem(new BookOfBushido());	//Default ctor = full
+            PackItem(new BookOfNinjitsu()); //Default ctor = full
+
+            // Runebook runebook = new Runebook(10);
+            //  runebook.CurCharges = runebook.MaxCharges;
+            //  PackItem(new  runebook());
+
+            //  for (int i = 0; i < 9; ++i)
+            //  PackItem(new RecallRune());
+
+
+            //PlaceItemIn(pack, 78, 169, cont);
+            // End bag of spell casting stuff
             if (m.Race != Race.Gargoyle)
             {
                 PackItem(new Dagger());

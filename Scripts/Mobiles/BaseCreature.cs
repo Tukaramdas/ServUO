@@ -5554,7 +5554,7 @@ namespace Server.Mobiles
                         GiveGold.GoldTransfer(ds.m_Mobile, c, this);
                         #endregion
 
-                        if (!givenFactionKill)
+						if (!givenFactionKill)
 						{
 							givenFactionKill = true;
 							Faction.HandleDeath(this, ds.m_Mobile);
@@ -5594,7 +5594,6 @@ namespace Server.Mobiles
 					{
 						Titles.AwardFame(titles[i], fame[i], true);
 						Titles.AwardKarma(titles[i], karma[i], true);
-                       
 					}
 				}
 
