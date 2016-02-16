@@ -4,6 +4,9 @@ using Server.Engines.XmlSpawner2;
 using Server.Items;
 using Server.Mobiles;
 using Server.Network;
+using Daat99MasterLooterSystem;
+using Server.Multis.Deeds;
+
 
 namespace Server.Misc
 {
