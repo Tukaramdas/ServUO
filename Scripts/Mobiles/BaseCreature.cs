@@ -5550,9 +5550,6 @@ namespace Server.Mobiles
 
 						XmlQuest.RegisterKill(this, ds.m_Mobile);
 
-                        #region Alpha Gold Ledger Edit 1
-                        GiveGold.GoldTransfer(ds.m_Mobile, c, this);
-                        #endregion
 						if (!givenFactionKill)
 						{
 							givenFactionKill = true;
@@ -5593,7 +5590,6 @@ namespace Server.Mobiles
 					{
 						Titles.AwardFame(titles[i], fame[i], true);
 						Titles.AwardKarma(titles[i], karma[i], true);
-                       
 					}
 				}
 
