@@ -1,0 +1,32 @@
+Region Effects 2015-01-17
+
+Different effects for different regions
+Unwatch This Resource
+
+    Overview
+    Version History
+    Discussion
+
+        Requirements:
+            Compiled for ServUO Publish 54
+
+        Have You ever wanted Cold Effects for Ice Dungeon or Fire Effects for Fire Dungeon or to have them in some other region (maybe just for an event)? There are 11 Effects in all:
+        Dark
+        Fire
+        Ice
+        Toxic
+        Electric
+        Water
+        Mist
+        Explosion
+        Stoned
+        Shiney
+        Firefly
+
+        Place the effects stone somewhere out of the way, double click (As A GM or higher) then set the effects for the regions you want and the torment for players begins.
+
+        GoldDraco13 originally wrote this. It been changed a few times but I never liked that it couldn't be accessed from other scripts. It now can.
+
+        I have added Earring that Void the all the Effects (there's a reward version of the same item name in the Vet Rewards Upgrade package I released) the ones here are NOT a reward item.
+
+        You can edit the duration or amount of damage in EffectsSystem.cs (At about line 12470). 

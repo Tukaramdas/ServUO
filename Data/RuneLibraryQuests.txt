@@ -1,0 +1,13 @@
+1 Hag's_House 850 1554 0
+4 Sacrifice_Hallowed_Ground 1176 1290 -30
+5 Frogs_Legs_Brit_Sewers 6032 1488 5
+6 Chickens 684 1008 0
+7 Sheep_&_Chickens 1131 3577 0
+8 Swamp_Water 1989 940 0
+9 Deer_Hearts 4560 1377 8
+10 Blackheart 2690 2236 2
+11 Solen_Matriarch 5777 1903 7
+12 Solen_Wind 1362 890 0
+13 Minoc_Ant_Hive 2606 764 0
+14 Ants_Lich_Ruins 728 1451 0
+15 Ambitious_Queen 5783 1982 3

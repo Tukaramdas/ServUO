@@ -1,0 +1,26 @@
+http://www.runuo.com/community/threads/runuo-2-2-house-teleporters.522863/
+
+
+
+This came from this...
+http://www.runuo.com/community/threads/player-house-teleporter.471686/
+
+What this does is give you a tile that you can lock down in your house and teleport from one house to another house.
+
+- If the tile is in your bag and you double-click it, it will change the appearance of the tile (all choices are shown in the picture below).
+
+- If you double-click the tile on the ground (not locked down or secured) it will erase any memory of where it may have been marked.
+
+- If the tile is not marked, but locked down...double-clicking it will mark it to that spot. You would then need to unsecure it and move it to another spot you want to teleport from.
+
+- If the tile is marked and secured/locked down, walking over it will teleport you to where you marked the tile.
+
+- The tile can be dyed by a normal dye tub.
+
+- You can set security on the tile so only certain people can use it (owner, friend, co-owners).
+
+- They will wipe out any marked data if the house at the other end is demolished and give you a message that the house at the other end must have been demolished.
+
+ 
+
+This is very similar to the linked post above, but some things were changed. First, these serialize and check the security level of the tile (that was missing in the previous house teleporter). The other change is that this tile can change appearance instead of being one style. It also now checks to see if a house is actually at the other end. The last thing that is different is that you can un-mark a tile where the previous version could not. The dialogs that appear when double-clicking it should be enough to tell a player how to use these tiles 

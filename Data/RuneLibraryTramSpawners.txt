@@ -1,0 +1,17 @@
+1 Uzeram's_Dungeon 5260 1835 0
+2 Newbie_Gear_Lothar 3600 2576 0
+3 Newbie_Gear_Brianna 6049 364 43
+4 Baby_Parents 3508 2565 15
+5 Baby_Bandit_Camp 2296 1255 0
+6 Gingerbread_Start 3465 2577 35
+7 Gingerbrrad_Thief 3421 2632 48 
+8 Death_Reaper1 3451 2560 31
+9 DeathReaper2 953 650 -90
+10 Santa_Quest_Elf 5205 619 0
+11 Ludwig 1420 1622 20
+12 Ludwig_Imps 1374 1534 1 
+13 Marrow_1 5824 3270 -3
+14 Marrow_2 5805 3328 0
+15 Sewer_1 1486 1633 20
+16 Sewer_Slimes 6062 1491 5
+17 Bobo 1952 1516 0
