@@ -5550,6 +5550,10 @@ namespace Server.Mobiles
 
 						XmlQuest.RegisterKill(this, ds.m_Mobile);
 
+                        #region Alpha Gold Ledger Edit 1
+                        GiveGold.GoldTransfer(ds.m_Mobile, c, this);
+                        #endregion
+
 						if (!givenFactionKill)
 						{
 							givenFactionKill = true;
