@@ -26,9 +26,9 @@ namespace Server
             this.AddHtml(178, 158, 450, 328, @"<BODY><BASEFONT COLOR=#B3FFE8>1-) ATLAS The World Travel Atlas looks like a regular rune book but acts almost like a moongate. Open the book and see all the options of where to go!  <br><br>
 2-) LOOT The command for the loot system is [Loot.  If you single click the MasterLootBackpack you can set options for what, and how, it loots. (Right click it in EC). If a critter has special loot, say for a quest, it is recommended you loot it by hand before using the loot command - just in case :) <br><br>
 3-) TOKENS The Trash4TokensBackpack is a trash bag with a 3 minute timer.  It will give Tokens for some items.  No telling how much.  It will not give Tokens for any stackable items - but will delete them!  The Tokens can be used to buy some items at the Token Stone (one in New Haven, and one at the Casino).  The Casino is in the Travel Atlas under Custom. <br><br>
-4-) SKILLBALL The skillball will let you choose 7 skills to GM. But will reset all otherskills to zero! You may consider GM'ing tedious, or expensive, skills (hiding, lockpick, fishing,magery, taming etc) <br><br>
-5-) BANKSTONE You got a bankstone for bank access at home. Simply stand where you want to place the stone and double click the deed. If you double click the stone it will re-deed.  <br><br>
-6-) SPELLBAR Use the command [Spellbar to get your spell icons setup. You must have the spellbook in your main bag for it to be found. <br><br>
+4-) SKILLBALL The skillball will let you choose 7 skills to GM. You may consider GM'ing tedious, or expensive, skills (hiding, lockpick, fishing, magery, taming etc) <br><br>
+5-) BANKSTONE You got a bankstone for bank access at home. Simply stand where you want to place the stone and double click the deed. If you double click the stone it will re-deed. You can interact with the bank stone as you would a bnaker (say: 'bank' to open bank, say 'balance' to view bank account balance) <br><br>
+6-) SPELLBAR Use the command [Spellbar to get your spell icons setup. You must have the spellbook in your main bag for it to be found. Better to use the Enhanced Client for the hotbars, though. :)  <br><br>
 7-) TOOLBAR Use the command [ShowTool to get a very handy toolbar. It has tabs for boat commands, pet commands, house commands, gear/stat totals, and ressurection helper.   <br><br>
 Please Enjoy your stay.
 

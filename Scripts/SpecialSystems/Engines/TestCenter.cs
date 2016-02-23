@@ -81,7 +81,7 @@ namespace Server.Misc
 
         private static void ChangeStrength(Mobile from, int value)
         {
-            if (value < 10 || value > 125)
+            if (value < 10 || value > 200)
             {
                 from.SendLocalizedMessage(1005628); // Stats range between 10 and 125.
             }
@@ -101,7 +101,7 @@ namespace Server.Misc
 
         private static void ChangeDexterity(Mobile from, int value)
         {
-            if (value < 10 || value > 125)
+            if (value < 10 || value > 200)
             {
                 from.SendLocalizedMessage(1005628); // Stats range between 10 and 125.
             }
@@ -121,7 +121,7 @@ namespace Server.Misc
 
         private static void ChangeIntelligence(Mobile from, int value)
         {
-            if (value < 10 || value > 125)
+            if (value < 10 || value > 200)
             {
                 from.SendLocalizedMessage(1005628); // Stats range between 10 and 125.
             }
@@ -428,7 +428,7 @@ namespace Server.Misc
                 m.Skills[PowerScroll.Skills[i]].Cap = 120.0;
             }
 
-            m.StatCap = 250;
+            m.StatCap = 600;
 
             Container cont;
             Container cont2;

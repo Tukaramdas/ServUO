@@ -201,7 +201,7 @@ namespace Server
                         Server.Skills skills = m.Skills;
  
                         for (int i = 0; i < skills.Length; ++i)
-            skills[i].Base = 0;
+     //       skills[i].Base = 0;
                         if (info.IsSwitched(1)) // ------------------------------------------------ Alchemy
                         {
             m.Skills[SkillName.Alchemy].Base = val;
