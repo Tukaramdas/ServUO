@@ -6,8 +6,8 @@
 		<accessLevel>Owner</accessLevel>
 		<flags>2</flags>
 		<created>2016-02-07T04:41:48.392201Z</created>
-		<lastLogin>2016-02-25T07:53:07.1745794Z</lastLogin>
-		<totalGameTime>P1DT18H20M52.1579199S</totalGameTime>
+		<lastLogin>2016-03-01T01:04:09.263561Z</lastLogin>
+		<totalGameTime>P1DT23H45M11.6538603S</totalGameTime>
 		<chars>
 			<char index="0">1</char>
 			<char index="1">3279</char>
@@ -41,7 +41,7 @@
 		<addressList count="1">
 			<ip>127.0.0.1</ip>
 		</addressList>
-		<totalCurrency>0.00071930000000000019</totalCurrency>
+		<totalCurrency>0.00071927000000000015</totalCurrency>
 	</account>
 	<account>
 		<username>radheya</username>

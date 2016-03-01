@@ -8,7 +8,7 @@
     <AllowGhost>False</AllowGhost>
     <SpeechPace>10</SpeechPace>
     <ResetTime>1</ResetTime>
-    <SpeechEntries>8</SpeechEntries>
+    <SpeechEntries>7</SpeechEntries>
   </NPC>
   <SpeechEntry>
     <EntryNumber>10</EntryNumber>
@@ -49,17 +49,7 @@
     <SpeechStyle>Regular</SpeechStyle>
     <SpeechHue>-1</SpeechHue>
   </SpeechEntry>
-  <SpeechEntry>
-    <EntryNumber>0</EntryNumber>
-    <ID>0</ID>
-    <Pause>1</Pause>
-    <PrePause>-1</PrePause>
-    <LockConversation>True</LockConversation>
-    <IgnoreCarried>False</IgnoreCarried>
-    <AllowNPCTrigger>False</AllowNPCTrigger>
-    <SpeechStyle>Regular</SpeechStyle>
-    <SpeechHue>-1</SpeechHue>
-  </SpeechEntry>
+
   <SpeechEntry>
     <EntryNumber>40</EntryNumber>
     <ID>40</ID>
