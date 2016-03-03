@@ -1,0 +1,3 @@
+C:\Users\Tuka\Desktop\UO Game Files\ServUO-EC Test Fork\Ultima\obj\Release\Ultima.csprojResolveAssemblyReference.cache
+C:\Users\Tuka\Desktop\UO Game Files\ServUO-EC Test Fork\Ultima\obj\Release\Ultima.dll
+C:\Users\Tuka\Desktop\UO Game Files\ServUO-EC Test Fork\Ultima.dll

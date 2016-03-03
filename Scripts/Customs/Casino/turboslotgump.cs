@@ -4,6 +4,7 @@ using Server.Gumps;
 using Server.Items;
 using Server.Network;
 using Server.Factions;
+using Server.Mobiles;
 
 namespace Server.Gumps
 {
@@ -441,7 +442,9 @@ namespace Server.Gumps
                 else
                 {
                     int amount = (m_Slot.CreditATMLimit - m_Slot.Won < m_Slot.CreditATMIncrements) ? m_Slot.CreditATMLimit - m_Slot.Won : m_Slot.CreditATMIncrements;
-                    if (from.BankBox.ConsumeTotal(typeof(Gold), amount))
+                    // Changed for cashless banking system support of ATM
+                    // if (from.BankBox.ConsumeTotal(typeof(Gold), amount))  
+                    if (Banker.Withdraw(from, amount))
                     {
                         m_Slot.SlotWon += amount;
                         from.SendMessage("{0} gold has been withdrawn from your bank and added to this machine's credit counter.", amount);
