@@ -311,7 +311,15 @@ namespace Server.Items
             {
                new PMEntry( new Point3D( 990,520,-50 ), "Luna" ), // Luna
                new PMEntry( new Point3D( 2047,1353,-85 ), "Umbra" ),  // Umbra
-               new PMEntry( new Point3D( 2368,1267,-85 ), "Doom" )  // Doom
+               new PMEntry( new Point3D( 2368,1267,-85 ), "Doom" ),  // Doom
+               new PMEntry( new Point3D( 912, 215, -90 ), "Orc Fort 1" ),  
+               new PMEntry( new Point3D( 1678, 374, -50 ), "Orc Fort 2" ), 
+               new PMEntry( new Point3D( 1375, 621, -86 ), "Orc Fort 3" ), 
+               new PMEntry( new Point3D( 1184, 715, -89 ), "Orc Fort 4" ),  
+               new PMEntry( new Point3D( 1279, 1324, -90 ), "Orc Fort 5" ), 
+               new PMEntry( new Point3D( 1598, 1834, -107 ), "Orc Fort 6" ),  
+               new PMEntry( new Point3D( 1598, 1762, -110 ), "Ruined Temple" )  
+  
 
             } );
 
@@ -325,7 +333,14 @@ namespace Server.Items
                new PMEntry( new Point3D( 727,1048,33 ), "Makoto Desert" ),  // Makoto Desert
                new PMEntry( new Point3D( 970,222,23 ), "Isamu Fan Dancer's Dojo" ), // Isamu Fan Dancer's Dojo
                new PMEntry( new Point3D( 1234,772,3 ), "Isamu Mt. Sho Castle" ),  // Isamu Mt. Sho Castle
-               new PMEntry( new Point3D( 1044,523,15 ), "Isamu Valor Shrine" )  // Isamu Valor Shrine
+               new PMEntry( new Point3D( 1044,523,15 ), "Isamu Valor Shrine" ),  // Isamu Valor Shrine
+               new PMEntry( new Point3D( 1169, 998, 41 ), "Isamu -Jima" ),
+               new PMEntry( new Point3D( 802, 1204, 25 ), "Makoto-Jima" ),
+               new PMEntry( new Point3D( 270, 628, 15 ), "Homare-Jima" )
+           
+
+
+
 
             } );
        

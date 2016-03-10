@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - ItemListEntry</title>
+      <style type="text/css">
+      body { background-color: white; font-family: Tahoma; color: #000000; }
+      a, a:visited { color: #000000; }
+      a:active, a:hover { color: #808080; }
+      </style>
+   </head>
+   <body>
+      <h4><a href="../namespaces/Solaris.ItemStore.html">Back to Solaris.ItemStore</a></h4>
+      <h2>ItemListEntry : <!-- DBG-2.1 --><a href="IComparable.html">IComparable</a></h2>
+<h4>Derived Types: <!-- DBG-3 --><a href="BaseAddonDeedListEntry.html">BaseAddonDeedListEntry</a>, <!-- DBG-3 --><a href="InstrumentListEntry.html">InstrumentListEntry</a>, <!-- DBG-3 --><a href="LargeBODListEntry.html">LargeBODListEntry</a>, <!-- DBG-3 --><a href="PowerScrollListEntry.html">PowerScrollListEntry</a>, <!-- DBG-3 --><a href="RepairDeedListEntry.html">RepairDeedListEntry</a>, <!-- DBG-3 --><a href="SOSListEntry.html">SOSListEntry</a>, <!-- DBG-3 --><a href="SeedListEntry.html">SeedListEntry</a>, <!-- DBG-3 --><a href="SmallBODListEntry.html">SmallBODListEntry</a>, <!-- DBG-3 --><a href="SpecialFishingNetListEntry.html">SpecialFishingNetListEntry</a>, <!-- DBG-3 --><a href="StatCapScrollListEntry.html">StatCapScrollListEntry</a>, <!-- DBG-3 --><a href="TreasureMapListEntry.html">TreasureMapListEntry</a></h4>
+      (<span style="color: blue;">static</span>) <span style="color: blue;">string</span> TrimNamespace( <span style="color: blue;">string</span> typename )<br />
+      (<span style="color: blue;">ctor</span>) ItemListEntry( <!-- DBG-0 --><a href="Item.html">Item</a> item )<br />
+      (<span style="color: blue;">ctor</span>) ItemListEntry( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br />
+      (<span style="color: blue;">ctor</span>) ItemListEntry( <!-- DBG-0 --><a href="ItemListEntry.html">ItemListEntry</a> entry )<br />
+      (<span style="color: blue;">ctor</span>) ItemListEntry( <!-- DBG-0 --><a href="Item.html">Item</a> item, <span style="color: blue;">string</span> name )<br />
+      (<span style="color: blue;">ctor</span>) ItemListEntry( <!-- DBG-0 --><a href="Item.html">Item</a> item, <span style="color: blue;">string</span> name, <span style="color: blue;">int</span> hue )<br />
+      <span style="color: blue;">List</span>&lt;<a href="ItemListEntryColumn.html">ItemListEntryColumn</a>&gt; Columns( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> GumpWidth( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> Hue( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> Insured( <span style="color: blue;">get</span>; )<br />
+      <!-- DBG-0 --><a href="LootType.html">LootType</a> LootType( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">string</span> Name( <span style="color: blue;">get</span>; )<br />
+      Type Type( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> AllGood( <!-- DBG-0 --><a href="Item.html">Item</a> item )<br />
+      <span style="color: blue;">virtual</span> <!-- DBG-0 --><a href="ItemListEntry.html">ItemListEntry</a> Clone()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">int</span> CompareTo( <span style="color: blue;">object</span> obj )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br />
+      <span style="color: blue;">virtual</span> <!-- DBG-0 --><a href="Item.html">Item</a> GenerateItem()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br />
+   </body>
+</html>

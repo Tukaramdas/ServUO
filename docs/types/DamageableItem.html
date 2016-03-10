@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - DamageableItem</title>
+      <style type="text/css">
+      body { background-color: white; font-family: Tahoma; color: #000000; }
+      a, a:visited { color: #000000; }
+      a:active, a:hover { color: #808080; }
+      </style>
+   </head>
+   <body>
+      <h4><a href="../namespaces/Server.Items.html">Back to Server.Items</a></h4>
+      <h2>DamageableItem : <!-- DBG-1 --><a href="Item.html">Item</a>, <!-- DBG-2.2 --><a href="IHued.html">IHued</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="Item.html">Item</a>&gt;, <!-- DBG-2.2 --><a href="ISerializable.html">ISerializable</a>, <!-- DBG-2.2 --><a href="ISpawnable.html">ISpawnable</a>, <!-- DBG-2.2 --><a href="IEntity.html">IEntity</a>, <!-- DBG-2.2 --><a href="IPoint3D.html">IPoint3D</a>, <!-- DBG-2.2 --><a href="IPoint2D.html">IPoint2D</a>, <!-- DBG-2.1 --><a href="IComparable.html">IComparable</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="IEntity.html">IEntity</a>&gt;</h2>
+<h4>Derived Types: <!-- DBG-3 --><a href="DesCityWallEast.html">DesCityWallEast</a>, <!-- DBG-3 --><a href="DesCityWallSouth.html">DesCityWallSouth</a>, <!-- DBG-3 --><a href="SAShadowWall1East.html">SAShadowWall1East</a>, <!-- DBG-3 --><a href="SAShadowWall1South.html">SAShadowWall1South</a>, <!-- DBG-3 --><a href="SAStoneWall1East.html">SAStoneWall1East</a>, <!-- DBG-3 --><a href="SAStoneWall1South.html">SAStoneWall1South</a>, <!-- DBG-3 --><a href="SAStoneWall2East.html">SAStoneWall2East</a>, <!-- DBG-3 --><a href="SAStoneWall2South.html">SAStoneWall2South</a></h4>
+<h4>Nested Types: <!-- DBG-4 --><a href="ItemLevel.html">ItemLevel</a></h4>
+      (<span style="color: blue;">ctor</span>) DamageableItem( <!-- DBG-0 --><a href="Serial.html">Serial</a> serial )<br />
+      (<span style="color: blue;">ctor</span>) DamageableItem( <span style="color: blue;">int</span> StartID, <span style="color: blue;">int</span> HalfID )<br />
+      <span style="color: blue;">int</span> Hits( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> HitsMax( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> IDHalfHits( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> IDStart( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="ItemLevel.html">ItemLevel</a> Level( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="IDamageableItem.html">IDamageableItem</a> Link( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> CheckTarget( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Target.html">Target</a> targ, <span style="color: blue;">object</span> targeted )<br />
+      <span style="color: blue;">void</span> Damage( <span style="color: blue;">int</span> amount, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">bool</span> willKill )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Delete()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br />
+      <span style="color: blue;">bool</span> Destroy()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> GetProperties( <!-- DBG-0 --><a href="ObjectPropertyList.html">ObjectPropertyList</a> list )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> OnBeforeDestroyed()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnDamage( <span style="color: blue;">int</span> amount, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">bool</span> willKill )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnDestroyed( <!-- DBG-0 --><a href="WoodenBox.html">WoodenBox</a> lootbox )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnDoubleClick( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> OnDragLift( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnLocationChange( <!-- DBG-0 --><a href="Point3D.html">Point3D</a> oldLocation )<br />
+      <span style="color: blue;">void</span> ProvideEntity()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br />
+      <span style="color: blue;">void</span> UpdateHitsToEntity()<br />
+      <span style="color: blue;">void</span> UpdateMaxHitsToEntity()<br />
+   </body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - BaseChallengeGame</title>
+      <style type="text/css">
+      body { background-color: white; font-family: Tahoma; color: #000000; }
+      a, a:visited { color: #000000; }
+      a:active, a:hover { color: #808080; }
+      </style>
+   </head>
+   <body>
+      <h4><a href="../namespaces/Server.Engines.XmlSpawner2.html">Back to Server.Engines.XmlSpawner2</a></h4>
+      <h2>BaseChallengeGame : <!-- DBG-1 --><a href="Item.html">Item</a>, <!-- DBG-2.2 --><a href="IHued.html">IHued</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="Item.html">Item</a>&gt;, <!-- DBG-2.2 --><a href="ISerializable.html">ISerializable</a>, <!-- DBG-2.2 --><a href="ISpawnable.html">ISpawnable</a>, <!-- DBG-2.2 --><a href="IEntity.html">IEntity</a>, <!-- DBG-2.2 --><a href="IPoint3D.html">IPoint3D</a>, <!-- DBG-2.2 --><a href="IPoint2D.html">IPoint2D</a>, <!-- DBG-2.1 --><a href="IComparable.html">IComparable</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="IEntity.html">IEntity</a>&gt;, <!-- DBG-2.2 --><a href="IChallengeGame.html">IChallengeGame</a></h2>
+<h4>Derived Types: <!-- DBG-3 --><a href="CTFGauntlet.html">CTFGauntlet</a>, <!-- DBG-3 --><a href="DeathBallGauntlet.html">DeathBallGauntlet</a>, <!-- DBG-3 --><a href="DeathmatchGauntlet.html">DeathmatchGauntlet</a>, <!-- DBG-3 --><a href="KingOfTheHillGauntlet.html">KingOfTheHillGauntlet</a>, <!-- DBG-3 --><a href="LastManStandingGauntlet.html">LastManStandingGauntlet</a>, <!-- DBG-3 --><a href="TeamDeathballGauntlet.html">TeamDeathballGauntlet</a>, <!-- DBG-3 --><a href="TeamDeathmatchGauntlet.html">TeamDeathmatchGauntlet</a>, <!-- DBG-3 --><a href="TeamKotHGauntlet.html">TeamKotHGauntlet</a>, <!-- DBG-3 --><a href="TeamLMSGauntlet.html">TeamLMSGauntlet</a></h4>
+<h4>Nested Types: <!-- DBG-4 --><a href="ChallengeTimer.html">ChallengeTimer</a></h4>
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> DoSetupChallenge( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> nameindex, Type gametype )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> TeamColor( <span style="color: blue;">int</span> team )<br />
+      (<span style="color: blue;">ctor</span>) BaseChallengeGame()<br />
+      (<span style="color: blue;">ctor</span>) BaseChallengeGame( <!-- DBG-0 --><a href="Serial.html">Serial</a> serial )<br />
+      (<span style="color: blue;">ctor</span>) BaseChallengeGame( <span style="color: blue;">int</span> itemid )<br />
+      <span style="color: blue;">bool</span> AllowPoints( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> ArenaSize( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> ChallengeBeingCancelled( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">string</span> ChallengeName( <span style="color: blue;">get</span>; )<br />
+      <!-- DBG-0 --><a href="Mobile.html">Mobile</a> Challenger( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      TimeSpan DecayTime( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> Decays( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> EntryFee( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> GameCompleted( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> GameInProgress( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> GameLocked( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="ChallengeTimer.html">ChallengeTimer</a> GameTimer( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> IsInChallengeGameRegion( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      ArrayList Organizers( <span style="color: blue;">get</span>; )<br />
+      ArrayList Participants( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      TimeSpan PostGameDecayTime( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> TotalPurse( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> UseKillDelay( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> ActivePlayers()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> AreChallengers( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> target )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> AreInGame( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> AreTeamMembers( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> target )<br />
+      <span style="color: blue;">void</span> AwardTeamWinnings( <span style="color: blue;">int</span> team, <span style="color: blue;">int</span> amount )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> AwardWinnings( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <span style="color: blue;">int</span> amount )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> CheckForGameEnd()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> CheckQualify( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      <span style="color: blue;">void</span> ClearArena()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> ClearChallenge( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">void</span> ClearNameHue()<br />
+      <span style="color: blue;">void</span> ClearNameHue( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> CollectEntryFee( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <span style="color: blue;">int</span> amount )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> EndGame()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Forfeit( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> GameBroadcast( <span style="color: blue;">string</span> msg )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> GameBroadcast( <span style="color: blue;">int</span> msgindex )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> GameBroadcast( <span style="color: blue;">int</span> msgindex, <span style="color: blue;">object</span> arg )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> GameBroadcast( <span style="color: blue;">int</span> msgindex, <span style="color: blue;">object</span> arg, <span style="color: blue;">object</span> arg2 )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> GameBroadcastSound( <span style="color: blue;">int</span> sound )<br />
+      <!-- DBG-0 --><a href="IChallengeEntry.html">IChallengeEntry</a> GetParticipant( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> GetProperties( <!-- DBG-0 --><a href="ObjectPropertyList.html">ObjectPropertyList</a> list )<br />
+      <!-- DBG-0 --><a href="TeamInfo.html">TeamInfo</a> GetTeam( <span style="color: blue;">int</span> team )<br />
+      ArrayList GetTeams()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> HasEntryFee( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      <span style="color: blue;">bool</span> HasValidMembers( <!-- DBG-0 --><a href="TeamInfo.html">TeamInfo</a> t )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> InsuranceIsFree( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> awardto )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> IsOrganizer( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">virtual</span> <!-- DBG-0 --><a href="TeamInfo.html">TeamInfo</a> NewTeam( <span style="color: blue;">int</span> team )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnDelete()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnKillPlayer( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> killer, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> killed )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnPlayerKilled( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> killer, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> killed )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnTick()<br />
+      <span style="color: blue;">void</span> RefreshAllNoto()<br />
+      <span style="color: blue;">void</span> RefreshNoto( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">void</span> RefreshSymmetricNoto( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">void</span> ResetAcceptance()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br />
+      <span style="color: blue;">void</span> SetNameHue()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> SetupChallenge( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">void</span> StartChallengeTimer()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> StartGame()<br />
+   </body>
+</html>

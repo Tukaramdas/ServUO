@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - MobileRewardVendor</title>
+      <style type="text/css">
+      body { background-color: white; font-family: Tahoma; color: #000000; }
+      a, a:visited { color: #000000; }
+      a:active, a:hover { color: #808080; }
+      </style>
+   </head>
+   <body>
+      <h4><a href="../namespaces/System.CustomizableVendor.html">Back to System.CustomizableVendor</a></h4>
+      <h2>MobileRewardVendor : <!-- DBG-1 --><a href="Banker.html">Banker</a>, <!-- DBG-2.2 --><a href="IHued.html">IHued</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="Mobile.html">Mobile</a>&gt;, <!-- DBG-2.2 --><a href="ISerializable.html">ISerializable</a>, <!-- DBG-2.2 --><a href="ISpawnable.html">ISpawnable</a>, <!-- DBG-2.2 --><a href="IEntity.html">IEntity</a>, <!-- DBG-2.2 --><a href="IPoint3D.html">IPoint3D</a>, <!-- DBG-2.2 --><a href="IPoint2D.html">IPoint2D</a>, <!-- DBG-2.1 --><a href="IComparable.html">IComparable</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="IEntity.html">IEntity</a>&gt;, <!-- DBG-2.2 --><a href="IHonorTarget.html">IHonorTarget</a>, <!-- DBG-2.2 --><a href="IVendor.html">IVendor</a>, <!-- DBG-2.2 --><a href="IRewardVendor.html">IRewardVendor</a></h2>
+      (<span style="color: blue;">ctor</span>) MobileRewardVendor()<br />
+      (<span style="color: blue;">ctor</span>) MobileRewardVendor( <!-- DBG-0 --><a href="Serial.html">Serial</a> serial )<br />
+      <span style="color: blue;">bool</span> IsBanker( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> IsInvulnerable( <span style="color: blue;">get</span>; )<br />
+      <!-- DBG-0 --><a href="DisplayBox.html">DisplayBox</a> System.CustomizableVendor.IRewardVendor.Display( <span style="color: blue;">get</span>; )<br />
+      Type System.CustomizableVendor.IRewardVendor.Menu( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><span style="color: blue;">Currency</span> System.CustomizableVendor.IRewardVendor.Payment( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="RewardCollection.html">RewardCollection</a> System.CustomizableVendor.IRewardVendor.Rewards( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> AddCustomContextEntries( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">List</span>&lt;<a href="ContextMenuEntry.html">ContextMenuEntry</a>&gt; list )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> HandlesOnSpeech( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> OnBuyItems( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> buyer, <span style="color: blue;">List</span>&lt;<a href="BuyItemResponse.html">BuyItemResponse</a>&gt; list )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnDelete()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnDoubleClick( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnSpeech( <!-- DBG-0 --><a href="SpeechEventArgs.html">SpeechEventArgs</a> e )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> System.CustomizableVendor.IRewardVendor.AddReward( <!-- DBG-0 --><a href="Reward.html">Reward</a> r )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> System.CustomizableVendor.IRewardVendor.CopyVendor( <!-- DBG-0 --><a href="IRewardVendor.html">IRewardVendor</a> vendor )<br />
+      <span style="color: blue;">virtual</span> <!-- DBG-0 --><a href="Container.html">Container</a> System.CustomizableVendor.IRewardVendor.GetContainer()<br />
+      <span style="color: blue;">virtual</span> <!-- DBG-0 --><a href="Item.html">Item</a> System.CustomizableVendor.IRewardVendor.GetItem()<br />
+      <span style="color: blue;">virtual</span> <!-- DBG-0 --><a href="Point3D.html">Point3D</a> System.CustomizableVendor.IRewardVendor.GetLocation()<br />
+      <span style="color: blue;">virtual</span> <!-- DBG-0 --><a href="Map.html">Map</a> System.CustomizableVendor.IRewardVendor.GetMap()<br />
+      <span style="color: blue;">virtual</span> <!-- DBG-0 --><a href="Mobile.html">Mobile</a> System.CustomizableVendor.IRewardVendor.GetMobile()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">string</span> System.CustomizableVendor.IRewardVendor.GetName()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> System.CustomizableVendor.IRewardVendor.IsRemoved()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> System.CustomizableVendor.IRewardVendor.RemoveReward( <!-- DBG-0 --><a href="Reward.html">Reward</a> r )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> VendorBuy( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+   </body>
+</html>

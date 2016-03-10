@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - BaseStoreKey</title>
+      <style type="text/css">
+      body { background-color: white; font-family: Tahoma; color: #000000; }
+      a, a:visited { color: #000000; }
+      a:active, a:hover { color: #808080; }
+      </style>
+   </head>
+   <body>
+      <h4><a href="../namespaces/Server.Items.html">Back to Server.Items</a></h4>
+      <h2>BaseStoreKey : <!-- DBG-1 --><a href="Item.html">Item</a>, <!-- DBG-2.2 --><a href="IHued.html">IHued</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="Item.html">Item</a>&gt;, <!-- DBG-2.2 --><a href="ISerializable.html">ISerializable</a>, <!-- DBG-2.2 --><a href="ISpawnable.html">ISpawnable</a>, <!-- DBG-2.2 --><a href="IEntity.html">IEntity</a>, <!-- DBG-2.2 --><a href="IPoint3D.html">IPoint3D</a>, <!-- DBG-2.2 --><a href="IPoint2D.html">IPoint2D</a>, <!-- DBG-2.1 --><a href="IComparable.html">IComparable</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="IEntity.html">IEntity</a>&gt;, <!-- DBG-2.2 --><span style="color: blue;">IItemStoreObject</span>, <!-- DBG-2.2 --><a href="ISecurable.html">ISecurable</a></h2>
+<h4>Derived Types: <!-- DBG-3 --><a href="ASHKey.html">ASHKey</a>, <!-- DBG-3 --><a href="AddonDeedKey.html">AddonDeedKey</a>, <!-- DBG-3 --><a href="AdventurerKey.html">AdventurerKey</a>, <!-- DBG-3 --><a href="ArmorKey.html">ArmorKey</a>, <!-- DBG-3 --><a href="ArmoryKey.html">ArmoryKey</a>, <!-- DBG-3 --><a href="BODKey.html">BODKey</a>, <!-- DBG-3 --><a href="BardsKey.html">BardsKey</a>, <!-- DBG-3 --><a href="BeverageKey.html">BeverageKey</a>, <!-- DBG-3 --><a href="ChampSkullKey.html">ChampSkullKey</a>, <!-- DBG-3 --><a href="ChefKey.html">ChefKey</a>, <!-- DBG-3 --><a href="ClothingKey.html">ClothingKey</a>, <!-- DBG-3 --><a href="ExtrasKey.html">ExtrasKey</a>, <!-- DBG-3 --><a href="FishKey.html">FishKey</a>, <!-- DBG-3 --><a href="GardenersKey.html">GardenersKey</a>, <!-- DBG-3 --><a href="GemKey.html">GemKey</a>, <!-- DBG-3 --><a href="GraniteKey.html">GraniteKey</a>, <!-- DBG-3 --><a href="IngotKey.html">IngotKey</a>, <!-- DBG-3 --><a href="JewelersKey.html">JewelersKey</a>, <!-- DBG-3 --><a href="JewelryKey.html">JewelryKey</a>, <!-- DBG-3 --><a href="LargeItemCountTestKey.html">LargeItemCountTestKey</a>, <!-- DBG-3 --><a href="MeatKey.html">MeatKey</a>, <!-- DBG-3 --><a href="PSKey.html">PSKey</a>, <!-- DBG-3 --><a href="PotionKey.html">PotionKey</a>, <!-- DBG-3 --><a href="ReagentKey.html">ReagentKey</a>, <!-- DBG-3 --><a href="RunicToolKey.html">RunicToolKey</a>, <!-- DBG-3 --><a href="ScribesKey.html">ScribesKey</a>, <!-- DBG-3 --><a href="SmithyKey.html">SmithyKey</a>, <!-- DBG-3 --><a href="TailorKey.html">TailorKey</a>, <!-- DBG-3 --><a href="ToolKey.html">ToolKey</a>, <!-- DBG-3 --><a href="TreasureHuntersKey.html">TreasureHuntersKey</a>, <!-- DBG-3 --><a href="WeaponKey.html">WeaponKey</a>, <!-- DBG-3 --><a href="WoodKey.html">WoodKey</a></h4>
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> EmptyContents( <span style="color: blue;">get</span>; )<br />
+      (<span style="color: blue;">static</span>) <!-- DBG-0 --><a href="Item.html">Item</a> LastWithdrawn( <span style="color: blue;">get</span>; )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> Consume( <!-- DBG-0 --><a href="Container.html">Container</a> pack, Type[] types, <span style="color: blue;">int</span>[] amounts )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> Consume( <!-- DBG-0 --><a href="Container.html">Container</a> pack, Type type, <span style="color: blue;">int</span> amount )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> CraftWithdraw( <!-- DBG-0 --><a href="Container.html">Container</a> pack, Type[] types, <span style="color: blue;">int</span> amount )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> CraftWithdraw( <!-- DBG-0 --><a href="Container.html">Container</a> pack, Type[] types, <span style="color: blue;">int</span> amount, <span style="color: blue;">bool</span> getamountonly )<br />
+      (<span style="color: blue;">static</span>) <!-- DBG-0 --><a href="Item.html">Item</a> FindItemByType( <!-- DBG-0 --><a href="Container.html">Container</a> pack, Type type )<br />
+      (<span style="color: blue;">static</span>) <!-- DBG-0 --><a href="Item.html">Item</a> FindItemByType( <!-- DBG-0 --><a href="Container.html">Container</a> pack, Type type, <span style="color: blue;">int</span> amount )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> GetAmount( <!-- DBG-0 --><a href="Container.html">Container</a> pack, Type[] types, <span style="color: blue;">int</span> amount )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> StoreAt( <!-- DBG-0 --><a href="Item.html">Item</a> source, <!-- DBG-0 --><a href="Item.html">Item</a> toplace )<br />
+      (<span style="color: blue;">static</span>) <!-- DBG-0 --><a href="Item.html">Item</a> WithdrawByEntryType( <!-- DBG-0 --><a href="Container.html">Container</a> pack, Type entrytype, <span style="color: blue;">int</span> amount, <span style="color: blue;">object</span>[] parameters )<br />
+      (<span style="color: blue;">ctor</span>) BaseStoreKey( <!-- DBG-0 --><a href="Serial.html">Serial</a> serial )<br />
+      (<span style="color: blue;">ctor</span>) BaseStoreKey( <span style="color: blue;">int</span> hue )<br />
+      (<span style="color: blue;">ctor</span>) BaseStoreKey( <!-- DBG-0 --><a href="ItemStore.html">ItemStore</a> Store, <span style="color: blue;">int</span> hue )<br />
+      <span style="color: blue;">bool</span> CanUseFromHouse( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> CanUseFromPack( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> DisplayColumns( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">List</span>&lt;<a href="StoreEntry.html">StoreEntry</a>&gt; EntryStructure( <span style="color: blue;">get</span>; )<br />
+      <!-- DBG-0 --><a href="SecureLevel.html">SecureLevel</a> Level( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="ItemStore.html">ItemStore</a> Store( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Add( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> CanUse( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Fill( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">void</span> Fill( <!-- DBG-0 --><a href="Container.html">Container</a> container )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">List</span>&lt;<a href="StoreEntry.html">StoreEntry</a>&gt; FindConsumableEntries( Type[] types, <span style="color: blue;">int</span>[] amounts, <span style="color: blue;">ref</span> <span style="color: blue;">bool</span>[] foundentries )<br />
+      <span style="color: blue;">virtual</span> <!-- DBG-0 --><a href="StoreEntry.html">StoreEntry</a> FindConsumableEntry( Type[] types, <span style="color: blue;">int</span> amount )<br />
+      <span style="color: blue;">virtual</span> <!-- DBG-0 --><a href="StoreEntry.html">StoreEntry</a> FindEntryByEntryType( Type entrytype, <span style="color: blue;">int</span> amount, <span style="color: blue;">object</span>[] parameters )<br />
+      <span style="color: blue;">virtual</span> <!-- DBG-0 --><a href="ItemStore.html">ItemStore</a> GenerateItemStore()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> GetContextMenuEntries( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">List</span>&lt;<a href="ContextMenuEntry.html">ContextMenuEntry</a>&gt; list )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnDelete()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnDoubleClick( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br />
+      <span style="color: blue;">void</span> SetStore( <!-- DBG-0 --><a href="ItemStore.html">ItemStore</a> newstore )<br />
+   </body>
+</html>

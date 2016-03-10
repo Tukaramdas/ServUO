@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - ListEntry</title>
+      <style type="text/css">
+      body { background-color: white; font-family: Tahoma; color: #000000; }
+      a, a:visited { color: #000000; }
+      a:active, a:hover { color: #808080; }
+      </style>
+   </head>
+   <body>
+      <h4><a href="../namespaces/Solaris.ItemStore.html">Back to Solaris.ItemStore</a></h4>
+      <h2>ListEntry : <!-- DBG-1 --><a href="StoreEntry.html">StoreEntry</a></h2>
+<h4>Nested Types: <!-- DBG-4 --><a href="AddItemTarget.html">AddItemTarget</a></h4>
+      (<span style="color: blue;">ctor</span>) ListEntry( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br />
+      (<span style="color: blue;">ctor</span>) ListEntry( <!-- DBG-0 --><a href="ListEntry.html">ListEntry</a> entry )<br />
+      (<span style="color: blue;">ctor</span>) ListEntry( Type type, Type itemlistentrytype, <span style="color: blue;">string</span> name )<br />
+      (<span style="color: blue;">ctor</span>) ListEntry( Type type, Type itemlistentrytype, <span style="color: blue;">string</span> name, <span style="color: blue;">int</span> itemid, <span style="color: blue;">int</span> hue )<br />
+      (<span style="color: blue;">ctor</span>) ListEntry( Type type, Type itemlistentrytype, <span style="color: blue;">string</span> name, <span style="color: blue;">int</span> height, <span style="color: blue;">int</span> x, <span style="color: blue;">int</span> y )<br />
+      (<span style="color: blue;">ctor</span>) ListEntry( Type type, Type itemlistentrytype, <span style="color: blue;">string</span> name, <span style="color: blue;">int</span> itemid, <span style="color: blue;">int</span> hue, <span style="color: blue;">int</span> height, <span style="color: blue;">int</span> x, <span style="color: blue;">int</span> y )<br />
+      (<span style="color: blue;">ctor</span>) ListEntry( Type type, Type itemlistentrytype, <span style="color: blue;">string</span> name, <span style="color: blue;">int</span> itemid, <span style="color: blue;">int</span> hue, <span style="color: blue;">int</span> height, <span style="color: blue;">int</span> x, <span style="color: blue;">int</span> y, <span style="color: blue;">List</span>&lt;<a href="ItemListEntry.html">ItemListEntry</a>&gt; itemlistentries )<br />
+      <span style="color: blue;">int</span> Amount( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> ButtonID( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> ButtonX( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> ButtonY( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">string</span>[] FilterText( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">List</span>&lt;<a href="ItemListEntry.html">ItemListEntry</a>&gt; ItemListEntries( <span style="color: blue;">get</span>; )<br />
+      Type ItemListEntryType( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> MaxAmount( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> Add( <!-- DBG-0 --><a href="Item.html">Item</a> item )<br />
+      <span style="color: blue;">void</span> AddItem( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">void</span> AddItem( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">object</span> targeted )<br />
+      <span style="color: blue;">virtual</span> <!-- DBG-0 --><a href="StoreEntry.html">StoreEntry</a> Clone()<br />
+      <span style="color: blue;">void</span> CloneItemListEntries( <!-- DBG-0 --><a href="ListEntry.html">ListEntry</a> sourceentry )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br />
+      <span style="color: blue;">void</span> FillFromBackpack( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">virtual</span> <!-- DBG-0 --><a href="Item.html">Item</a> GetModel()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> Match( <!-- DBG-0 --><a href="Item.html">Item</a> item, <span style="color: blue;">bool</span> checksubtypes )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> Match( <span style="color: blue;">int</span> amount, <span style="color: blue;">object</span>[] parameters )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br />
+      <span style="color: blue;">virtual</span> <!-- DBG-0 --><a href="Item.html">Item</a> Withdraw( <span style="color: blue;">ref</span> <span style="color: blue;">int</span> amount, <span style="color: blue;">bool</span> forcequantity )<br />
+      <!-- DBG-0 --><a href="Item.html">Item</a> WithdrawItem( <span style="color: blue;">int</span> index )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> WithdrawItem( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> index )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> WithdrawItem( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="ItemListEntry.html">ItemListEntry</a> entry )<br />
+   </body>
+</html>

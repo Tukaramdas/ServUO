@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - Imbuing</title>
+      <style type="text/css">
+      body { background-color: white; font-family: Tahoma; color: #000000; }
+      a, a:visited { color: #000000; }
+      a:active, a:hover { color: #808080; }
+      </style>
+   </head>
+   <body>
+      <h4><a href="../namespaces/Server.SkillHandlers.html">Back to Server.SkillHandlers</a></h4>
+      <h2>Imbuing</h2>
+      (<span style="color: blue;">static</span>) <span style="color: blue;">Dictionary</span>&lt;<a href="Mobile.html">Mobile</a>,<a href="ImbuingContext.html">ImbuingContext</a>&gt; ContextTable( <span style="color: blue;">get</span>; )<br />
+      (<span style="color: blue;">static</span>) <!-- DBG-0 --><a href="SkillName.html">SkillName</a>[] PossibleSkills( <span style="color: blue;">get</span>; )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">Dictionary</span>&lt;<a href="Int32.html">Int32</a>,<a href="ImbuingDefinition.html">ImbuingDefinition</a>&gt; Table( <span style="color: blue;">get</span>; )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> AddContext( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="ImbuingContext.html">ImbuingContext</a> context )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> CanImbueItem( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Item.html">Item</a> item )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> CanUnravelItem( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Item.html">Item</a> item, <span style="color: blue;">bool</span> message )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> CheckResists( <!-- DBG-0 --><a href="BaseArmor.html">BaseArmor</a> i, <span style="color: blue;">int</span> mod )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> CheckSkillBonuses( <!-- DBG-0 --><a href="Item.html">Item</a> item, <span style="color: blue;">int</span> modification )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> CheckSoulForge( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> range )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> CheckSoulForge( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> range, <span style="color: blue;">bool</span> message )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">object</span> GetAttribute( <span style="color: blue;">int</span> mod )<br />
+      (<span style="color: blue;">static</span>) <!-- DBG-0 --><a href="ImbuingContext.html">ImbuingContext</a> GetContext( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> GetGemAmount( <!-- DBG-0 --><a href="Item.html">Item</a> item, <span style="color: blue;">int</span> mod, <span style="color: blue;">int</span> value )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> GetIntensityForAttribute( <span style="color: blue;">object</span> attr, <span style="color: blue;">int</span> checkMod, <span style="color: blue;">int</span> value )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> GetMaxWeight( <span style="color: blue;">object</span> itw )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> GetModForAttribute( <!-- DBG-0 --><a href="AosAttribute.html">AosAttribute</a> attr )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> GetModForAttribute( <span style="color: blue;">string</span> str )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> GetModForAttribute( <!-- DBG-0 --><a href="AosElementAttribute.html">AosElementAttribute</a> type )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> GetModForAttribute( <!-- DBG-0 --><a href="SAAbsorptionAttribute.html">SAAbsorptionAttribute</a> attr )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> GetModForAttribute( <!-- DBG-0 --><a href="AosWeaponAttribute.html">AosWeaponAttribute</a> attr )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> GetModForAttribute( <!-- DBG-0 --><a href="SlayerName.html">SlayerName</a> attr )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> GetModForAttribute( <!-- DBG-0 --><a href="SkillName.html">SkillName</a> attr )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> GetModForAttribute( <!-- DBG-0 --><a href="AosArmorAttribute.html">AosArmorAttribute</a> attr )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> GetPrimaryAmount( <!-- DBG-0 --><a href="Item.html">Item</a> item, <span style="color: blue;">int</span> mod, <span style="color: blue;">int</span> value )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span>[] GetPropRange( <!-- DBG-0 --><a href="SAAbsorptionAttribute.html">SAAbsorptionAttribute</a> attr )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span>[] GetPropRange( <!-- DBG-0 --><a href="AosAttribute.html">AosAttribute</a> attr )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span>[] GetPropRange( <!-- DBG-0 --><a href="AosWeaponAttribute.html">AosWeaponAttribute</a> attr )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span>[] GetPropRange( <!-- DBG-0 --><a href="AosElementAttribute.html">AosElementAttribute</a> attr )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span>[] GetPropRange( <!-- DBG-0 --><a href="AosArmorAttribute.html">AosArmorAttribute</a> attr )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> GetQualityBonus( <!-- DBG-0 --><a href="Item.html">Item</a> item )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> GetSkillBonuses( <!-- DBG-0 --><a href="AosSkillBonuses.html">AosSkillBonuses</a> bonus, <span style="color: blue;">object</span> prop )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> GetSpecialAmount( <!-- DBG-0 --><a href="Item.html">Item</a> item, <span style="color: blue;">int</span> mod, <span style="color: blue;">int</span> value )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">double</span> GetSuccessChance( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Item.html">Item</a> item, <span style="color: blue;">int</span> totalItemWeight, <span style="color: blue;">int</span> propWeight, <span style="color: blue;">out</span> <span style="color: blue;">double</span> dif )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> GetTotalMods( <!-- DBG-0 --><a href="Item.html">Item</a> itw, <span style="color: blue;">int</span> mod )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> GetTotalMods_OnCommand( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> GetTotalMods_OnTarget( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">object</span> targeted )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> GetTotalWeight( <!-- DBG-0 --><a href="Item.html">Item</a> item, <span style="color: blue;">int</span> mod )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> GetTotalWeight_OnCommand( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> GetTotalWeight_OnTarget( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">object</span> targeted )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> GetValueForMod( <!-- DBG-0 --><a href="Item.html">Item</a> item, <span style="color: blue;">int</span> mod )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> ImbueItem( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Item.html">Item</a> i, <span style="color: blue;">int</span> mod, <span style="color: blue;">int</span> value )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> Initialize()<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> IsHitAreaOrSpell( <!-- DBG-0 --><a href="AosWeaponAttribute.html">AosWeaponAttribute</a> attr, <span style="color: blue;">int</span> mod )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> IsInNonImbueList( Type itemType )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> IsInSkillGroup( <!-- DBG-0 --><a href="SkillName.html">SkillName</a> skill, <span style="color: blue;">int</span> index )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> IsSpecialItem( <!-- DBG-0 --><a href="Item.html">Item</a> item )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> LoadImbuingDefinition()<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> OnBeforeImbue( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Item.html">Item</a> item, <span style="color: blue;">int</span> mod, <span style="color: blue;">int</span> value )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> OnBeforeImbue( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Item.html">Item</a> item, <span style="color: blue;">int</span> mod, <span style="color: blue;">int</span> value, <span style="color: blue;">int</span> totalprops, <span style="color: blue;">int</span> maxprops, <span style="color: blue;">int</span> totalitemweight, <span style="color: blue;">int</span> maxweight )<br />
+      (<span style="color: blue;">static</span>) TimeSpan OnUse( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> UnravelItem( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Item.html">Item</a> item, <span style="color: blue;">bool</span> message )<br />
+      (<span style="color: blue;">ctor</span>) Imbuing()<br />
+   </body>
+</html>

@@ -24,7 +24,8 @@ namespace Server
         Sorcerer,
 		Initiation,
         Alorons,
-        Dardens
+        Dardens,
+        Fishing // Added for High Seas Support
     }
 
     public interface ISetItem

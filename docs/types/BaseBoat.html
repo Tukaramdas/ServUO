@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - BaseBoat</title>
+      <style type="text/css">
+      body { background-color: white; font-family: Tahoma; color: #000000; }
+      a, a:visited { color: #000000; }
+      a:active, a:hover { color: #808080; }
+      </style>
+   </head>
+   <body>
+      <h4><a href="../namespaces/Server.Multis.html">Back to Server.Multis</a></h4>
+      <h2>BaseBoat : <!-- DBG-1 --><a href="BaseMulti.html">BaseMulti</a>, <!-- DBG-2.2 --><a href="IHued.html">IHued</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="Item.html">Item</a>&gt;, <!-- DBG-2.2 --><a href="ISerializable.html">ISerializable</a>, <!-- DBG-2.2 --><a href="ISpawnable.html">ISpawnable</a>, <!-- DBG-2.2 --><a href="IEntity.html">IEntity</a>, <!-- DBG-2.2 --><a href="IPoint3D.html">IPoint3D</a>, <!-- DBG-2.2 --><a href="IPoint2D.html">IPoint2D</a>, <!-- DBG-2.1 --><a href="IComparable.html">IComparable</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="IEntity.html">IEntity</a>&gt;</h2>
+<h4>Derived Types: <!-- DBG-3 --><a href="LargeBoat.html">LargeBoat</a>, <!-- DBG-3 --><a href="LargeDragonBoat.html">LargeDragonBoat</a>, <!-- DBG-3 --><a href="MediumBoat.html">MediumBoat</a>, <!-- DBG-3 --><a href="MediumDragonBoat.html">MediumDragonBoat</a>, <!-- DBG-3 --><a href="PirateShip_Boat.html">PirateShip_Boat</a>, <!-- DBG-3 --><a href="SmallBoat.html">SmallBoat</a>, <!-- DBG-3 --><a href="SmallDragonBoat.html">SmallDragonBoat</a></h4>
+<h4>Nested Types: <!-- DBG-4 --><a href="DecayTimer.html">DecayTimer</a>, <!-- DBG-4 --><a href="DryDockResult.html">DryDockResult</a>, <!-- DBG-4 --><a href="MoveTimer.html">MoveTimer</a>, <!-- DBG-4 --><a href="TurnTimer.html">TurnTimer</a>, <!-- DBG-4 --><a href="UpdateAllTimer.html">UpdateAllTimer</a></h4>
+      (<span style="color: blue;">static</span>) <span style="color: blue;">List</span>&lt;<a href="BaseBoat.html">BaseBoat</a>&gt; Boats( <span style="color: blue;">get</span>; )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> EventSink_WorldSave( <!-- DBG-0 --><a href="WorldSaveEventArgs.html">WorldSaveEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <!-- DBG-0 --><a href="BaseBoat.html">BaseBoat</a> FindBoatAt( <!-- DBG-0 --><a href="IPoint2D.html">IPoint2D</a> loc, <!-- DBG-0 --><a href="Map.html">Map</a> map )<br />
+      (<span style="color: blue;">static</span>) <!-- DBG-0 --><a href="Rectangle2D.html">Rectangle2D</a>[] GetWrapFor( <!-- DBG-0 --><a href="Map.html">Map</a> m )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> Initialize()<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> IsValidLocation( <!-- DBG-0 --><a href="Point3D.html">Point3D</a> p, <!-- DBG-0 --><a href="Map.html">Map</a> map )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> UpdateAllComponents()<br />
+      (<span style="color: blue;">ctor</span>) BaseBoat()<br />
+      (<span style="color: blue;">ctor</span>) BaseBoat( <!-- DBG-0 --><a href="Serial.html">Serial</a> serial )<br />
+      <span style="color: blue;">bool</span> Anchored( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="BaseDockedBoat.html">BaseDockedBoat</a> DockedBoat( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> EastID( <span style="color: blue;">get</span>; )<br />
+      <!-- DBG-0 --><a href="Direction.html">Direction</a> Facing( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> HandlesOnSpeech( <span style="color: blue;">get</span>; )<br />
+      <!-- DBG-0 --><a href="Hold.html">Hold</a> Hold( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> HoldDistance( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> IsMoving( <span style="color: blue;">get</span>; )<br />
+      <!-- DBG-0 --><a href="MapItem.html">MapItem</a> MapItem( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="Point3D.html">Point3D</a> MarkOffset( <span style="color: blue;">get</span>; )<br />
+      <!-- DBG-0 --><a href="Direction.html">Direction</a> Moving( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> NextNavPoint( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> NorthID( <span style="color: blue;">get</span>; )<br />
+      <!-- DBG-0 --><a href="BoatOrder.html">BoatOrder</a> Order( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="Mobile.html">Mobile</a> Owner( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="Plank.html">Plank</a> PPlank( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="Point2D.html">Point2D</a> PortOffset( <span style="color: blue;">get</span>; )<br />
+      <!-- DBG-0 --><a href="Plank.html">Plank</a> SPlank( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">string</span> ShipName( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> SouthID( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> Speed( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="Point2D.html">Point2D</a> StarboardOffset( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> Status( <span style="color: blue;">get</span>; )<br />
+      <!-- DBG-0 --><a href="TillerMan.html">TillerMan</a> TillerMan( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> TillerManDistance( <span style="color: blue;">get</span>; )<br />
+      DateTime TimeOfDecay( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> WestID( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">void</span> AssociateMap( <!-- DBG-0 --><a href="MapItem.html">MapItem</a> map )<br />
+      <span style="color: blue;">void</span> BeginDryDock( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">void</span> BeginRename( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">bool</span> CanCommand( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      <span style="color: blue;">bool</span> CanFit( <!-- DBG-0 --><a href="Point3D.html">Point3D</a> p, <!-- DBG-0 --><a href="Map.html">Map</a> map, <span style="color: blue;">int</span> itemID )<br />
+      <span style="color: blue;">bool</span> CheckDecay()<br />
+      <!-- DBG-0 --><a href="DryDockResult.html">DryDockResult</a> CheckDryDock( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">bool</span> CheckKey( <span style="color: blue;">uint</span> keyValue )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> Contains( <span style="color: blue;">int</span> x, <span style="color: blue;">int</span> y )<br />
+      <span style="color: blue;">uint</span> CreateKeys( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br />
+      <span style="color: blue;">bool</span> DoMovement( <span style="color: blue;">bool</span> message )<br />
+      <span style="color: blue;">void</span> EndDryDock( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">void</span> EndRename( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">string</span> newName )<br />
+      <!-- DBG-0 --><a href="Point3D.html">Point3D</a> GetMarkedLocation()<br />
+      <!-- DBG-0 --><a href="Direction.html">Direction</a> GetMovementFor( <span style="color: blue;">int</span> x, <span style="color: blue;">int</span> y, <span style="color: blue;">out</span> <span style="color: blue;">int</span> maxSpeed )<br />
+      <!-- DBG-0 --><a href="Point3D.html">Point3D</a> GetRotatedLocation( <span style="color: blue;">int</span> x, <span style="color: blue;">int</span> y )<br />
+      <span style="color: blue;">void</span> GiveName( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      <span style="color: blue;">void</span> GiveNavPoint()<br />
+      <span style="color: blue;">bool</span> LowerAnchor( <span style="color: blue;">bool</span> message )<br />
+      <span style="color: blue;">bool</span> Move( <!-- DBG-0 --><a href="Direction.html">Direction</a> dir, <span style="color: blue;">int</span> speed, <span style="color: blue;">bool</span> message )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnAfterDelete()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnLocationChange( <!-- DBG-0 --><a href="Point3D.html">Point3D</a> old )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnMapChange()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnSpeech( <!-- DBG-0 --><a href="SpeechEventArgs.html">SpeechEventArgs</a> e )<br />
+      <span style="color: blue;">bool</span> OneMove( <!-- DBG-0 --><a href="Direction.html">Direction</a> dir )<br />
+      <span style="color: blue;">bool</span> RaiseAnchor( <span style="color: blue;">bool</span> message )<br />
+      <span style="color: blue;">void</span> Refresh()<br />
+      <span style="color: blue;">void</span> RemoveKeys( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      <span style="color: blue;">void</span> RemoveName( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      <span style="color: blue;">void</span> Rename( <span style="color: blue;">string</span> newName )<br />
+      <!-- DBG-0 --><a href="Point3D.html">Point3D</a> Rotate( <!-- DBG-0 --><a href="Point3D.html">Point3D</a> p, <span style="color: blue;">int</span> count )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br />
+      <span style="color: blue;">bool</span> SetFacing( <!-- DBG-0 --><a href="Direction.html">Direction</a> facing )<br />
+      <span style="color: blue;">void</span> SetName( <!-- DBG-0 --><a href="SpeechEventArgs.html">SpeechEventArgs</a> e )<br />
+      <span style="color: blue;">bool</span> StartCourse( <span style="color: blue;">bool</span> single, <span style="color: blue;">bool</span> message )<br />
+      <span style="color: blue;">bool</span> StartCourse( <span style="color: blue;">string</span> navPoint, <span style="color: blue;">bool</span> single, <span style="color: blue;">bool</span> message )<br />
+      <span style="color: blue;">bool</span> StartMove( <!-- DBG-0 --><a href="Direction.html">Direction</a> dir, <span style="color: blue;">bool</span> fast )<br />
+      <span style="color: blue;">bool</span> StartMove( <!-- DBG-0 --><a href="Direction.html">Direction</a> dir, <span style="color: blue;">int</span> speed, TimeSpan interval, <span style="color: blue;">bool</span> single, <span style="color: blue;">bool</span> message )<br />
+      <span style="color: blue;">bool</span> StartTurn( <span style="color: blue;">int</span> offset, <span style="color: blue;">bool</span> message )<br />
+      <span style="color: blue;">bool</span> StopMove( <span style="color: blue;">bool</span> message )<br />
+      <span style="color: blue;">void</span> Teleport( <span style="color: blue;">int</span> xOffset, <span style="color: blue;">int</span> yOffset, <span style="color: blue;">int</span> zOffset )<br />
+      <span style="color: blue;">bool</span> Turn( <span style="color: blue;">int</span> offset, <span style="color: blue;">bool</span> message )<br />
+      <span style="color: blue;">void</span> UpdateComponents()<br />
+   </body>
+</html>

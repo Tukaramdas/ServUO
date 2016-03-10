@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - DuelContext</title>
+      <style type="text/css">
+      body { background-color: white; font-family: Tahoma; color: #000000; }
+      a, a:visited { color: #000000; }
+      a:active, a:hover { color: #808080; }
+      </style>
+   </head>
+   <body>
+      <h4><a href="../namespaces/Server.Engines.ConPVP.html">Back to Server.Engines.ConPVP</a></h4>
+      <h2>DuelContext</h2>
+<h4>Nested Types: <!-- DBG-4 --><a href="ArenaMoongate.html">ArenaMoongate</a>, <!-- DBG-4 --><a href="ExitTeleporter.html">ExitTeleporter</a>, <!-- DBG-4 --><a href="InternalWall.html">InternalWall</a>, <!-- DBG-4 --><a href="ReturnEntry.html">ReturnEntry</a></h4>
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> AllowSpecialAbility( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">string</span> name, <span style="color: blue;">bool</span> message )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> AllowSpecialMove( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">string</span> name, <!-- DBG-0 --><a href="SpecialMove.html">SpecialMove</a> move )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> CancelSpell( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> mob )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> CheckCombat( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> CheckSuddenDeath( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> mob )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> CloseAndSendGump( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> mob, <!-- DBG-0 --><a href="Gump.html">Gump</a> g, Type[] types )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> CloseAndSendGump( <!-- DBG-0 --><a href="NetState.html">NetState</a> ns, <!-- DBG-0 --><a href="Gump.html">Gump</a> g, Type[] types )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> Debuff( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> mob )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> EventSink_Login( <!-- DBG-0 --><a href="LoginEventArgs.html">LoginEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> EventSink_Speech( <!-- DBG-0 --><a href="SpeechEventArgs.html">SpeechEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> Initialize()<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> IsFreeConsume( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> mob )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> ViewLadder_OnTarget( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">object</span> obj, <span style="color: blue;">object</span> state )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> vli_oc( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> vli_ot( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">object</span> obj )<br />
+      (<span style="color: blue;">ctor</span>) DuelContext( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> initiator, <!-- DBG-0 --><a href="RulesetLayout.html">RulesetLayout</a> layout )<br />
+      (<span style="color: blue;">ctor</span>) DuelContext( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> initiator, <!-- DBG-0 --><a href="RulesetLayout.html">RulesetLayout</a> layout, <span style="color: blue;">bool</span> addNew )<br />
+      <!-- DBG-0 --><a href="Arena.html">Arena</a> Arena( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> Finished( <span style="color: blue;">get</span>; )<br />
+      <!-- DBG-0 --><a href="Mobile.html">Mobile</a> Initiator( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> IsOneVsOne( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> IsSuddenDeath( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      ArrayList Participants( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> ReadyCount( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> ReadyWait( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> Registered( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> Rematch( <span style="color: blue;">get</span>; )<br />
+      <!-- DBG-0 --><a href="Ruleset.html">Ruleset</a> Ruleset( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> Started( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> StartedBeginCountdown( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> StartedReadyCountdown( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> Tied( <span style="color: blue;">get</span>; )<br />
+      <!-- DBG-0 --><a href="Tournament.html">Tournament</a> Tournament( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">void</span> ActivateSuddenDeath()<br />
+      <span style="color: blue;">bool</span> AllowItemEquip( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Item.html">Item</a> item )<br />
+      <span style="color: blue;">bool</span> AllowItemUse( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Item.html">Item</a> item )<br />
+      <span style="color: blue;">bool</span> AllowSkillUse( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="SkillName.html">SkillName</a> skill )<br />
+      <span style="color: blue;">bool</span> AllowSpellCast( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Spell.html">Spell</a> spell )<br />
+      <span style="color: blue;">void</span> Award( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> us, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> them, <span style="color: blue;">bool</span> won )<br />
+      <span style="color: blue;">void</span> BeginAutoTie()<br />
+      <span style="color: blue;">void</span> BuildParties()<br />
+      <span style="color: blue;">bool</span> CantDoAnything( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> mob )<br />
+      <!-- DBG-0 --><a href="Participant.html">Participant</a> CheckCompletion()<br />
+      <span style="color: blue;">bool</span> CheckFull()<br />
+      <span style="color: blue;">bool</span> CheckItemEquip( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Item.html">Item</a> item )<br />
+      <span style="color: blue;">void</span> ClearIllegalItems()<br />
+      <span style="color: blue;">void</span> ClearIllegalItems( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> mob )<br />
+      <span style="color: blue;">void</span> CloseAllGumps()<br />
+      <span style="color: blue;">void</span> Countdown_Callback( <span style="color: blue;">object</span> state )<br />
+      <span style="color: blue;">void</span> CreateWall()<br />
+      <span style="color: blue;">void</span> DelayBounce( TimeSpan ts, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> mob, <!-- DBG-0 --><a href="Container.html">Container</a> corpse )<br />
+      <span style="color: blue;">void</span> DelayBounce_Callback( <span style="color: blue;">object</span> state )<br />
+      <span style="color: blue;">void</span> DestroyWall()<br />
+      <span style="color: blue;">void</span> EndAutoTie()<br />
+      <!-- DBG-0 --><a href="DuelPlayer.html">DuelPlayer</a> Find( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> mob )<br />
+      <span style="color: blue;">void</span> Finish( <!-- DBG-0 --><a href="Participant.html">Participant</a> winner )<br />
+      <span style="color: blue;">bool</span> InstAllowSpecialAbility( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">string</span> name, <span style="color: blue;">bool</span> message )<br />
+      <span style="color: blue;">bool</span> InstAllowSpecialMove( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">string</span> name, <!-- DBG-0 --><a href="SpecialMove.html">SpecialMove</a> move )<br />
+      <span style="color: blue;">void</span> InvokeAutoTie()<br />
+      <span style="color: blue;">bool</span> IsAlly( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m1, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m2 )<br />
+      <span style="color: blue;">void</span> OnDeath( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> mob, <!-- DBG-0 --><a href="Container.html">Container</a> corpse )<br />
+      <span style="color: blue;">void</span> OnLocationChanged( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> mob )<br />
+      <span style="color: blue;">void</span> OnMapChanged( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> mob )<br />
+      <span style="color: blue;">void</span> QueryRematch()<br />
+      <span style="color: blue;">void</span> Refresh( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> mob, <!-- DBG-0 --><a href="Container.html">Container</a> cont )<br />
+      <span style="color: blue;">void</span> RejectReady( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> rejector, <span style="color: blue;">string</span> page )<br />
+      <span style="color: blue;">void</span> RemoveAggressions( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> mob )<br />
+      <span style="color: blue;">void</span> Requip( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Container.html">Container</a> cont )<br />
+      <span style="color: blue;">void</span> SendBeginGump( <span style="color: blue;">int</span> count )<br />
+      <span style="color: blue;">void</span> SendOutside( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> mob )<br />
+      <span style="color: blue;">void</span> SendReadyGump()<br />
+      <span style="color: blue;">void</span> SendReadyGump( <span style="color: blue;">int</span> count )<br />
+      <span style="color: blue;">void</span> SendReadyUpGump()<br />
+      <span style="color: blue;">void</span> StartCountdown( <span style="color: blue;">int</span> count, <!-- DBG-0 --><a href="CountdownCallback.html">CountdownCallback</a> cb )<br />
+      <span style="color: blue;">void</span> StartSuddenDeath( TimeSpan timeUntilActive )<br />
+      <span style="color: blue;">void</span> StopCountdown()<br />
+      <span style="color: blue;">void</span> StopSDTimers()<br />
+      <span style="color: blue;">void</span> Unregister()<br />
+      <span style="color: blue;">void</span> Unregister( <span style="color: blue;">bool</span> queryRematch )<br />
+      <span style="color: blue;">void</span> UnregisterRematch()<br />
+      <span style="color: blue;">string</span> ValidateStart()<br />
+      <span style="color: blue;">void</span> WarnSuddenDeath()<br />
+   </body>
+</html>

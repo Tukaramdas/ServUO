@@ -20,7 +20,7 @@ namespace Server.Items
 {
 	public class TreasureMap : MapItem
 	{
-		public const double LootChance = 0.01; // 1% chance to appear as loot
+		public const double LootChance = 0.03; // 1% chance to appear as loot
 
 		private static readonly Type[][] m_SpawnTypes = new[]
 		{

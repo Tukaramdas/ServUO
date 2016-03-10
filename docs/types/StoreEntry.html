@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - StoreEntry</title>
+      <style type="text/css">
+      body { background-color: white; font-family: Tahoma; color: #000000; }
+      a, a:visited { color: #000000; }
+      a:active, a:hover { color: #808080; }
+      </style>
+   </head>
+   <body>
+      <h4><a href="../namespaces/Solaris.ItemStore.html">Back to Solaris.ItemStore</a></h4>
+      <h2>StoreEntry</h2>
+<h4>Derived Types: <!-- DBG-3 --><a href="AncientSmithyHammerToolEntry.html">AncientSmithyHammerToolEntry</a>, <!-- DBG-3 --><a href="BeverageEntry.html">BeverageEntry</a>, <!-- DBG-3 --><a href="ChampionSkullEntry.html">ChampionSkullEntry</a>, <!-- DBG-3 --><a href="ColumnSeparationEntry.html">ColumnSeparationEntry</a>, <!-- DBG-3 --><a href="GenericDistinguishableEntry.html">GenericDistinguishableEntry</a>, <!-- DBG-3 --><a href="GenericEntry.html">GenericEntry</a>, <!-- DBG-3 --><a href="InstrumentEntry.html">InstrumentEntry</a>, <!-- DBG-3 --><a href="ListEntry.html">ListEntry</a>, <!-- DBG-3 --><a href="PotionEntry.html">PotionEntry</a>, <!-- DBG-3 --><a href="ResourceEntry.html">ResourceEntry</a>, <!-- DBG-3 --><a href="RunicToolEntry.html">RunicToolEntry</a>, <!-- DBG-3 --><a href="StashEntry.html">StashEntry</a>, <!-- DBG-3 --><a href="ToolEntry.html">ToolEntry</a></h4>
+      (<span style="color: blue;">static</span>) <span style="color: blue;">List</span>&lt;<a href="StoreEntry.html">StoreEntry</a>&gt; CloneList( <span style="color: blue;">List</span>&lt;<a href="StoreEntry.html">StoreEntry</a>&gt; sourcelist )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> GetTotalHeight( <span style="color: blue;">List</span>&lt;<a href="StoreEntry.html">StoreEntry</a>&gt; sourcelist )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> IndexOfItem( <span style="color: blue;">List</span>&lt;<a href="StoreEntry.html">StoreEntry</a>&gt; sourcelist, <!-- DBG-0 --><a href="Item.html">Item</a> item )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> IndexOfItem( <span style="color: blue;">List</span>&lt;<a href="StoreEntry.html">StoreEntry</a>&gt; sourcelist, <!-- DBG-0 --><a href="Item.html">Item</a> item, <span style="color: blue;">bool</span> checkalltypes )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> IndexOfType( <span style="color: blue;">List</span>&lt;<a href="StoreEntry.html">StoreEntry</a>&gt; sourcelist, Type type )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> IndexOfType( <span style="color: blue;">List</span>&lt;<a href="StoreEntry.html">StoreEntry</a>&gt; sourcelist, Type[] types )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> IndexOfType( <span style="color: blue;">List</span>&lt;<a href="StoreEntry.html">StoreEntry</a>&gt; sourcelist, Type type, <span style="color: blue;">bool</span> checkalltypes )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> IndexOfType( <span style="color: blue;">List</span>&lt;<a href="StoreEntry.html">StoreEntry</a>&gt; sourcelist, Type[] types, <span style="color: blue;">bool</span> checkalltypes )<br />
+      (<span style="color: blue;">ctor</span>) StoreEntry( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br />
+      (<span style="color: blue;">ctor</span>) StoreEntry( <!-- DBG-0 --><a href="StoreEntry.html">StoreEntry</a> entry )<br />
+      (<span style="color: blue;">ctor</span>) StoreEntry( Type type, <span style="color: blue;">string</span> name )<br />
+      (<span style="color: blue;">ctor</span>) StoreEntry( Type type, <span style="color: blue;">string</span> name, <span style="color: blue;">int</span> amount )<br />
+      (<span style="color: blue;">ctor</span>) StoreEntry( Type type, Type[] subtypes, <span style="color: blue;">string</span> name )<br />
+      (<span style="color: blue;">ctor</span>) StoreEntry( Type type, Type[] subtypes, <span style="color: blue;">string</span> name, <span style="color: blue;">int</span> amount )<br />
+      (<span style="color: blue;">ctor</span>) StoreEntry( Type type, <span style="color: blue;">string</span> name, <span style="color: blue;">int</span> amount, <span style="color: blue;">int</span> height, <span style="color: blue;">int</span> x, <span style="color: blue;">int</span> y )<br />
+      (<span style="color: blue;">ctor</span>) StoreEntry( Type type, Type[] subtypes, <span style="color: blue;">string</span> name, <span style="color: blue;">int</span> amount, <span style="color: blue;">int</span> height, <span style="color: blue;">int</span> x, <span style="color: blue;">int</span> y )<br />
+      Type[] AlternateTypes( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> Amount( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> ButtonID( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> ButtonX( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> ButtonY( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> Height( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">string</span> Name( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> RequiresRecipient( <span style="color: blue;">get</span>; )<br />
+      Type Type( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> X( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> Y( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">void</span> AbsorbItem( <!-- DBG-0 --><a href="Item.html">Item</a> item )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> Add( <!-- DBG-0 --><a href="Item.html">Item</a> item )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> CanUse( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">virtual</span> <!-- DBG-0 --><a href="StoreEntry.html">StoreEntry</a> Clone()<br />
+      <span style="color: blue;">void</span> Consume()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Dispose()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Empty( <!-- DBG-0 --><a href="Item.html">Item</a> item )<br />
+      <span style="color: blue;">virtual</span> <!-- DBG-0 --><a href="Item.html">Item</a> FindRecipient( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">virtual</span> <!-- DBG-0 --><a href="Item.html">Item</a> GetModel()<br />
+      <span style="color: blue;">bool</span> Match( <!-- DBG-0 --><a href="Item.html">Item</a> item )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> Match( <span style="color: blue;">int</span> amount, <span style="color: blue;">object</span>[] parameters )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> Match( <!-- DBG-0 --><a href="Item.html">Item</a> item, <span style="color: blue;">bool</span> checksubtypes )<br />
+      <span style="color: blue;">bool</span> Match( Type[] checktypes, <span style="color: blue;">bool</span> checksubtypes )<br />
+      <span style="color: blue;">bool</span> Match( Type checktype, <span style="color: blue;">bool</span> checksubtypes )<br />
+      <span style="color: blue;">void</span> RefreshParentGump()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br />
+      <!-- DBG-0 --><a href="Item.html">Item</a> Withdraw( <span style="color: blue;">ref</span> <span style="color: blue;">int</span> amount )<br />
+      <span style="color: blue;">virtual</span> <!-- DBG-0 --><a href="Item.html">Item</a> Withdraw( <span style="color: blue;">ref</span> <span style="color: blue;">int</span> amount, <span style="color: blue;">bool</span> deedable )<br />
+      <span style="color: blue;">virtual</span> <!-- DBG-0 --><a href="Item.html">Item</a> WithdrawTo( <span style="color: blue;">ref</span> <span style="color: blue;">int</span> amount, <!-- DBG-0 --><a href="Item.html">Item</a> destination )<br />
+   </body>
+</html>

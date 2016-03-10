@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - TurboSlot</title>
+      <style type="text/css">
+      body { background-color: white; font-family: Tahoma; color: #000000; }
+      a, a:visited { color: #000000; }
+      a:active, a:hover { color: #808080; }
+      </style>
+   </head>
+   <body>
+      <h4><a href="../namespaces/Server.Items.html">Back to Server.Items</a></h4>
+      <h2>TurboSlot : <!-- DBG-1 --><a href="Item.html">Item</a>, <!-- DBG-2.2 --><a href="IHued.html">IHued</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="Item.html">Item</a>&gt;, <!-- DBG-2.2 --><a href="ISerializable.html">ISerializable</a>, <!-- DBG-2.2 --><a href="ISpawnable.html">ISpawnable</a>, <!-- DBG-2.2 --><a href="IEntity.html">IEntity</a>, <!-- DBG-2.2 --><a href="IPoint3D.html">IPoint3D</a>, <!-- DBG-2.2 --><a href="IPoint2D.html">IPoint2D</a>, <!-- DBG-2.1 --><a href="IComparable.html">IComparable</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="IEntity.html">IEntity</a>&gt;</h2>
+<h4>Nested Types: <!-- DBG-4 --><a href="BonusRoundType.html">BonusRoundType</a>, <!-- DBG-4 --><a href="InternalTimer1.html">InternalTimer1</a>, <!-- DBG-4 --><a href="InternalTimer2.html">InternalTimer2</a>, <!-- DBG-4 --><a href="JackpotRewardType.html">JackpotRewardType</a>, <!-- DBG-4 --><a href="PaybackType.html">PaybackType</a>, <!-- DBG-4 --><a href="ScatterType.html">ScatterType</a>, <!-- DBG-4 --><a href="SlotThemeType.html">SlotThemeType</a></h4>
+      (<span style="color: blue;">static</span>) <!-- DBG-0 --><a href="Item.html">Item</a> CreateRunicKit( <span style="color: blue;">int</span> type )<br />
+      (<span style="color: blue;">ctor</span>) TurboSlot()<br />
+      (<span style="color: blue;">ctor</span>) TurboSlot( <!-- DBG-0 --><a href="Serial.html">Serial</a> serial )<br />
+      <span style="color: blue;">bool</span> Active( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> AnnounceJackpots( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> AnyBars( <span style="color: blue;">get</span>; )<br />
+      <!-- DBG-0 --><a href="BonusRoundType.html">BonusRoundType</a> BonusRound( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> CardClubOnly( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> Cost( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> CreditATMIncrements( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> CreditATMLimit( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> CreditCashOutAt( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="PaybackType.html">PaybackType</a> CurrentPayback( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> ErrorCode( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> FreeSpin( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> HandlesOnMovement( <span style="color: blue;">get</span>; )<br />
+      <!-- DBG-0 --><a href="Mobile.html">Mobile</a> InUseBy( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="JackpotRewardType.html">JackpotRewardType</a> JackpotRewards( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> LastPay( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      DateTime LastPlayed( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> LastWonAmount( <span style="color: blue;">get</span>; )<br />
+      <!-- DBG-0 --><a href="Mobile.html">Mobile</a> LastWonBy( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      DateTime LastWonByDate( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> MembershipCard( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> PlayerSounds( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> ProgIsMaster( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> ProgJackpot( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> ProgJackpotStart( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> ProgPercent( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="Item.html">Item</a> ProgSlotMaster( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      TimeSpan RandomMax( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      TimeSpan RandomMin( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      TimeSpan RandomOver( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> ReelOne( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> ReelThree( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> ReelTwo( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> ResetTotals( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="ScatterType.html">ScatterType</a> ScatterPay( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> ShowPayback( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="PaybackType.html">PaybackType</a> SlotPaybackOdds( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="SlotThemeType.html">SlotThemeType</a> SlotTheme( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> SlotTotalCollected( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> SlotWon( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> TotalCollected( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> TotalNetProfit( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> TotalSpins( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> TotalWon( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">float</span> WinningPercentage( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> Won( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">float</span> w_Percentage( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> zJackpotStats0( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> zJackpotStats1( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> zJackpotStats2( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> zJackpotStats3( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> zJackpotStats4( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> zJackpotStats5( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> zJackpotStats6( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> zJackpotStats7( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> zJackpotStats8( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> zJackpotStatsS1( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> zJackpotStatsS2( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> zReelOne( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> zReelThree( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> zReelTwo( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">void</span> ActivateBlinkTimer( <span style="color: blue;">int</span> hue )<br />
+      <span style="color: blue;">void</span> ActivateRandomTimer()<br />
+      <span style="color: blue;">void</span> AddSlave( <!-- DBG-0 --><a href="TurboSlot.html">TurboSlot</a> s )<br />
+      <span style="color: blue;">void</span> AddToJackpot( <span style="color: blue;">int</span> amount )<br />
+      <span style="color: blue;">void</span> AnnounceJackpot( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">string</span> text )<br />
+      <span style="color: blue;">bool</span> AnyBarJackpot()<br />
+      <span style="color: blue;">void</span> BlinkMe()<br />
+      <span style="color: blue;">float</span> CalcOdds( <span style="color: blue;">int</span>[,] distTable )<br />
+      <span style="color: blue;">bool</span> CarryingClubCard( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      <span style="color: blue;">bool</span> CashCheck( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <span style="color: blue;">out</span> <span style="color: blue;">int</span> amount )<br />
+      <span style="color: blue;">void</span> CasinoCheats()<br />
+      <span style="color: blue;">bool</span> CheckInRange( <!-- DBG-0 --><a href="Point3D.html">Point3D</a> loc, <span style="color: blue;">int</span> range )<br />
+      <span style="color: blue;">void</span> Classic( <span style="color: blue;">bool</span> initialize )<br />
+      <span style="color: blue;">void</span> ClassicII( <span style="color: blue;">bool</span> initialize )<br />
+      <span style="color: blue;">void</span> ClassicIII( <span style="color: blue;">bool</span> initialize )<br />
+      <span style="color: blue;">int</span> CountScatter( <span style="color: blue;">int</span> ScatterReel, <span style="color: blue;">int</span> m_ReelOne, <span style="color: blue;">int</span> m_ReelTwo, <span style="color: blue;">int</span> m_ReelThree )<br />
+      <!-- DBG-0 --><a href="Item.html">Item</a> CreateItem( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, Type t, <span style="color: blue;">int</span> errorcode )<br />
+      <span style="color: blue;">void</span> CreateOddsTable( <span style="color: blue;">int</span>[] distTable )<br />
+      <span style="color: blue;">void</span> CreateOddsTable( <span style="color: blue;">int</span> table, <span style="color: blue;">int</span>[] distTable )<br />
+      <!-- DBG-0 --><a href="Item.html">Item</a> CreatePowerScroll( <span style="color: blue;">int</span> type, <span style="color: blue;">int</span> level )<br />
+      <span style="color: blue;">string</span> CreateProfileStrings( <span style="color: blue;">int</span>[] arg )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br />
+      <span style="color: blue;">bool</span> DetermineReward( <span style="color: blue;">int</span> jackpotindex )<br />
+      <span style="color: blue;">void</span> DoCashOut( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">void</span> DoDrain( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      <span style="color: blue;">void</span> DoFireworks( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      <span style="color: blue;">void</span> DoJackpotEffect( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <span style="color: blue;">int</span> JackpotEffect, <span style="color: blue;">int</span> index )<br />
+      <span style="color: blue;">void</span> DoPowerScrollEffect( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">void</span> DoSpin( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">void</span> DoSpinWin( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> r1index )<br />
+      <span style="color: blue;">void</span> DoSpinWin( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> r1index, <span style="color: blue;">int</span> winnings )<br />
+      <span style="color: blue;">void</span> DoSpinWin( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> r1index, <span style="color: blue;">int</span> winnings, <span style="color: blue;">int</span> mobileSound, <span style="color: blue;">int</span> jackpotSound, <span style="color: blue;">string</span> slotText, <span style="color: blue;">int</span> JackpotEffect )<br />
+      <span style="color: blue;">void</span> DoTimer1( TimeSpan delay )<br />
+      <span style="color: blue;">void</span> DoTimer2( TimeSpan delay )<br />
+      <span style="color: blue;">void</span> ExtremelyTightSlots()<br />
+      <span style="color: blue;">void</span> FarmerFaceoff( <span style="color: blue;">bool</span> initialize )<br />
+      <span style="color: blue;">void</span> FlameStrike()<br />
+      <span style="color: blue;">int</span> GetInt( <span style="color: blue;">string</span> intstr )<br />
+      <span style="color: blue;">string</span>[] GetJackpotPayoutStr( <span style="color: blue;">int</span> index, <span style="color: blue;">out</span> <span style="color: blue;">decimal</span> payout )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> GetProperties( <!-- DBG-0 --><a href="ObjectPropertyList.html">ObjectPropertyList</a> list )<br />
+      <span style="color: blue;">string</span>[] GetRewardStr( <span style="color: blue;">string</span>[] RString, <span style="color: blue;">int</span> index, <span style="color: blue;">int</span> sindex, <span style="color: blue;">out</span> <span style="color: blue;">decimal</span> rewardamount )<br />
+      <span style="color: blue;">void</span> GiveItem( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> to, <!-- DBG-0 --><a href="Item.html">Item</a> i )<br />
+      <span style="color: blue;">void</span> GiveRewards( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> jackpotindex )<br />
+      <span style="color: blue;">void</span> GoldEffect( <!-- DBG-0 --><a href="Item.html">Item</a> g )<br />
+      <span style="color: blue;">void</span> GruesomeGambling( <span style="color: blue;">bool</span> initialize )<br />
+      <span style="color: blue;">void</span> Holiday1( <span style="color: blue;">bool</span> initialize )<br />
+      <span style="color: blue;">void</span> IssueMembershipCard( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> to, <span style="color: blue;">int</span> jackpot )<br />
+      <span style="color: blue;">void</span> JackpotHit( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> jackpot, <!-- DBG-0 --><a href="TurboSlot.html">TurboSlot</a> slot )<br />
+      <span style="color: blue;">void</span> LadyLuck( <span style="color: blue;">bool</span> initialize )<br />
+      <span style="color: blue;">void</span> LooseSlots()<br />
+      <span style="color: blue;">void</span> MinerMadness( <span style="color: blue;">bool</span> initialize )<br />
+      <span style="color: blue;">void</span> NameAndHueModel( <!-- DBG-0 --><a href="Item.html">Item</a> item )<br />
+      <span style="color: blue;">void</span> NormalSlots()<br />
+      <span style="color: blue;">void</span> OffToTheRaces( <span style="color: blue;">bool</span> initialize )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnDelete()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnDoubleClick( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnMovement( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="Point3D.html">Point3D</a> oldLocation )<br />
+      <span style="color: blue;">void</span> Pirates( <span style="color: blue;">bool</span> initialize )<br />
+      <span style="color: blue;">void</span> PowerScrolls( <span style="color: blue;">bool</span> initialize )<br />
+      <span style="color: blue;">void</span> RandomScrollSymbols()<br />
+      <span style="color: blue;">void</span> RemoveMaster( <!-- DBG-0 --><a href="TurboSlot.html">TurboSlot</a> s )<br />
+      <span style="color: blue;">void</span> RemoveSlave( <!-- DBG-0 --><a href="TurboSlot.html">TurboSlot</a> s )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br />
+      <span style="color: blue;">void</span> SetupOddsTable( <!-- DBG-0 --><a href="PaybackType.html">PaybackType</a> p, <span style="color: blue;">bool</span> force )<br />
+      <span style="color: blue;">void</span> SetupTheme( <!-- DBG-0 --><a href="SlotThemeType.html">SlotThemeType</a> theme, <span style="color: blue;">bool</span> initialize )<br />
+      <span style="color: blue;">void</span> SlotOffline( <span style="color: blue;">int</span> error )<br />
+      <span style="color: blue;">void</span> Sparkle( <span style="color: blue;">int</span> JackpotEffect )<br />
+      <span style="color: blue;">void</span> StatScrolls( <span style="color: blue;">bool</span> initialize )<br />
+      <span style="color: blue;">void</span> TailorTreats( <span style="color: blue;">bool</span> initialize )<br />
+      <span style="color: blue;">void</span> ThrowOutBlood( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> count, <span style="color: blue;">int</span> distance )<br />
+      <span style="color: blue;">void</span> ThrowOutBones( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> count )<br />
+      <span style="color: blue;">void</span> ThrowOutGold( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> min, <span style="color: blue;">int</span> max )<br />
+      <span style="color: blue;">void</span> ThrowOutItem( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> count, <span style="color: blue;">int</span> itemtype, <span style="color: blue;">int</span> distance, <span style="color: blue;">int</span> amount )<br />
+      <span style="color: blue;">void</span> TightSlots()<br />
+      <span style="color: blue;">void</span> TrophyHunter( <span style="color: blue;">bool</span> initialize )<br />
+      <span style="color: blue;">void</span> UpdateLastWonBy( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <span style="color: blue;">int</span> r1index, <span style="color: blue;">int</span> jackpotamount )<br />
+   </body>
+</html>

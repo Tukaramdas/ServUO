@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - BaseQuester</title>
+      <style type="text/css">
+      body { background-color: white; font-family: Tahoma; color: #000000; }
+      a, a:visited { color: #000000; }
+      a:active, a:hover { color: #808080; }
+      </style>
+   </head>
+   <body>
+      <h4><a href="../namespaces/Server.Engines.Quests.html">Back to Server.Engines.Quests</a></h4>
+      <h2>BaseQuester : <!-- DBG-1 --><a href="BaseVendor.html">BaseVendor</a>, <!-- DBG-2.2 --><a href="IHued.html">IHued</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="Mobile.html">Mobile</a>&gt;, <!-- DBG-2.2 --><a href="ISerializable.html">ISerializable</a>, <!-- DBG-2.2 --><a href="ISpawnable.html">ISpawnable</a>, <!-- DBG-2.2 --><a href="IEntity.html">IEntity</a>, <!-- DBG-2.2 --><a href="IPoint3D.html">IPoint3D</a>, <!-- DBG-2.2 --><a href="IPoint2D.html">IPoint2D</a>, <!-- DBG-2.1 --><a href="IComparable.html">IComparable</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="IEntity.html">IEntity</a>&gt;, <!-- DBG-2.2 --><a href="IHonorTarget.html">IHonorTarget</a>, <!-- DBG-2.2 --><a href="IVendor.html">IVendor</a></h2>
+<h4>Derived Types: <!-- DBG-3 --><a href="AlbertaGiacco.html">AlbertaGiacco</a>, <!-- DBG-3 --><a href="AnsellaGryen.html">AnsellaGryen</a>, <!-- DBG-3 --><a href="BaseAmbitiousSolenQueen.html">BaseAmbitiousSolenQueen</a>, <!-- DBG-3 --><a href="BaseSolenMatriarch.html">BaseSolenMatriarch</a>, <!-- DBG-3 --><a href="Blackheart.html">Blackheart</a>, <!-- DBG-3 --><a href="Chyloth.html">Chyloth</a>, <!-- DBG-3 --><a href="Dryad.html">Dryad</a>, <!-- DBG-3 --><a href="ElwoodMcCarrin.html">ElwoodMcCarrin</a>, <!-- DBG-3 --><a href="Emino.html">Emino</a>, <!-- DBG-3 --><a href="EnshroudedFigure.html">EnshroudedFigure</a>, <!-- DBG-3 --><a href="GabrielPiete.html">GabrielPiete</a>, <!-- DBG-3 --><a href="Grizelda.html">Grizelda</a>, <!-- DBG-3 --><a href="Haochi.html">Haochi</a>, <!-- DBG-3 --><a href="HaochisGuardsman.html">HaochisGuardsman</a>, <!-- DBG-3 --><a href="HiddenFigure.html">HiddenFigure</a>, <!-- DBG-3 --><a href="Horus.html">Horus</a>, <!-- DBG-3 --><a href="Impresario.html">Impresario</a>, <!-- DBG-3 --><a href="JedahEntille.html">JedahEntille</a>, <!-- DBG-3 --><a href="Maabus.html">Maabus</a>, <!-- DBG-3 --><a href="MansionGuard.html">MansionGuard</a>, <!-- DBG-3 --><a href="Mardoth.html">Mardoth</a>, <!-- DBG-3 --><a href="MilitiaCanoneer.html">MilitiaCanoneer</a>, <!-- DBG-3 --><a href="Naturalist.html">Naturalist</a>, <!-- DBG-3 --><a href="Relnia.html">Relnia</a>, <!-- DBG-3 --><a href="Schmendrick.html">Schmendrick</a>, <!-- DBG-3 --><a href="TomasONeerlan.html">TomasONeerlan</a>, <!-- DBG-3 --><a href="Uzeraan.html">Uzeraan</a>, <!-- DBG-3 --><a href="Victoria.html">Victoria</a>, <!-- DBG-3 --><a href="Zeefzorpul.html">Zeefzorpul</a>, <!-- DBG-3 --><a href="Zoel.html">Zoel</a></h4>
+      (<span style="color: blue;">static</span>) <!-- DBG-0 --><a href="Container.html">Container</a> GetNewContainer()<br />
+      (<span style="color: blue;">ctor</span>) BaseQuester()<br />
+      (<span style="color: blue;">ctor</span>) BaseQuester( <span style="color: blue;">string</span> title )<br />
+      (<span style="color: blue;">ctor</span>) BaseQuester( <!-- DBG-0 --><a href="Serial.html">Serial</a> serial )<br />
+      <span style="color: blue;">bool</span> CanTeach( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> ClickTitle( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> DisallowAllMoves( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> IsActiveVendor( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> IsInvulnerable( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">List</span>&lt;<a href="SBInfo.html">SBInfo</a>&gt; SBInfos( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> TalkNumber( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> AddCustomContextEntries( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">List</span>&lt;<a href="ContextMenuEntry.html">ContextMenuEntry</a>&gt; list )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> CanBeDamaged()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> CanTalkTo( <!-- DBG-0 --><a href="PlayerMobile.html">PlayerMobile</a> to )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> CheckMorph()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br />
+      <span style="color: blue;">void</span> FocusTo( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> to )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">int</span> GetAutoTalkRange( <!-- DBG-0 --><a href="PlayerMobile.html">PlayerMobile</a> m )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> InitSBInfo()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnMovement( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="Point3D.html">Point3D</a> oldLocation )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnTalk( <!-- DBG-0 --><a href="PlayerMobile.html">PlayerMobile</a> player, <span style="color: blue;">bool</span> contextMenu )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br />
+      <!-- DBG-0 --><a href="Item.html">Item</a> SetHue( <!-- DBG-0 --><a href="Item.html">Item</a> item, <span style="color: blue;">int</span> hue )<br />
+   </body>
+</html>

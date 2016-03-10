@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - BaseSiegeWeapon</title>
+      <style type="text/css">
+      body { background-color: white; font-family: Tahoma; color: #000000; }
+      a, a:visited { color: #000000; }
+      a:active, a:hover { color: #808080; }
+      </style>
+   </head>
+   <body>
+      <h4><a href="../namespaces/Server.Items.html">Back to Server.Items</a></h4>
+      <h2>BaseSiegeWeapon : <!-- DBG-1 --><a href="BaseAddon.html">BaseAddon</a>, <!-- DBG-2.2 --><a href="IHued.html">IHued</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="Item.html">Item</a>&gt;, <!-- DBG-2.2 --><a href="ISerializable.html">ISerializable</a>, <!-- DBG-2.2 --><a href="ISpawnable.html">ISpawnable</a>, <!-- DBG-2.2 --><a href="IEntity.html">IEntity</a>, <!-- DBG-2.2 --><a href="IPoint3D.html">IPoint3D</a>, <!-- DBG-2.2 --><a href="IPoint2D.html">IPoint2D</a>, <!-- DBG-2.1 --><a href="IComparable.html">IComparable</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="IEntity.html">IEntity</a>&gt;, <!-- DBG-2.2 --><a href="IChopable.html">IChopable</a>, <!-- DBG-2.2 --><a href="IAddon.html">IAddon</a>, <!-- DBG-2.2 --><a href="ISiegeWeapon.html">ISiegeWeapon</a></h2>
+<h4>Derived Types: <!-- DBG-3 --><a href="SiegeCannon.html">SiegeCannon</a>, <!-- DBG-3 --><a href="SiegeCatapult.html">SiegeCatapult</a>, <!-- DBG-3 --><a href="SiegeRam.html">SiegeRam</a></h4>
+<h4>Nested Types: <!-- DBG-4 --><a href="SiegeTarget.html">SiegeTarget</a></h4>
+      (<span style="color: blue;">ctor</span>) BaseSiegeWeapon()<br />
+      (<span style="color: blue;">ctor</span>) BaseSiegeWeapon( <!-- DBG-0 --><a href="Serial.html">Serial</a> serial )<br />
+      Type[] AllowedProjectiles( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> CheckLOS( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">double</span> DamageReductionWhenDamaged( <span style="color: blue;">get</span>; )<br />
+      <!-- DBG-0 --><a href="BaseAddonDeed.html">BaseAddonDeed</a> Deed( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> Facing( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> FixedFacing( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> Hits( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> HitsMax( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> IsDraggable( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> IsPackable( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> MinFiringRange( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> MinStorageRange( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> MinTargetRange( <span style="color: blue;">get</span>; )<br />
+      TimeSpan NextFiring( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="Item.html">Item</a> Projectile( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="Point3D.html">Point3D</a> ProjectileLaunchPoint( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">double</span> RangeReductionWhenDamaged( <span style="color: blue;">get</span>; )<br />
+      <!-- DBG-0 --><a href="XmlSiege.html">XmlSiege</a> SiegeAttachment( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> StoredWeaponID( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">double</span> WeaponDamageFactor( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">double</span> WeaponLoadingDelay( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">double</span> WeaponRangeFactor( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">double</span> WeaponStorageDelay( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> AttackTarget( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="IEntity.html">IEntity</a> target, <!-- DBG-0 --><a href="Point3D.html">Point3D</a> targetloc, <span style="color: blue;">bool</span> checkLOS )<br />
+      <span style="color: blue;">bool</span> CheckAllowedProjectile( <!-- DBG-0 --><a href="Item.html">Item</a> projectile )<br />
+      <span style="color: blue;">bool</span> ContainsInterface( Type[] typearray, Type type )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> DamageTarget_Callback( <span style="color: blue;">object</span> state )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> HasFiringAngle( <!-- DBG-0 --><a href="IPoint3D.html">IPoint3D</a> t )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> LaunchProjectile( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Item.html">Item</a> projectile, <!-- DBG-0 --><a href="IEntity.html">IEntity</a> target, <!-- DBG-0 --><a href="Point3D.html">Point3D</a> targetloc, TimeSpan delay )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> LoadWeapon( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Item.html">Item</a> projectile )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnDelete()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnDoubleClick( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> OnDroppedToWorld( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Point3D.html">Point3D</a> point )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> PlaceWeapon( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Point3D.html">Point3D</a> location, <!-- DBG-0 --><a href="Map.html">Map</a> map )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> StoreWeapon( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> StoreWeapon_Callback( <span style="color: blue;">object</span> state )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> UpdateDisplay()<br />
+   </body>
+</html>

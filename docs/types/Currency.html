@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - Currency</title>
+      <style type="text/css">
+      body { background-color: white; font-family: Tahoma; color: #000000; }
+      a, a:visited { color: #000000; }
+      a:active, a:hover { color: #808080; }
+      </style>
+   </head>
+   <body>
+      <h4><a href="../namespaces/System.CustomizableVendor.html">Back to System.CustomizableVendor</a></h4>
+      <h2>Currency : <!-- DBG-1 --><a href="Item.html">Item</a>, <!-- DBG-2.2 --><a href="IHued.html">IHued</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="Item.html">Item</a>&gt;, <!-- DBG-2.2 --><a href="ISerializable.html">ISerializable</a>, <!-- DBG-2.2 --><a href="ISpawnable.html">ISpawnable</a>, <!-- DBG-2.2 --><a href="IEntity.html">IEntity</a>, <!-- DBG-2.2 --><a href="IPoint3D.html">IPoint3D</a>, <!-- DBG-2.2 --><a href="IPoint2D.html">IPoint2D</a>, <!-- DBG-2.1 --><a href="IComparable.html">IComparable</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="IEntity.html">IEntity</a>&gt;</h2>
+<h4>Nested Types: <!-- DBG-4 --><a href="Payment.html">Payment</a></h4>
+      (<span style="color: blue;">ctor</span>) Currency()<br />
+      (<span style="color: blue;">ctor</span>) Currency( <!-- DBG-0 --><a href="Item.html">Item</a> i )<br />
+      (<span style="color: blue;">ctor</span>) Currency( <!-- DBG-0 --><a href="Serial.html">Serial</a> serial )<br />
+      (<span style="color: blue;">ctor</span>) Currency( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, PropertyInfo pi )<br />
+      (<span style="color: blue;">ctor</span>) Currency( <!-- DBG-0 --><a href="Item.html">Item</a> i, PropertyInfo pi )<br />
+      (<span style="color: blue;">ctor</span>) Currency( <span style="color: blue;">object</span> bindedTo, Type attachType, PropertyInfo attachProp )<br />
+      <span style="color: blue;">int</span> CurrHue( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> PayID( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">string</span> PayName( <span style="color: blue;">get</span>; )<br />
+      Type PaymentType( <span style="color: blue;">get</span>; )<br />
+      Type XMLType( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">void</span> Charge( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <span style="color: blue;">int</span> cost, <span style="color: blue;">int</span> remain )<br />
+      <span style="color: blue;">void</span> Charge( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="Container.html">Container</a> pack, <!-- DBG-0 --><a href="Container.html">Container</a> bank, <span style="color: blue;">int</span> cost )<br />
+      <span style="color: blue;">void</span> Charge( <!-- DBG-0 --><a href="Container.html">Container</a> pack, <!-- DBG-0 --><a href="Container.html">Container</a> bank, Type t, <span style="color: blue;">int</span> cost )<br />
+      <span style="color: blue;">void</span> Charge( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, Type t, PropertyInfo pi, <span style="color: blue;">int</span> cost, <span style="color: blue;">int</span> remain )<br />
+      <span style="color: blue;">int</span> CoinID( <span style="color: blue;">int</span> itemID )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br />
+      <span style="color: blue;">string</span> GetName( <!-- DBG-0 --><a href="Item.html">Item</a> i )<br />
+      <span style="color: blue;">int</span> GetPropertyValue( <span style="color: blue;">object</span> o )<br />
+      <span style="color: blue;">int</span> GetXMLValue( <span style="color: blue;">object</span> o )<br />
+      <span style="color: blue;">void</span> Modify( Type t, <span style="color: blue;">string</span> append )<br />
+      <span style="color: blue;">int</span> ProcessByGold( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      <span style="color: blue;">int</span> ProcessByItem( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, Type t )<br />
+      <span style="color: blue;">int</span> ProcessByProperty( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, Type t, PropertyInfo pi )<br />
+      <span style="color: blue;">int</span> ProcessByProperty( <!-- DBG-0 --><a href="Container.html">Container</a> pack, <!-- DBG-0 --><a href="Container.html">Container</a> bank, Type t, PropertyInfo pi )<br />
+      <span style="color: blue;">bool</span> Purchase( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <span style="color: blue;">int</span> cost )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br />
+      <span style="color: blue;">void</span> SetPropertyValue( <span style="color: blue;">object</span> o, <span style="color: blue;">int</span> val )<br />
+      <span style="color: blue;">void</span> SetXMLValue( <span style="color: blue;">object</span> o, <span style="color: blue;">int</span> val )<br />
+      <span style="color: blue;">void</span> VOneUpdate()<br />
+      <span style="color: blue;">int</span> Value( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+   </body>
+</html>

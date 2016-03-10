@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<accounts count="2">
+	<account>
+		<username>xavius</username>
+		<newCryptPassword>A5-BB-57-94-78-54-E3-59-7D-D2-01-F1-FD-69-7D-CF-94-5A-AE-3B</newCryptPassword>
+		<accessLevel>Owner</accessLevel>
+		<flags>2</flags>
+		<created>2016-02-07T04:41:48.392201Z</created>
+		<lastLogin>2016-03-09T07:51:46.9556539Z</lastLogin>
+		<totalGameTime>P2DT4H36M39.5406432S</totalGameTime>
+		<chars>
+			<char index="0">1</char>
+			<char index="1">3279</char>
+			<char index="2">2755</char>
+			<char index="3">1265</char>
+		</chars>
+		<comments>
+			<comment addedBy="System" lastModified="2016-02-08T07:20:02.126462Z">Character #4 0x50F "test" deleted by 127.0.0.1</comment>
+		</comments>
+		<tags>
+			<tag name="BabyRecieved">true</tag>
+			<tag name="SantaReward">true</tag>
+			<tag name="HolidayReward">true</tag>
+			<tag name="BloodyDeathScythe">true</tag>
+			<tag name="VoidEffect">no</tag>
+			<tag name="PDarkEffect">no</tag>
+			<tag name="PFireEffect">no</tag>
+			<tag name="PIceEffect">no</tag>
+			<tag name="PToxicEffect">no</tag>
+			<tag name="PElectEffect">no</tag>
+			<tag name="PWaterEffect">no</tag>
+			<tag name="PMistEffect">no</tag>
+			<tag name="PExplosionEffect">no</tag>
+			<tag name="PStoneEffect">no</tag>
+			<tag name="PShineyEffect">no</tag>
+			<tag name="PFireFlyEffect">no</tag>
+			<tag name="UnchargedEnchantedShovelRecieved">true</tag>
+			<tag name="DiamondHoopEarringsRecieved">true</tag>
+			<tag name="numRewardsChosen">1</tag>
+			<tag name="AutoDefend">Enabled</tag>
+		</tags>
+		<addressList count="1">
+			<ip>127.0.0.1</ip>
+		</addressList>
+		<totalCurrency>0.00070427000000000011</totalCurrency>
+	</account>
+	<account>
+		<username>radheya</username>
+		<newCryptPassword>11-60-FC-0D-12-41-A7-A0-86-56-20-A3-6A-89-10-73-C3-CC-27-2F</newCryptPassword>
+		<flags>2</flags>
+		<created>2016-02-08T12:30:45.449192Z</created>
+		<lastLogin>2016-02-24T07:55:52.6787086Z</lastLogin>
+		<totalGameTime>PT6H5M10.1746525S</totalGameTime>
+		<chars>
+			<char index="0">1999</char>
+			<char index="1">35</char>
+			<char index="2">10</char>
+			<char index="4">21</char>
+		</chars>
+		<comments>
+			<comment addedBy="System" lastModified="2016-02-14T00:13:00.3035226Z">Character #2 0x11 "Tim" deleted by 127.0.0.1</comment>
+			<comment addedBy="System" lastModified="2016-02-22T04:50:00.1829865Z">Character #4 0x7A "wewewewew" deleted by 127.0.0.1</comment>
+			<comment addedBy="System" lastModified="2016-02-22T04:50:03.9839918Z">Character #3 0x8 "test" deleted by 127.0.0.1</comment>
+		</comments>
+		<tags>
+			<tag name="VoidEffect">no</tag>
+			<tag name="PDarkEffect">no</tag>
+			<tag name="PFireEffect">no</tag>
+			<tag name="PIceEffect">no</tag>
+			<tag name="PToxicEffect">no</tag>
+			<tag name="PElectEffect">no</tag>
+			<tag name="PWaterEffect">no</tag>
+			<tag name="PMistEffect">no</tag>
+			<tag name="PExplosionEffect">no</tag>
+			<tag name="PStoneEffect">no</tag>
+			<tag name="PShineyEffect">no</tag>
+			<tag name="PFireFlyEffect">no</tag>
+		</tags>
+		<addressList count="1">
+			<ip>127.0.0.1</ip>
+		</addressList>
+		<totalCurrency>6E-05</totalCurrency>
+	</account>
+</accounts>

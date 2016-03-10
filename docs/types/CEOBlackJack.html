@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - CEOBlackJack</title>
+      <style type="text/css">
+      body { background-color: white; font-family: Tahoma; color: #000000; }
+      a, a:visited { color: #000000; }
+      a:active, a:hover { color: #808080; }
+      </style>
+   </head>
+   <body>
+      <h4><a href="../namespaces/Server.Items.html">Back to Server.Items</a></h4>
+      <h2>CEOBlackJack : <!-- DBG-1 --><a href="Item.html">Item</a>, <!-- DBG-2.2 --><a href="IHued.html">IHued</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="Item.html">Item</a>&gt;, <!-- DBG-2.2 --><a href="ISerializable.html">ISerializable</a>, <!-- DBG-2.2 --><a href="ISpawnable.html">ISpawnable</a>, <!-- DBG-2.2 --><a href="IEntity.html">IEntity</a>, <!-- DBG-2.2 --><a href="IPoint3D.html">IPoint3D</a>, <!-- DBG-2.2 --><a href="IPoint2D.html">IPoint2D</a>, <!-- DBG-2.1 --><a href="IComparable.html">IComparable</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="IEntity.html">IEntity</a>&gt;</h2>
+<h4>Nested Types: <!-- DBG-4 --><a href="BJStruct.html">BJStruct</a>, <!-- DBG-4 --><a href="BetValues.html">BetValues</a>, <!-- DBG-4 --><a href="BlackJackPays.html">BlackJackPays</a>, <!-- DBG-4 --><a href="Casino.html">Casino</a>, <!-- DBG-4 --><a href="DealerTimer.html">DealerTimer</a>, <!-- DBG-4 --><a href="DoubleDown.html">DoubleDown</a>, <!-- DBG-4 --><a href="GameStatus.html">GameStatus</a>, <!-- DBG-4 --><a href="HandStatus.html">HandStatus</a>, <!-- DBG-4 --><a href="HandStruct.html">HandStruct</a>, <!-- DBG-4 --><a href="SplitAces.html">SplitAces</a>, <!-- DBG-4 --><a href="VerboseType.html">VerboseType</a></h4>
+      (<span style="color: blue;">static</span>) <span style="color: blue;">double</span> BlackJackMultiplier( <!-- DBG-0 --><a href="BlackJackPays.html">BlackJackPays</a> bjPays, <span style="color: blue;">bool</span> WonAmount )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">short</span> CardValue( <span style="color: blue;">short</span> card, <span style="color: blue;">bool</span> AceHigh )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">string</span> Center( <span style="color: blue;">string</span> text )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> CheckForBlackJack( <!-- DBG-0 --><a href="HandStruct.html">HandStruct</a> hand )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">string</span> Color( <span style="color: blue;">string</span> text, <span style="color: blue;">int</span> color )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">string</span> Color( <span style="color: blue;">string</span> text, <span style="color: blue;">int</span> color, <span style="color: blue;">bool</span> usetag )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">string</span> DealerHitMessage()<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> DealerMustHit( <!-- DBG-0 --><a href="HandStruct.html">HandStruct</a> hand, <span style="color: blue;">bool</span> DealerHitsSoft17, <span style="color: blue;">out</span> <span style="color: blue;">string</span> message )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> DoBlackJackSound( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="CEOBlackJack.html">CEOBlackJack</a> ceobj )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> DoFireworks( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> DoLosingSound( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      (<span style="color: blue;">static</span>) <!-- DBG-0 --><a href="HandStruct.html">HandStruct</a> EvalHand( <!-- DBG-0 --><a href="HandStruct.html">HandStruct</a> hand )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">string</span> HelpText()<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> OkToDouble( <!-- DBG-0 --><a href="BJStruct.html">BJStruct</a> bj, <!-- DBG-0 --><a href="DoubleDown.html">DoubleDown</a> ddRule )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> Soft17( <!-- DBG-0 --><a href="HandStruct.html">HandStruct</a> hand )<br />
+      (<span style="color: blue;">static</span>) <!-- DBG-0 --><a href="BJStruct.html">BJStruct</a> Split( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> bet, <!-- DBG-0 --><a href="BJStruct.html">BJStruct</a> bj )<br />
+      (<span style="color: blue;">ctor</span>) CEOBlackJack()<br />
+      (<span style="color: blue;">ctor</span>) CEOBlackJack( <!-- DBG-0 --><a href="Serial.html">Serial</a> serial )<br />
+      <span style="color: blue;">bool</span> Active( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="BlackJackPays.html">BlackJackPays</a> BJMultiplier( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> BJSplitAPaysEven( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> BJSplitAces21( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> CardSounds( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">string</span> CasinoName( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="Casino.html">Casino</a> CasinoTheme( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> ContinuousShuffle( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> CreditATMIncrements( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> CreditATMLimit( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> CreditCashOutAt( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> CurrentBet( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> DealerCardsFaceUp( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> DealerDelay( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> DealerHitsSoft17( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> DealerTakesPush( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> DoubleAfterSplit( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="DoubleDown.html">DoubleDown</a> DoubleRule( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> ErrorCode( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> Escrow( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> HandlesOnMovement( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> HelpGump( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="Mobile.html">Mobile</a> InUseBy( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="BetValues.html">BetValues</a> MaxBet( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="BetValues.html">BetValues</a> MinBet( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">short</span> NumberOfDecks( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> OfferInsurance( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> OrigHue( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> PlayerCardsFaceUp( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> ResetStats( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> Resplits( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="Mobile.html">Mobile</a> SecurityCamMob( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="VerboseType.html">VerboseType</a> SecurityChatter( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="SplitAces.html">SplitAces</a> SplitAcesRule( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> TestMode( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">ulong</span> TotalCollected( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">long</span> TotalNetProfit( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">ulong</span> TotalPlays( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">ulong</span> TotalWon( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">float</span> WinningPercentage( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> Won( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> AcesX2( <!-- DBG-0 --><a href="BJStruct.html">BJStruct</a> bj )<br />
+      <span style="color: blue;">void</span> BlackJackOffline( <span style="color: blue;">int</span> error )<br />
+      <span style="color: blue;">bool</span> CashCheck( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <span style="color: blue;">out</span> <span style="color: blue;">int</span> checkamount )<br />
+      <span style="color: blue;">void</span> Credit( <span style="color: blue;">int</span> amount )<br />
+      <span style="color: blue;">void</span> Credit( <span style="color: blue;">int</span> amount, <span style="color: blue;">int</span> bet, <span style="color: blue;">int</span> won )<br />
+      <span style="color: blue;">void</span> DealerChecksCards( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">void</span> DealerHits( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">void</span> DealerStands( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">string</span> message )<br />
+      <span style="color: blue;">void</span> DealersTurn( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">void</span> Debit( <span style="color: blue;">int</span> amount )<br />
+      <span style="color: blue;">void</span> Debit( <span style="color: blue;">int</span> amount, <span style="color: blue;">bool</span> inEscrow )<br />
+      <span style="color: blue;">void</span> DecBet()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br />
+      <span style="color: blue;">void</span> DoCashOut( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">void</span> Double( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <!-- DBG-0 --><a href="BJStruct.html">BJStruct</a> Double( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> bet, <!-- DBG-0 --><a href="BJStruct.html">BJStruct</a> bj )<br />
+      <span style="color: blue;">bool</span> GetBet( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> amount )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> GetProperties( <!-- DBG-0 --><a href="ObjectPropertyList.html">ObjectPropertyList</a> list )<br />
+      <span style="color: blue;">void</span> Hit( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">bool</span> gump )<br />
+      <span style="color: blue;">void</span> IncBet()<br />
+      <span style="color: blue;">bool</span> OkToSplit( <!-- DBG-0 --><a href="BJStruct.html">BJStruct</a> bj )<br />
+      <span style="color: blue;">int</span> OnCredit()<br />
+      <span style="color: blue;">int</span> OnCredit( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> amount )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnDoubleClick( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnMovement( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="Point3D.html">Point3D</a> oldLocation )<br />
+      <span style="color: blue;">void</span> PlayBlackJack( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">void</span> PlayBlackJack( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> cost )<br />
+      <span style="color: blue;">void</span> ProcessInsurance( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> choice )<br />
+      <span style="color: blue;">void</span> RecordCollected( <span style="color: blue;">int</span> amount )<br />
+      <span style="color: blue;">void</span> RecordCollected( <span style="color: blue;">int</span> amount, <span style="color: blue;">bool</span> outEscrow )<br />
+      <span style="color: blue;">bool</span> RemovePlayer( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">void</span> SecurityCamera( <span style="color: blue;">int</span> chatter, <span style="color: blue;">string</span> text )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br />
+      <span style="color: blue;">void</span> Split( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">void</span> Stand( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">void</span> Stand( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">string</span> message )<br />
+   </body>
+</html>

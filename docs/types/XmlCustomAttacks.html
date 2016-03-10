@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - XmlCustomAttacks</title>
+      <style type="text/css">
+      body { background-color: white; font-family: Tahoma; color: #000000; }
+      a, a:visited { color: #000000; }
+      a:active, a:hover { color: #808080; }
+      </style>
+   </head>
+   <body>
+      <h4><a href="../namespaces/Server.Engines.XmlSpawner2.html">Back to Server.Engines.XmlSpawner2</a></h4>
+      <h2>XmlCustomAttacks : <!-- DBG-1 --><a href="XmlAttachment.html">XmlAttachment</a>, <!-- DBG-2.2 --><a href="IXmlAttachment.html">IXmlAttachment</a></h2>
+<h4>Nested Types: <!-- DBG-4 --><a href="ActiveCombo.html">ActiveCombo</a>, <!-- DBG-4 --><a href="ComboAttack.html">ComboAttack</a>, <!-- DBG-4 --><a href="ComboAttacks.html">ComboAttacks</a>, <!-- DBG-4 --><a href="ComboTimer.html">ComboTimer</a>, <!-- DBG-4 --><a href="CustomAttacksGump.html">CustomAttacksGump</a>, <!-- DBG-4 --><a href="CustomAttacksInfoGump.html">CustomAttacksInfoGump</a>, <!-- DBG-4 --><a href="IconTypes.html">IconTypes</a>, <!-- DBG-4 --><a href="SpecialAttack.html">SpecialAttack</a>, <!-- DBG-4 --><a href="SpecialAttacks.html">SpecialAttacks</a></h4>
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> AddAttack( <span style="color: blue;">object</span> target, <!-- DBG-0 --><a href="SpecialAttacks.html">SpecialAttacks</a> attack )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> AddComboAttack( <span style="color: blue;">string</span> name, <!-- DBG-0 --><a href="ComboAttacks.html">ComboAttacks</a> id, <!-- DBG-0 --><a href="SpecialAttacks.html">SpecialAttacks</a>[] sequence )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> AddSpecialAttack( <span style="color: blue;">string</span> name, <span style="color: blue;">string</span> description, <!-- DBG-0 --><a href="SpecialAttacks.html">SpecialAttacks</a> id, <span style="color: blue;">int</span> icon, TimeSpan duration, <span style="color: blue;">int</span> mana, <span style="color: blue;">int</span> stam, <span style="color: blue;">int</span> hits, <span style="color: blue;">int</span> karma, <span style="color: blue;">int</span> minstr, <span style="color: blue;">int</span> mindex, <span style="color: blue;">int</span> minint, <!-- DBG-0 --><a href="SkillName.html">SkillName</a>[] skills, <span style="color: blue;">int</span>[] minlevel, Type[] reagents, <span style="color: blue;">int</span>[] quantity )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> AddSpecialAttack( <span style="color: blue;">string</span> name, <span style="color: blue;">string</span> description, <!-- DBG-0 --><a href="SpecialAttacks.html">SpecialAttacks</a> id, <span style="color: blue;">int</span> icon, <!-- DBG-0 --><a href="IconTypes.html">IconTypes</a> itype, TimeSpan duration, <span style="color: blue;">int</span> mana, <span style="color: blue;">int</span> stam, <span style="color: blue;">int</span> hits, <span style="color: blue;">int</span> karma, <span style="color: blue;">int</span> minstr, <span style="color: blue;">int</span> mindex, <span style="color: blue;">int</span> minint, <!-- DBG-0 --><a href="SkillName.html">SkillName</a>[] skills, <span style="color: blue;">int</span>[] minlevel, Type[] reagents, <span style="color: blue;">int</span>[] quantity )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> CheckRequirements( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="SpecialAttack.html">SpecialAttack</a> s )<br />
+      (<span style="color: blue;">static</span>) <!-- DBG-0 --><a href="ComboAttack.html">ComboAttack</a> GetComboAttack( <!-- DBG-0 --><a href="ComboAttacks.html">ComboAttacks</a> id )<br />
+      (<span style="color: blue;">static</span>) <!-- DBG-0 --><a href="SpecialAttack.html">SpecialAttack</a> GetSpecialAttack( <!-- DBG-0 --><a href="SpecialAttacks.html">SpecialAttacks</a> id )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> Initialize()<br />
+      (<span style="color: blue;">ctor</span>) XmlCustomAttacks()<br />
+      (<span style="color: blue;">ctor</span>) XmlCustomAttacks( <!-- DBG-0 --><a href="ASerial.html">ASerial</a> serial )<br />
+      (<span style="color: blue;">ctor</span>) XmlCustomAttacks( <span style="color: blue;">string</span> name )<br />
+      (<span style="color: blue;">ctor</span>) XmlCustomAttacks( <!-- DBG-0 --><a href="SpecialAttacks.html">SpecialAttacks</a>[] attacklist )<br />
+      (<span style="color: blue;">ctor</span>) XmlCustomAttacks( <!-- DBG-0 --><a href="SpecialAttacks.html">SpecialAttacks</a> attack )<br />
+      (<span style="color: blue;">ctor</span>) XmlCustomAttacks( <span style="color: blue;">string</span> name, <span style="color: blue;">int</span> nspecials )<br />
+      <span style="color: blue;">bool</span> HasActiveCombos( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">void</span> AddSpecial( <!-- DBG-0 --><a href="SpecialAttacks.html">SpecialAttacks</a> id )<br />
+      <span style="color: blue;">void</span> CheckCombos( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> attacker, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> defender, <!-- DBG-0 --><a href="BaseWeapon.html">BaseWeapon</a> weapon, <span style="color: blue;">int</span> damageGiven, <!-- DBG-0 --><a href="SpecialAttack.html">SpecialAttack</a> s )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br />
+      <span style="color: blue;">void</span> DoComboAttack( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> attacker, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> defender, <!-- DBG-0 --><a href="BaseWeapon.html">BaseWeapon</a> weapon, <span style="color: blue;">int</span> damageGiven, <!-- DBG-0 --><a href="ComboAttack.html">ComboAttack</a> combo )<br />
+      <span style="color: blue;">void</span> DoComboTimer( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, TimeSpan delay )<br />
+      <span style="color: blue;">void</span> DoSpecialAttack( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> attacker, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> defender, <!-- DBG-0 --><a href="BaseWeapon.html">BaseWeapon</a> weapon, <span style="color: blue;">int</span> damageGiven, <!-- DBG-0 --><a href="SpecialAttack.html">SpecialAttack</a> special )<br />
+      <span style="color: blue;">void</span> FillComboList()<br />
+      <span style="color: blue;">void</span> FillSpecialsList()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnAttach()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnEquip( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">string</span> OnIdentify( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnRemoved( <span style="color: blue;">object</span> parent )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnWeaponHit( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> attacker, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> defender, <!-- DBG-0 --><a href="BaseWeapon.html">BaseWeapon</a> weapon, <span style="color: blue;">int</span> damageGiven )<br />
+      <span style="color: blue;">void</span> ResetCombos()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br />
+      <span style="color: blue;">void</span> SetRandomSpecials( <span style="color: blue;">int</span> count )<br />
+   </body>
+</html>

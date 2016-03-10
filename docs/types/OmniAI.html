@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - OmniAI</title>
+      <style type="text/css">
+      body { background-color: white; font-family: Tahoma; color: #000000; }
+      a, a:visited { color: #000000; }
+      a:active, a:hover { color: #808080; }
+      </style>
+   </head>
+   <body>
+      <h4><a href="../namespaces/Server.Mobiles.html">Back to Server.Mobiles</a></h4>
+      <h2>OmniAI : <!-- DBG-1 --><a href="BaseAI.html">BaseAI</a></h2>
+<h4>Nested Types: <!-- DBG-4 --><a href="DiscordEffectTimer.html">DiscordEffectTimer</a></h4>
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> CanTarget( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> to )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> CanTarget( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> to, <span style="color: blue;">bool</span> harm )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> CanTarget( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> to, <span style="color: blue;">bool</span> harm, <span style="color: blue;">bool</span> checkguildparty, <span style="color: blue;">bool</span> allownull )<br />
+      (<span style="color: blue;">static</span>) <!-- DBG-0 --><a href="Mobile.html">Mobile</a> FindRandomTarget( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      (<span style="color: blue;">static</span>) <!-- DBG-0 --><a href="Mobile.html">Mobile</a> FindRandomTarget( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">bool</span> allowcombatant )<br />
+      (<span style="color: blue;">static</span>) <!-- DBG-0 --><a href="Guild.html">Guild</a> GetGuild( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      (<span style="color: blue;">static</span>) <!-- DBG-0 --><a href="Party.html">Party</a> GetParty( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> IsFieldSpell( <span style="color: blue;">int</span> ID )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> IsGoodGuy( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      (<span style="color: blue;">ctor</span>) OmniAI( <!-- DBG-0 --><a href="BaseCreature.html">BaseCreature</a> m )<br />
+      <span style="color: blue;">bool</span> m_CanShapeShift( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> m_CanStun( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> m_CanUseBard( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> m_CanUseBushido( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> m_CanUseChivalry( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> m_CanUseMagery( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> m_CanUseMagerySummon( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> m_CanUseMystic( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> m_CanUseNecromancy( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> m_CanUseNinjitsu( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> m_CanUseSpellweaving( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> m_ForceMelee( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> m_IsSmart( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> m_Melees( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> m_SwapWeapons( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">void</span> BardPower()<br />
+      <span style="color: blue;">void</span> BushidoPower()<br />
+      <span style="color: blue;">void</span> CheckArmed( <span style="color: blue;">bool</span> swap )<br />
+      <!-- DBG-0 --><a href="Spell.html">Spell</a> CheckBless()<br />
+      <!-- DBG-0 --><a href="Spell.html">Spell</a> CheckCurse()<br />
+      <span style="color: blue;">void</span> CheckFocus()<br />
+      <span style="color: blue;">bool</span> CheckForAttuneWeapon()<br />
+      <span style="color: blue;">bool</span> CheckForConsecrateWeapon()<br />
+      <!-- DBG-0 --><a href="Spell.html">Spell</a> CheckForCurseWeapon()<br />
+      <span style="color: blue;">bool</span> CheckForDispelEvil()<br />
+      <span style="color: blue;">void</span> CheckForFieldSpells()<br />
+      <span style="color: blue;">bool</span> CheckForGiftOfRenewal()<br />
+      <span style="color: blue;">bool</span> CheckForRemoveCurse()<br />
+      <span style="color: blue;">bool</span> CheckForSleep( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      <!-- DBG-0 --><a href="Spell.html">Spell</a> CheckForVengefulSpiritSpell()<br />
+      <span style="color: blue;">bool</span> CheckInstrument()<br />
+      <!-- DBG-0 --><a href="Spell.html">Spell</a> CheckMagerySummon()<br />
+      <span style="color: blue;">double</span> CheckManaDrain()<br />
+      <span style="color: blue;">void</span> ChivalryPower()<br />
+      <span style="color: blue;">void</span> CreateNecromancerFamiliar()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> DoActionCombat()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> DoActionFlee()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> DoActionGuard()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> DoActionWander()<br />
+      <span style="color: blue;">void</span> ForceTarget()<br />
+      <span style="color: blue;">void</span> GetHiddenNinjaMove()<br />
+      <!-- DBG-0 --><a href="Spell.html">Spell</a> GetMagerySpell()<br />
+      <!-- DBG-0 --><a href="Spell.html">Spell</a> GetMysticSpell()<br />
+      <!-- DBG-0 --><a href="Spell.html">Spell</a> GetNecromancerCurseSpell()<br />
+      <!-- DBG-0 --><a href="Spell.html">Spell</a> GetNecromancerDamageSpell()<br />
+      <!-- DBG-0 --><a href="Spell.html">Spell</a> GetNecromancerShapeshiftSpell()<br />
+      <!-- DBG-0 --><a href="Spell.html">Spell</a> GetNecromancerSpell()<br />
+      <span style="color: blue;">void</span> GetNinjaMove()<br />
+      <!-- DBG-0 --><a href="Spell.html">Spell</a> GetPaladinSpell()<br />
+      <!-- DBG-0 --><a href="Spell.html">Spell</a> GetRandomMageryDamageSpell()<br />
+      <!-- DBG-0 --><a href="Spell.html">Spell</a> GetSpellweavingSummon()<br />
+      <span style="color: blue;">void</span> MageryPower()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> MoveTo( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <span style="color: blue;">bool</span> run, <span style="color: blue;">int</span> range )<br />
+      <span style="color: blue;">void</span> MysticPower()<br />
+      <span style="color: blue;">void</span> NecromancerPower()<br />
+      <span style="color: blue;">void</span> NinjitsuPower()<br />
+      <span style="color: blue;">bool</span> ProcessTarget()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> ShurikenDamage()<br />
+      <span style="color: blue;">void</span> SpellweavingPower()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> Think()<br />
+      <span style="color: blue;">bool</span> TryToHeal()<br />
+      <span style="color: blue;">void</span> UseBushidoMove()<br />
+      <span style="color: blue;">void</span> UseBushidoStance()<br />
+      <span style="color: blue;">void</span> UseDiscord()<br />
+      <span style="color: blue;">void</span> UsePeacemaking()<br />
+      <span style="color: blue;">bool</span> UseProvocation()<br />
+      <span style="color: blue;">void</span> UseWeaponStrike()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">bool</span> WalkMobileRange( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <span style="color: blue;">int</span> iSteps, <span style="color: blue;">bool</span> bRun, <span style="color: blue;">int</span> iWantDistMin, <span style="color: blue;">int</span> iWantDistMax )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> WalkRandom( <span style="color: blue;">int</span> iChanceToNotMove, <span style="color: blue;">int</span> iChanceToDir, <span style="color: blue;">int</span> iSteps )<br />
+   </body>
+</html>

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - XmlPoints</title>
+      <style type="text/css">
+      body { background-color: white; font-family: Tahoma; color: #000000; }
+      a, a:visited { color: #000000; }
+      a:active, a:hover { color: #808080; }
+      </style>
+   </head>
+   <body>
+      <h4><a href="../namespaces/Server.Engines.XmlSpawner2.html">Back to Server.Engines.XmlSpawner2</a></h4>
+      <h2>XmlPoints : <!-- DBG-1 --><a href="XmlAttachment.html">XmlAttachment</a>, <!-- DBG-2.2 --><a href="IXmlAttachment.html">IXmlAttachment</a></h2>
+<h4>Nested Types: <!-- DBG-4 --><a href="CancelTimer.html">CancelTimer</a>, <!-- DBG-4 --><a href="ChallengeTarget.html">ChallengeTarget</a>, <!-- DBG-4 --><a href="ConfirmChallengeGump.html">ConfirmChallengeGump</a>, <!-- DBG-4 --><a href="DuelLocationEntry.html">DuelLocationEntry</a>, <!-- DBG-4 --><a href="IssueChallengeGump.html">IssueChallengeGump</a>, <!-- DBG-4 --><a href="KillEntry.html">KillEntry</a>, <!-- DBG-4 --><a href="LanguageType.html">LanguageType</a>, <!-- DBG-4 --><a href="LeaderboardTimer.html">LeaderboardTimer</a>, <!-- DBG-4 --><a href="PointsGump.html">PointsGump</a>, <!-- DBG-4 --><a href="RankEntry.html">RankEntry</a>, <!-- DBG-4 --><a href="TopPlayersGump.html">TopPlayersGump</a></h4>
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> AddAllPoints_OnCommand( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> AddText( <!-- DBG-0 --><a href="LanguageType.html">LanguageType</a> t, <span style="color: blue;">int</span> index, <span style="color: blue;">string</span> text )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> AllowChallengeGump( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> target )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> AreChallengers( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> target )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> AreInAnyGame( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> target )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> AreInSameGame( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> target )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> AreTeamMembers( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> target )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> AutoRes_Callback( <span style="color: blue;">object</span> state )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> BroadcastKills_OnCommand( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> BroadcastMessage( <!-- DBG-0 --><a href="AccessLevel.html">AccessLevel</a> ac, <span style="color: blue;">int</span> hue, <span style="color: blue;">string</span> message )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> CTFChallenge_OnCommand( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> Challenge_OnCommand( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> CheckCombat( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> CheckPoints_OnCommand( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> DeathBall_OnCommand( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> Deathmatch_OnCommand( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> DuelLocationAvailable( <!-- DBG-0 --><a href="DuelLocationEntry.html">DuelLocationEntry</a> duelloc )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> EventSink_Speech( <!-- DBG-0 --><a href="SpeechEventArgs.html">SpeechEventArgs</a> args )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> GetCredits( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> GetPoints( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> GetRanking( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">string</span> GetText( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> msgindex )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> HasCredits( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <span style="color: blue;">int</span> credits )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">string</span> HtmlSpecialEncoding( <span style="color: blue;">string</span> text )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> Initialize()<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> InsuranceIsFree( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> awardto )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> KingOfTheHill_OnCommand( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> LBSDeserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> LBSSerialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> LMSChallenge_OnCommand( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> Language_OnCommand( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> LeaderboardSave_OnCommand( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> RefreshRankList()<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> RemoveAllPoints_OnCommand( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> Return_Callback( <span style="color: blue;">object</span> state )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> SameGuild( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> killed, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> killer )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> SeeKills_OnCommand( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> SendColorText( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> color, <span style="color: blue;">int</span> msgindex )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> SendColorText( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> color, <span style="color: blue;">int</span> msgindex, <span style="color: blue;">object</span> arg )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> SendColorText( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> color, <span style="color: blue;">int</span> msgindex, <span style="color: blue;">object</span> arg, <span style="color: blue;">object</span> arg2 )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> SendText( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> msgindex )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> SendText( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> msgindex, <span style="color: blue;">object</span> arg )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> SendText( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> msgindex, <span style="color: blue;">object</span> arg, <span style="color: blue;">object</span> arg2 )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> ShowPointsOverhead( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> SystemBroadcastKills_OnCommand( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">string</span> SystemText( <span style="color: blue;">int</span> index )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> TakeCredits( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <span style="color: blue;">int</span> credits )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> TeamDeathBall_OnCommand( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> TeamDeathmatch_OnCommand( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> TeamKotH_OnCommand( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> TeamLMSChallenge_OnCommand( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> TopPlayers_OnCommand( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> UpdateRanking( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="XmlPoints.html">XmlPoints</a> attachment )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> WriteLeaderboard( <span style="color: blue;">string</span> filename, <span style="color: blue;">int</span> nranks )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> WriteLeaderboardHtml( <span style="color: blue;">string</span> filename, <span style="color: blue;">int</span> nranks )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> WriteLeaderboardXml( <span style="color: blue;">string</span> filename, <span style="color: blue;">int</span> nranks )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> YoungProtection( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> target )<br />
+      (<span style="color: blue;">ctor</span>) XmlPoints()<br />
+      (<span style="color: blue;">ctor</span>) XmlPoints( <!-- DBG-0 --><a href="ASerial.html">ASerial</a> serial )<br />
+      <span style="color: blue;">bool</span> Broadcast( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="BaseChallengeGame.html">BaseChallengeGame</a> ChallengeGame( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="BaseChallengeGame.html">BaseChallengeGame</a> ChallengeSetup( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="Mobile.html">Mobile</a> Challenger( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> Credits( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="LanguageType.html">LanguageType</a> CurrentLanguage( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> Deaths( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> DeltaRank( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> HandlesOnKill( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> HandlesOnKilled( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> HasChallenge( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> Kills( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      DateTime LastDeath( <span style="color: blue;">get</span>; )<br />
+      DateTime LastKill( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> Points( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> Rank( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> ReceiveBroadcasts( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      DateTime WhenRanked( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> CanAffectPoints( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> killer, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> killed, <span style="color: blue;">bool</span> assumechallenge )<br />
+      <span style="color: blue;">void</span> ClearAggression( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> source, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> target )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br />
+      <span style="color: blue;">void</span> DoTimer( TimeSpan delay )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnAttach()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">string</span> OnIdentify( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnKill( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> killed, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> killer )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnKilled( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> killed, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> killer )<br />
+      <span style="color: blue;">void</span> RefreshKillList()<br />
+      <span style="color: blue;">void</span> ReportPointLoss_Callback( <span style="color: blue;">object</span> state )<br />
+      <span style="color: blue;">void</span> SendColorText( <span style="color: blue;">int</span> color, <span style="color: blue;">int</span> msgindex )<br />
+      <span style="color: blue;">void</span> SendColorText( <span style="color: blue;">int</span> color, <span style="color: blue;">int</span> msgindex, <span style="color: blue;">object</span> arg )<br />
+      <span style="color: blue;">void</span> SendColorText( <span style="color: blue;">int</span> color, <span style="color: blue;">int</span> msgindex, <span style="color: blue;">object</span> arg, <span style="color: blue;">object</span> arg2 )<br />
+      <span style="color: blue;">void</span> SendText( <span style="color: blue;">int</span> msgindex )<br />
+      <span style="color: blue;">void</span> SendText( <span style="color: blue;">int</span> msgindex, <span style="color: blue;">object</span> arg )<br />
+      <span style="color: blue;">void</span> SendText( <span style="color: blue;">int</span> msgindex, <span style="color: blue;">object</span> arg, <span style="color: blue;">object</span> arg2 )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br />
+      <span style="color: blue;">string</span> Text( <span style="color: blue;">int</span> index )<br />
+   </body>
+</html>

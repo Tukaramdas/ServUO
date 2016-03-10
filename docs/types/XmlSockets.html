@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - XmlSockets</title>
+      <style type="text/css">
+      body { background-color: white; font-family: Tahoma; color: #000000; }
+      a, a:visited { color: #000000; }
+      a:active, a:hover { color: #808080; }
+      </style>
+   </head>
+   <body>
+      <h4><a href="../namespaces/Server.Engines.XmlSpawner2.html">Back to Server.Engines.XmlSpawner2</a></h4>
+      <h2>XmlSockets : <!-- DBG-1 --><a href="XmlAttachment.html">XmlAttachment</a>, <!-- DBG-2.2 --><a href="IXmlAttachment.html">IXmlAttachment</a></h2>
+<h4>Nested Types: <!-- DBG-4 --><a href="AddAugmentationToSocket.html">AddAugmentationToSocket</a>, <!-- DBG-4 --><a href="AddSocketToTarget.html">AddSocketToTarget</a>, <!-- DBG-4 --><a href="LimitSocketsCommand.html">LimitSocketsCommand</a>, <!-- DBG-4 --><a href="RecoverAugmentationFromTarget.html">RecoverAugmentationFromTarget</a>, <!-- DBG-4 --><a href="SocketOccupant.html">SocketOccupant</a>, <!-- DBG-4 --><a href="SocketsGump.html">SocketsGump</a>, <!-- DBG-4 --><a href="UpgradeAugmentCommand.html">UpgradeAugmentCommand</a></h4>
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> AddSocket( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">object</span> target, <span style="color: blue;">int</span> maxSockets, <span style="color: blue;">double</span> difficulty, <!-- DBG-0 --><a href="SkillName.html">SkillName</a> requiredSkill, Type resource, <span style="color: blue;">int</span> quantity )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> AddSocket( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">object</span> target, <span style="color: blue;">int</span> maxSockets, <span style="color: blue;">double</span> difficulty, <!-- DBG-0 --><a href="SkillName.html">SkillName</a> requiredSkill, <span style="color: blue;">double</span> difficulty2, <!-- DBG-0 --><a href="SkillName.html">SkillName</a> requiredSkill2, Type resource, <span style="color: blue;">int</span> quantity )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> AddSocket_OnCommand( <!-- DBG-0 --><a href="CommandEventArgs.html">CommandEventArgs</a> e )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> Augment( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">object</span> parent, <!-- DBG-0 --><a href="XmlSockets.html">XmlSockets</a> sock, <span style="color: blue;">int</span> socketnum, <!-- DBG-0 --><a href="IXmlSocketAugmentation.html">IXmlSocketAugmentation</a> a )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> ComputeSuccessChance( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> nsockets, <span style="color: blue;">double</span> difficulty, <!-- DBG-0 --><a href="SkillName.html">SkillName</a> requiredSkill )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">int</span> ComputeSuccessChance( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> nsockets, <span style="color: blue;">double</span> difficulty, <!-- DBG-0 --><a href="SkillName.html">SkillName</a> requiredSkill, <span style="color: blue;">double</span> difficulty2, <!-- DBG-0 --><a href="SkillName.html">SkillName</a> requiredSkill2 )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> ConfigureRandom( <span style="color: blue;">object</span> target, <span style="color: blue;">double</span> dropchance, <span style="color: blue;">double</span> chance5, <span style="color: blue;">double</span> chance4, <span style="color: blue;">double</span> chance3, <span style="color: blue;">double</span> chance2, <span style="color: blue;">double</span> chance1 )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> ConfigureRandom( <span style="color: blue;">object</span> target, <span style="color: blue;">double</span> dropchance, <span style="color: blue;">double</span> chance5, <span style="color: blue;">double</span> chance4, <span style="color: blue;">double</span> chance3, <span style="color: blue;">double</span> chance2, <span style="color: blue;">double</span> chance1, <!-- DBG-0 --><a href="SkillName.html">SkillName</a> skillname, <span style="color: blue;">double</span> minskill, Type resource, <span style="color: blue;">int</span> quantity )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> ConfigureRandom( <span style="color: blue;">object</span> target, <span style="color: blue;">double</span> dropchance, <span style="color: blue;">double</span> chance5, <span style="color: blue;">double</span> chance4, <span style="color: blue;">double</span> chance3, <span style="color: blue;">double</span> chance2, <span style="color: blue;">double</span> chance1, <!-- DBG-0 --><a href="SkillName.html">SkillName</a> skillname, <span style="color: blue;">double</span> minskill, <!-- DBG-0 --><a href="SkillName.html">SkillName</a> skillname2, <span style="color: blue;">double</span> minskill2, Type resource, <span style="color: blue;">int</span> quantity )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> Initialize()<br />
+      (<span style="color: blue;">ctor</span>) XmlSockets( <span style="color: blue;">int</span> nsockets )<br />
+      (<span style="color: blue;">ctor</span>) XmlSockets( <!-- DBG-0 --><a href="ASerial.html">ASerial</a> serial )<br />
+      (<span style="color: blue;">ctor</span>) XmlSockets( <span style="color: blue;">int</span> nsockets, <span style="color: blue;">bool</span> mustaugmentinpack )<br />
+      <span style="color: blue;">bool</span> MustAugmentInPack( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> NFree( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> NSockets( <span style="color: blue;">get</span>; )<br />
+      ArrayList SocketOccupants( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnAttach()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">string</span> OnIdentify( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      <!-- DBG-0 --><a href="BaseSocketAugmentation.html">BaseSocketAugmentation</a> RecoverAugmentation( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">object</span> o, <span style="color: blue;">int</span> index )<br />
+      <!-- DBG-0 --><a href="BaseSocketAugmentation.html">BaseSocketAugmentation</a> RecoverRandomAugmentation( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">object</span> o )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br />
+   </body>
+</html>

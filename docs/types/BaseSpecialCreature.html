@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - BaseSpecialCreature</title>
+      <style type="text/css">
+      body { background-color: white; font-family: Tahoma; color: #000000; }
+      a, a:visited { color: #000000; }
+      a:active, a:hover { color: #808080; }
+      </style>
+   </head>
+   <body>
+      <h4><a href="../namespaces/Server.Mobiles.html">Back to Server.Mobiles</a></h4>
+      <h2>BaseSpecialCreature : <!-- DBG-1 --><a href="BaseCreature.html">BaseCreature</a>, <!-- DBG-2.2 --><a href="IHued.html">IHued</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="Mobile.html">Mobile</a>&gt;, <!-- DBG-2.2 --><a href="ISerializable.html">ISerializable</a>, <!-- DBG-2.2 --><a href="ISpawnable.html">ISpawnable</a>, <!-- DBG-2.2 --><a href="IEntity.html">IEntity</a>, <!-- DBG-2.2 --><a href="IPoint3D.html">IPoint3D</a>, <!-- DBG-2.2 --><a href="IPoint2D.html">IPoint2D</a>, <!-- DBG-2.1 --><a href="IComparable.html">IComparable</a>, <!-- DBG-2.1 --><a href="IComparable-T-.html">IComparable</a>&lt;<a href="IEntity.html">IEntity</a>&gt;, <!-- DBG-2.2 --><a href="IHonorTarget.html">IHonorTarget</a></h2>
+<h4>Derived Types: <!-- DBG-3 --><a href="BaseAssembly.html">BaseAssembly</a>, <!-- DBG-3 --><a href="BaseSubChampion.html">BaseSubChampion</a>, <!-- DBG-3 --><a href="BlackthornClone.html">BlackthornClone</a></h4>
+<h4>Nested Types: <!-- DBG-4 --><a href="InternalBleedTimer.html">InternalBleedTimer</a>, <!-- DBG-4 --><a href="TeleportTimer.html">TeleportTimer</a></h4>
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> BeginBleed( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> DoBleed( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="Mobile.html">Mobile</a> from, <span style="color: blue;">int</span> level )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">void</span> EndBleed( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <span style="color: blue;">bool</span> message )<br />
+      (<span style="color: blue;">static</span>) <span style="color: blue;">bool</span> IsBleeding( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m )<br />
+      (<span style="color: blue;">ctor</span>) BaseSpecialCreature( <!-- DBG-0 --><a href="Serial.html">Serial</a> serial )<br />
+      (<span style="color: blue;">ctor</span>) BaseSpecialCreature( <!-- DBG-0 --><a href="AIType.html">AIType</a> ai, <!-- DBG-0 --><a href="FightMode.html">FightMode</a> mode, <span style="color: blue;">int</span> iRangePerception, <span style="color: blue;">int</span> iRangeFight, <span style="color: blue;">double</span> dActiveSpeed, <span style="color: blue;">double</span> dPassiveSpeed )<br />
+      <span style="color: blue;">int</span> BreathDamagePercent( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> BreathMaxRange( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> BreathMaxTargets( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> DoesEarthquaking( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> DoesLifeDraining( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> DoesMultiFirebreathing( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> DoesNoxStriking( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> DoesSummoning( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> DoesTeleporting( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> DoesTripleBolting( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">double</span> EarthquakingChance( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> HasBreath( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">double</span> LifeDrainingChance( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">bool</span> MF_AirAreaAttack( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> MF_AntiArchery( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> MF_AntiEscape( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> MF_Bomber( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> MF_Displacer( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> MF_DrainHits( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> MF_DrainMana( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> MF_DrainStam( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> MF_FireAreaAttack( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> MF_HumanRevealer( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> MF_MassPeace( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> MF_MassProvoke( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> MF_RobotRevealer( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> MF_TakesDrugs( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> MF_WaterAreaAttack( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">double</span> MultiFirebreathingChance( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">double</span> NoxStrikingChance( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">double</span> SummoningChance( <span style="color: blue;">get</span>; )<br />
+      TimeSpan SummoningDelay( <span style="color: blue;">get</span>; )<br />
+      TimeSpan SummoningDuration( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">double</span> SummoningLowChance( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> SummoningMax( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> SummoningMin( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> SummoningSound( <span style="color: blue;">get</span>; )<br />
+      Type SummoningType( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">double</span> TeleportingChance( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">double</span> TripleBoltingChance( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Bolt_Callback( <span style="color: blue;">object</span> state )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">int</span> BreathComputeDamage()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> BreathStart( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> target )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Deserialize( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> DrainLife()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Earthquake()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> NoxStrike( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> attacker )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnActionCombat()<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnDamagedBySpell( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> attacker )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnGaveMeleeAttack( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> defender )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnGotMeleeAttack( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> attacker )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> OnMovement( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> m, <!-- DBG-0 --><a href="Point3D.html">Point3D</a> oldLocation )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">int</span> SummonMinions( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> victim )<br />
+      <span style="color: blue;">virtual</span> <span style="color: blue;">void</span> TripleBolt( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> to )<br />
+   </body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>RunUO Documentation - Class Overview - Tournament</title>
+      <style type="text/css">
+      body { background-color: white; font-family: Tahoma; color: #000000; }
+      a, a:visited { color: #000000; }
+      a:active, a:hover { color: #808080; }
+      </style>
+   </head>
+   <body>
+      <h4><a href="../namespaces/Server.Engines.ConPVP.html">Back to Server.Engines.ConPVP</a></h4>
+      <h2>Tournament</h2>
+      (<span style="color: blue;">ctor</span>) Tournament()<br />
+      (<span style="color: blue;">ctor</span>) Tournament( <!-- DBG-0 --><a href="GenericReader.html">GenericReader</a> reader )<br />
+      ArrayList Arenas( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="TournamentStage.html">TournamentStage</a> CurrentStage( <span style="color: blue;">get</span>; )<br />
+      <!-- DBG-0 --><a href="EventController.html">EventController</a> EventController( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="GroupingType.html">GroupingType</a> GroupType( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">bool</span> IsNotoRestricted( <span style="color: blue;">get</span>; )<br />
+      <span style="color: blue;">int</span> LevelRequirement( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      ArrayList Participants( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> ParticipantsPerMatch( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> PlayersPerParticipant( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="TournyPyramid.html">TournyPyramid</a> Pyramid( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="Ruleset.html">Ruleset</a> Ruleset( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      TimeSpan SignupPeriod( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      DateTime SignupStart( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="TournamentStage.html">TournamentStage</a> Stage( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      TimeSpan SuddenDeath( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">int</span> SuddenDeathRounds( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="TieType.html">TieType</a> TieType( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <!-- DBG-0 --><a href="TournyType.html">TournyType</a> TournyType( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      ArrayList Undefeated( <span style="color: blue;">get</span>; <span style="color: blue;">set</span>; )<br />
+      <span style="color: blue;">void</span> Alert( <span style="color: blue;">string</span>[] alerts )<br />
+      <span style="color: blue;">void</span> Alert( <!-- DBG-0 --><a href="Arena.html">Arena</a> arena, <span style="color: blue;">string</span>[] alerts )<br />
+      <span style="color: blue;">void</span> Alert_Callback( <span style="color: blue;">object</span> state )<br />
+      <span style="color: blue;">int</span> ComputeCashAward()<br />
+      <span style="color: blue;">void</span> GiveAwards()<br />
+      <span style="color: blue;">void</span> GiveAwards( ArrayList players, <!-- DBG-0 --><a href="TrophyRank.html">TrophyRank</a> rank, <span style="color: blue;">int</span> cash )<br />
+      <span style="color: blue;">void</span> HandleTie( <!-- DBG-0 --><a href="Arena.html">Arena</a> arena, <!-- DBG-0 --><a href="TournyMatch.html">TournyMatch</a> match, ArrayList remaining )<br />
+      <span style="color: blue;">void</span> HandleWon( <!-- DBG-0 --><a href="Arena.html">Arena</a> arena, <!-- DBG-0 --><a href="TournyMatch.html">TournyMatch</a> match, <!-- DBG-0 --><a href="TournyParticipant.html">TournyParticipant</a> winner )<br />
+      <span style="color: blue;">bool</span> HasParticipant( <!-- DBG-0 --><a href="Mobile.html">Mobile</a> mob )<br />
+      <span style="color: blue;">void</span> OnEliminated( <!-- DBG-0 --><a href="DuelPlayer.html">DuelPlayer</a> player )<br />
+      <span style="color: blue;">void</span> Serialize( <!-- DBG-0 --><a href="GenericWriter.html">GenericWriter</a> writer )<br />
+      <span style="color: blue;">void</span> Slice()<br />
+   </body>
+</html>

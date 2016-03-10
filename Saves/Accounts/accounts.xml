@@ -6,8 +6,8 @@
 		<accessLevel>Owner</accessLevel>
 		<flags>2</flags>
 		<created>2016-02-07T04:41:48.392201Z</created>
-		<lastLogin>2016-03-03T11:51:07.3185393Z</lastLogin>
-		<totalGameTime>P2DT1H39M23.3747564S</totalGameTime>
+		<lastLogin>2016-03-09T13:30:09.2124176Z</lastLogin>
+		<totalGameTime>P2DT6H11M48.3966132S</totalGameTime>
 		<chars>
 			<char index="0">1</char>
 			<char index="1">3279</char>
@@ -37,6 +37,7 @@
 			<tag name="UnchargedEnchantedShovelRecieved">true</tag>
 			<tag name="DiamondHoopEarringsRecieved">true</tag>
 			<tag name="numRewardsChosen">1</tag>
+			<tag name="AutoDefend">Enabled</tag>
 		</tags>
 		<addressList count="1">
 			<ip>127.0.0.1</ip>
