@@ -43,7 +43,7 @@ namespace Server.Items
 
             if (IsChildOf(from.Backpack) || from.InRange(this, 2) && from.CanSee(this))
             {
-               /* switch (Utility.Random(8))
+                switch (Utility.Random(8))
                 {
                     default:
                     case 0: from.SendMessage("IT IS CERTAIN"); break;
@@ -55,8 +55,8 @@ namespace Server.Items
                     case 6: from.SendMessage("DON'T COUNT ON IT"); break;
                     case 7: from.SendMessage("YES"); break;
                 }
-                */
-                this.PublicOverheadMessage(MessageType.Regular, 0x3B2, 1007000 + Utility.Random(28)); 
+                
+               // this.PublicOverheadMessage(MessageType.Regular, 0x3B2, 1007000 + Utility.Random(28)); 
             }
             else
             {

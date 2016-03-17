@@ -324,10 +324,22 @@ namespace Server.Items.Crops
                     from.SendMessage("You remove fish from the net and put it in your pack.");
                     this.Delete(); break;
                 case 2:
-                    from.AddToBackpack(new Fish());
-                    from.AddToBackpack(new MessageInABottle());
-                    from.SendMessage("You remove fish from the net and put it in your pack.");
-                    this.Delete(); break;
+                   switch (Utility.Random(3))
+                    {
+                        case 0: from.AddToBackpack(new EmptyFishingNet());
+                            from.SendMessage("There is nothing left in the net to remove.");
+                            this.Delete(); break;
+                        case 1: from.AddToBackpack(new MessageInABottle());
+                            from.SendMessage("You remove an MIB from the net and put it in your pack.");
+                            this.Delete(); break;
+                        case 2:
+                            from.AddToBackpack(new EmptyFishingNet());
+                            from.AddToBackpack(new Fish(Utility.Random(1, 2)));
+                            from.SendMessage("You remove fish from the net and put it in your pack.");
+                            this.Delete(); break;
+                    }
+                    break;
+               
                 case 3:
                     from.AddToBackpack(new EmptyFishingNet());
                     from.AddToBackpack(new Fish(Utility.Random(1, 2)));
@@ -348,13 +360,38 @@ namespace Server.Items.Crops
                     from.SendMessage("You remove fish from the net and put it in your pack.");
                     this.Delete(); break;
                 case 6:
-                    from.AddToBackpack(new SmallPondAddonDeed());
-                    from.SendMessage("You remove fish from the net and put it in your pack.");
-                    this.Delete(); break;
+                  switch (Utility.Random(3))
+                    {
+                        case 0: from.AddToBackpack(new EmptyFishingNet());
+                            from.SendMessage("There is nothing left in the net to remove.");
+                            this.Delete(); break;
+                        case 1: from.AddToBackpack(new SmallPondAddonDeed());
+                            from.SendMessage("You remove Pond Deed from the net and put it in your pack.");
+                            this.Delete(); break;
+                        case 2:
+                            from.AddToBackpack(new EmptyFishingNet());
+                            from.AddToBackpack(new Fish(Utility.Random(1, 2)));
+                            from.SendMessage("You remove fish from the net and put it in your pack.");
+                            this.Delete(); break;
+                    }
+                    break;
+                  
                 case 7:
-                    from.AddToBackpack(new FishingBoots());
-                    from.SendMessage("You remove fish from the net and put it in your pack.");
-                    this.Delete(); break;
+                    switch (Utility.Random(3))
+                    {
+                        case 0: from.AddToBackpack(new EmptyFishingNet());
+                            from.SendMessage("There is nothing left in the net to remove.");
+                            this.Delete(); break;
+                        case 1:  from.AddToBackpack(new FishingBoots());
+                            from.SendMessage("You remove Boots from the net and put it in your pack.");
+                            this.Delete(); break;
+                        case 2:
+                            from.AddToBackpack(new EmptyFishingNet());
+                            from.AddToBackpack(new Fish(Utility.Random(1, 2)));
+                            from.SendMessage("You remove fish from the net and put it in your pack.");
+                            this.Delete(); break;
+                    }
+                    break; 
                 case 8:
                     from.AddToBackpack(new EmptyFishingNet());
                     from.AddToBackpack(new Fish(Utility.Random(1, 2)));
@@ -398,11 +435,24 @@ namespace Server.Items.Crops
                     from.SendMessage("You remove fish from the net and put it in your pack.");
                     this.Delete(); break;
                 case 15:
-                    from.AddToBackpack(new EmptyFishingNet());
-                    from.AddToBackpack(new Fish(Utility.Random(1, 2)));
-                    from.AddToBackpack(new CaptainBlackheartsFishingPole());
-                    from.SendMessage("You remove fish from the net and put it in your pack.");
-                    this.Delete(); break;
+                  switch (Utility.Random(3))
+                    {
+                        case 0: from.AddToBackpack(new EmptyFishingNet());
+                            from.SendMessage("There is nothing left in the net to remove.");
+                            this.Delete(); break;
+                        case 1: from.AddToBackpack(new EmptyFishingNet());
+                            from.AddToBackpack(new Fish(Utility.Random(1, 2)));
+                            from.AddToBackpack(new CaptainBlackheartsFishingPole());
+                            from.SendMessage("You remove fish, and Fishing Pole from the net and put it in your pack.");
+                            this.Delete(); break;
+                        case 2:
+                            from.AddToBackpack(new EmptyFishingNet());
+                            from.AddToBackpack(new Fish(Utility.Random(1, 2)));
+                            from.SendMessage("You remove fish from the net and put it in your pack.");
+                            this.Delete(); break;
+                    }
+                    break;
+                   
                 case 16:
                     from.AddToBackpack(new EmptyFishingNet());
                     from.AddToBackpack(new Fish(Utility.Random(1, 2)));
