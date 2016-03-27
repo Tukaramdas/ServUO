@@ -42,7 +42,7 @@ namespace Server.Gumps
 //----------------------/----------------------------------------------/
 "<BASEFONT COLOR=YELLOW><I>James looks to you with a gleam in his eye</I><BR><BR>Hi there stranger!<BR><BR>" +
 "<BASEFONT COLOR=YELLOW>You know, worms are the best bait. Get an old fisherman some worms, would ye?<BR><BR>" +
-"<BASEFONT COLOR=YELLOW>I hear you can get worms from decaying corpses over at the cemetery in Britain.<BR><BR><I>James hands you an empty jar</I><BR><BR>If you get me enough fertile dirt and worms to fill this jar, you can have my old fishing pole." +
+"<BASEFONT COLOR=YELLOW>I hear you can get worms from decaying corpses over at the cemetery in Britain.<BR><BR><I>James hands you an empty jar</I><BR><BR>If you get me 10 each fertile dirt and worms to fill this jar, you can have my old fishing pole." +
 "<BASEFONT COLOR=YELLOW> I wouldn't need this old thing if I had some bait.<BR><BR>You will have to go find the dirt, I think earth elementals will give you some if you ask kindly, hehe. If not just killem' and take it!" +
  
                                               "</BODY>", false, true);

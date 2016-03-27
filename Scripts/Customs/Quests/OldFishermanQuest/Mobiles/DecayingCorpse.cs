@@ -45,7 +45,7 @@ namespace Server.Mobiles
 			PackItem( new Garlic( 5 ) );
 			PackItem( new Bandage( 10 ) );
 			
-		if( 0.30 > Utility.RandomDouble() ) // 0.30 = 30% = chance to drop 
+		if( 0.50 > Utility.RandomDouble() ) // 0.50 = 50% = chance to drop 
 			switch ( Utility.Random( 1 ))  
 		{ 
 			case 0: PackItem( new Worm()); break;

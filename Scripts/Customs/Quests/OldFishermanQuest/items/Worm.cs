@@ -10,7 +10,7 @@ namespace Server.Items
 		public Worm() : base( 0x1085 )
 		{
                   Name = "a worm";
-                  Hue = 1114;
+                  Hue = 1173;
 			
 		}
 
