@@ -15,11 +15,11 @@ namespace Server.Items
 
           Name = "Arcanic Robe";
           Hue = 1150;
-      Attributes.CastRecovery = 1;
-      Attributes.CastSpeed = 1;
-      Attributes.LowerRegCost = 10;
-      Attributes.LowerManaCost = 5;
-      Attributes.Luck = 95;
+      Attributes.CastRecovery = 2;
+      Attributes.CastSpeed = 2;
+      Attributes.LowerRegCost = 15;
+      Attributes.LowerManaCost = 15;
+      Attributes.Luck = 295;
 		}
 
 		public ArcanicRobe( Serial serial ) : base( serial )

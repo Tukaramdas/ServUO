@@ -14,7 +14,7 @@ namespace Server.Items
          Hue = 1165;
          Name = "Fortified Arms";
 
-            Attributes.AttackChance = 5;
+            Attributes.AttackChance = 15;
             Attributes.BonusDex = 5;
             Attributes.DefendChance = 10;
             Attributes.EnhancePotions = 20;
@@ -22,10 +22,10 @@ namespace Server.Items
             ArmorAttributes.SelfRepair = 5;
 
             ColdBonus = 10;
-            EnergyBonus = 5;
-            FireBonus = 8;
-            PhysicalBonus = 9;
-            PoisonBonus = 5;
+            EnergyBonus = 15;
+            FireBonus = 18;
+            PhysicalBonus = 19;
+            PoisonBonus = 15;
             StrBonus = 10;
 
         }

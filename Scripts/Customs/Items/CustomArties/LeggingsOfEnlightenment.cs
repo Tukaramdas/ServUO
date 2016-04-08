@@ -6,11 +6,11 @@ namespace Server.Items
     public class LeggingsOfEnlightenment : LeafLegs, ITokunoDyable
 	{
 
-		public override int BaseFireResistance{ get{ return 9; } }
+		public override int BaseFireResistance{ get{ return 19; } }
 		public override int BasePoisonResistance{ get{ return 12; } }
 		public override int BasePhysicalResistance{ get{ return 11; } }
-		public override int BaseEnergyResistance{ get{ return 6; } }
-		public override int BaseColdResistance{ get{ return 5; } }
+		public override int BaseEnergyResistance{ get{ return 16; } }
+		public override int BaseColdResistance{ get{ return 15; } }
 public override int ArtifactRarity{ get{ return 13; } }
 
         public override int InitMinHits { get { return 255; } }
@@ -27,7 +27,7 @@ public override int ArtifactRarity{ get{ return 13; } }
 			Attributes.BonusInt = 8;
 			Attributes.SpellDamage = 10;
 			Attributes.LowerManaCost = 10;
-			Attributes.LowerRegCost = 5;
+			Attributes.LowerRegCost = 15;
 		}
 
 		public LeggingsOfEnlightenment( Serial serial ) : base( serial )

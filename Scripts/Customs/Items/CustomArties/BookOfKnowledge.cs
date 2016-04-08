@@ -15,10 +15,10 @@ namespace Server.Items
 			Hue = 1171;
 			
 			Attributes.SpellDamage = 25;
-			Attributes.LowerManaCost = 5;
-			Attributes.LowerRegCost = 5;
-			Attributes.CastSpeed = 1;
-			Attributes.CastRecovery = 1;
+			Attributes.LowerManaCost = 15;
+			Attributes.LowerRegCost = 25;
+			Attributes.CastSpeed = 2;
+			Attributes.CastRecovery = 2;
 			LootType = LootType.Regular;
 		}
 

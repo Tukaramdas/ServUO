@@ -5,6 +5,7 @@ using Server.Items;
 using Server.Multis;
 using Server.Gumps;
 
+
 namespace Server.Items
 {
 	public enum TableType
@@ -742,9 +743,9 @@ namespace Server.Items
 			
 			
 		}
-		
-		
-		public override void OnDoubleClick( Mobile from )
+
+
+        public override void OnDoubleClick( Mobile from )
 		{
 			BaseHouse house = BaseHouse.FindHouseAt( this );
 

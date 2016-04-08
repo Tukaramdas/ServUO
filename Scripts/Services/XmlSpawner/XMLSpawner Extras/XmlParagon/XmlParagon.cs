@@ -13,19 +13,59 @@ namespace Server.Engines.XmlSpawner2
         // default artifact types
         private static Type[] m_Artifacts = new Type[]
 		{
-			typeof( GoldBricks ), typeof( PhillipsWoodenSteed ), 
-			typeof( AlchemistsBauble ), typeof( ArcticDeathDealer ),
-			typeof( BlazeOfDeath ), typeof( BowOfTheJukaKing ),
-			typeof( BurglarsBandana ), typeof( CavortingClub ),
-			typeof( EnchantedTitanLegBone ), typeof( GwennosHarp ),
-			typeof( IolosLute ), typeof( LunaLance ),
-			typeof( NightsKiss ), typeof( NoxRangersHeavyCrossbow ),
-			typeof( OrcishVisage ), typeof( PolarBearMask ),
-			typeof( ShieldOfInvulnerability ), typeof( StaffOfPower ),
-			typeof( VioletCourage ), typeof( HeartOfTheLion ), 
-			typeof( WrathOfTheDryad ), typeof( PixieSwatter ), 
-			typeof( GlovesOfThePugilist )
-		};
+            typeof(GoldBricks), typeof(PhillipsWoodenSteed),
+            typeof(AlchemistsBauble), typeof(ArcticDeathDealer),
+            typeof(BlazeOfDeath), typeof(BowOfTheJukaKing),
+            typeof(BurglarsBandana), typeof(CavortingClub),
+            typeof(EnchantedTitanLegBone), typeof(GwennosHarp),
+            typeof(IolosLute), typeof(LunaLance),
+            typeof(NightsKiss), typeof(NoxRangersHeavyCrossbow),
+            typeof(OrcishVisage), typeof(PolarBearMask),
+            typeof(ShieldOfInvulnerability), typeof(StaffOfPower),
+            typeof(VioletCourage), typeof(HeartOfTheLion),
+            typeof(WrathOfTheDryad), typeof(PixieSwatter),
+            typeof(GlovesOfThePugilist), typeof(Futon),
+            typeof(BraveKnightOfTheBritannia), typeof(DjinnisRing),
+            typeof(MoctapotlsObsidianSword),
+            typeof( AegisOfGrace ), typeof( BladeDance ),
+            typeof( Bonesmasher ), typeof( FeyLeggings ),
+            typeof( FleshRipper ), typeof( HelmOfSwiftness ),
+            typeof( PadsOfTheCuSidhe ), typeof( RaedsGlory ),
+            typeof( RighteousAnger ), typeof( RobeOfTheEclipse ),
+            typeof( RobeOfTheEquinox ), typeof( SoulSeeker ),
+            typeof( TalonBite ), typeof( TotemOfVoid ),
+            typeof( QuiverOfRage ), typeof( BloodwoodSpirit ),
+            typeof( QuiverOfElements ), typeof( BrightsightLenses ),
+            typeof( Boomstick ), typeof( WildfireBow ),
+            typeof( Windsong ), typeof( TotemOfVoid ),
+            typeof( AbysmalGloves), typeof (AngelicEmbrace),
+            typeof(BraceletOfTheElements), typeof(RingOfTheMagician),
+            typeof(SprintersSandals), typeof(ShadowBlade),
+            typeof(WarriorsClasp), typeof(YashimotosHatsuburi),
+            typeof(VampiricDaisho), typeof(SwiftStrike),
+            typeof(ShimmeringTalisman), typeof(SamuraiBokuto),
+            typeof(RoyalGuardsGorget), typeof(RoyalGuardsChestplate),
+            typeof(RoyalArchersBow), typeof(HeritageToken),
+            typeof(Retort), typeof(RamusNecromanticScalpel),
+            typeof(Pestilence), typeof(NoxBow),
+            typeof(MerlinsPants), typeof(MarbleShield),
+            typeof(MagiciansMempo), typeof(MagiciansIllusion),
+            typeof(MagesBand), typeof(LuckyEarrings),
+            typeof(LeggingsOfEnlightenment), typeof(KamiNarisIndestructableDoubleAxe),
+            typeof(JadeScimitar), typeof(Indecency),
+            typeof(HellForgedArms), typeof(GlovesOfRegeneration),
+            typeof(GlovesOfCorruption), typeof(Fury),
+            typeof(FurCapeOfTheSorceress), typeof(Fortifiedarms),
+            typeof(FesteringWound), typeof(FalseGodsScepter),
+            typeof(EvilMageGloves), typeof(EvilMageGloves),
+            typeof(DupresCollar), typeof(DeathsMask),
+            typeof(DarkNeck), typeof(DarkGuardiansChest),
+            typeof(CircletOfTheSorceress), typeof(BookOfKnowledge),
+            typeof(ArcanicRobe), typeof(Annihilation),
+            typeof(AngeroftheGods), typeof(AngelicEmbrace),
+            typeof(AbysmalGloves), typeof(Bloodlust),
+            typeof(WeaponRenamingTool)
+        };
 
         private int m_Hue;
 
@@ -367,7 +407,7 @@ namespace Server.Engines.XmlSpawner2
 
             double chance = ConvertFactor / Math.Round(20.0 - (fame / 3200));
 
-            return (chance > Utility.RandomDouble());
+            return (chance * 2 > Utility.RandomDouble());
         }
 
         public virtual bool XmlCheckArtifactChance(Mobile m, BaseCreature bc)
@@ -381,6 +421,8 @@ namespace Server.Engines.XmlSpawner2
 
             double chance = ArtifactFactor / (Math.Max(10, 100 * (0.83 - Math.Round(Math.Log(Math.Round(fame / 6000, 3) + 0.001, 10), 3))) * (100 - Math.Sqrt(m.Luck)) / 100.0);
 
+            chance *= 20; // Set your bonus chance here. 1.1 is 10%
+            Console.WriteLine("Paragon chance: " + chance + "%");
             return chance > Utility.RandomDouble();
         }
 
@@ -488,8 +530,8 @@ namespace Server.Engines.XmlSpawner2
             DamageBuff = 5;
 
             ConvertFactor = 1;
-            ArtifactFactor = 1;
-            ChestChance = .10;
+            ArtifactFactor = 5;
+            ChestChance = .50;
             ParagonLabel = "(Paragon)";
         }
         #endregion

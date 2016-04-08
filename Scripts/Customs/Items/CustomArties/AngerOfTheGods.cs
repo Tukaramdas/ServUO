@@ -17,6 +17,7 @@ public override int ArtifactRarity{ get{ return 12; } }
             WeaponAttributes.HitHarm = 50;
             WeaponAttributes.HitLeechMana = 15;
             WeaponAttributes.HitLowerAttack = 25;
+            Attributes.SpellChanneling = 1;
             Attributes.CastSpeed = 1;
             Attributes.WeaponSpeed = 20;
             Hue = 1265;

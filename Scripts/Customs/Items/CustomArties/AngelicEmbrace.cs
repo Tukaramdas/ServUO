@@ -13,11 +13,11 @@ public override int ArtifactRarity{ get{ return 12; } }
 	public override int InitMinHits{ get{ return 255; } }
       public override int InitMaxHits{ get{ return 255; } }
 
-	public override int BaseColdResistance{ get{ return 9; } }
+	public override int BaseColdResistance{ get{ return 19; } }
 	public override int BaseEnergyResistance{ get{ return 10; } }        
-	public override int BasePhysicalResistance{ get{ return 12; } }
+	public override int BasePhysicalResistance{ get{ return 22; } }
 	public override int BasePoisonResistance{ get{ return 11; } }      
-	public override int BaseFireResistance{ get{ return 5; } }
+	public override int BaseFireResistance{ get{ return 15; } }
       
                 
 

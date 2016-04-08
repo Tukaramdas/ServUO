@@ -18,7 +18,7 @@ public override int ArtifactRarity{ get{ return 12; } }
             WeaponAttributes.HitLeechHits = 35;
             WeaponAttributes.HitLightning = 20;
             WeaponAttributes.SelfRepair = 3;
-            Attributes.Luck = 50;
+            Attributes.Luck = 250;
             Attributes.SpellChanneling = 1;
             Attributes.WeaponSpeed = 25;
         }

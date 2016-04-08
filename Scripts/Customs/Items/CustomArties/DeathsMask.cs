@@ -12,11 +12,11 @@ public override int ArtifactRarity{ get{ return 15; } }
 		public override int InitMinHits{ get{ return 255; } }
 		public override int InitMaxHits{ get{ return 255; } }
 
-		public override int BaseColdResistance{ get{ return 11; } } 
-		public override int BaseEnergyResistance{ get{ return 3; } } 
+		public override int BaseColdResistance{ get{ return 20; } } 
+		public override int BaseEnergyResistance{ get{ return 18; } } 
 		public override int BasePhysicalResistance{ get{ return 15; } } 
-		public override int BasePoisonResistance{ get{ return 12; } } 
-		public override int BaseFireResistance{ get{ return 12; } } 
+		public override int BasePoisonResistance{ get{ return 16; } } 
+		public override int BaseFireResistance{ get{ return 22; } } 
       
       [Constructable]
 		public DeathsMask()

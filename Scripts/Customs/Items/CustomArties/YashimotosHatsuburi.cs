@@ -10,12 +10,14 @@ namespace Server.Items
   {
 public override int ArtifactRarity{ get{ return 12; } }
 
+        public override int InitMinHits { get { return 255; } }
+        public override int InitMaxHits { get { return 255; } }
 
-		public override int BaseColdResistance{ get{ return 5; } } 
-		public override int BaseEnergyResistance{ get{ return 2; } } 
-		public override int BasePhysicalResistance{ get{ return 7; } } 
-		public override int BasePoisonResistance{ get{ return 3; } } 
-		public override int BaseFireResistance{ get{ return 7; } } 
+        public override int BaseColdResistance{ get{ return 15; } } 
+		public override int BaseEnergyResistance{ get{ return 12; } } 
+		public override int BasePhysicalResistance{ get{ return 17; } } 
+		public override int BasePoisonResistance{ get{ return 13; } } 
+		public override int BaseFireResistance{ get{ return 17; } } 
       
       [Constructable]
 		public YashimotosHatsuburi()

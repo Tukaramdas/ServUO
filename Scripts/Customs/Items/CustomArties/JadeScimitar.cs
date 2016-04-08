@@ -23,6 +23,7 @@ public override int ArtifactRarity{ get{ return 15; } }
       WeaponAttributes.HitPhysicalArea = 50;
       WeaponAttributes.HitPoisonArea = 20;
       WeaponAttributes.UseBestSkill = 1;
+      Attributes.SpellChanneling = 1;
       Attributes.AttackChance = 15;
       Attributes.WeaponDamage = 50;
       Attributes.WeaponSpeed = 30;

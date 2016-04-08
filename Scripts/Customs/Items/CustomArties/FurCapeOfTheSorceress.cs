@@ -18,8 +18,8 @@ public override int ArtifactRarity{ get{ return 16; } }
           Hue = 1266;
       Attributes.BonusInt = 5;
       Attributes.BonusMana = 10;
-      Attributes.LowerManaCost = 5;
-      Attributes.LowerRegCost = 10;
+      Attributes.LowerManaCost = 15;
+      Attributes.LowerRegCost = 20;
       Attributes.SpellDamage = 15;
       Attributes.BonusMana = 10;
 		}

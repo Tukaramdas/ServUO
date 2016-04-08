@@ -10,9 +10,9 @@ namespace Server.Items
   {
       public override int ArtifactRarity{ get{ return 12; } }
 
-		public override int BaseColdResistance{ get{ return 8; } } 
+		public override int BaseColdResistance{ get{ return 18; } } 
 		public override int BaseEnergyResistance{ get{ return 10; } } 
-		public override int BasePhysicalResistance{ get{ return 5; } } 
+		public override int BasePhysicalResistance{ get{ return 15; } } 
 		public override int BasePoisonResistance{ get{ return 15; } } 
 		public override int BaseFireResistance{ get{ return 10; } }
 

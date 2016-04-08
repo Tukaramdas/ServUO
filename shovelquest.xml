@@ -54,18 +54,19 @@
     <CentreZ>0</CentreZ>
     <Range>5</Range>
     <MaxCount>4</MaxCount>
-    <MinDelay>5</MinDelay>
-    <MaxDelay>10</MaxDelay>
-    <DelayInSec>False</DelayInSec>
+    <MinDelay>3</MinDelay>
+    <MaxDelay>5</MaxDelay>
+    <DelayInSec>True</DelayInSec>
     <Duration>0</Duration>
     <DespawnTime>0</DespawnTime>
     <ProximityRange>10</ProximityRange>
     <ProximityTriggerSound>500</ProximityTriggerSound>
     <ItemTriggerName>A Magical Connection Box</ItemTriggerName>
+    <NoItemTriggerName>The Head Of An Enchanted Shovel</NoItemTriggerName>
     <TriggerProbability>1</TriggerProbability>
     <InContainer>False</InContainer>
-    <MinRefractory>0</MinRefractory>
-    <MaxRefractory>0</MaxRefractory>
+    <MinRefractory>0.25</MinRefractory>
+    <MaxRefractory>0.333333333333333</MaxRefractory>
     <TODStart>0</TODStart>
     <TODEnd>0</TODEnd>
     <TODMode>0</TODMode>
@@ -97,18 +98,19 @@
     <CentreZ>-8</CentreZ>
     <Range>5</Range>
     <MaxCount>1</MaxCount>
-    <MinDelay>5</MinDelay>
-    <MaxDelay>10</MaxDelay>
-    <DelayInSec>False</DelayInSec>
+    <MinDelay>3</MinDelay>
+    <MaxDelay>5</MaxDelay>
+    <DelayInSec>True</DelayInSec>
     <Duration>0</Duration>
     <DespawnTime>0</DespawnTime>
     <ProximityRange>10</ProximityRange>
     <ProximityTriggerSound>500</ProximityTriggerSound>
     <ItemTriggerName>A Magical Connection Box</ItemTriggerName>
+    <NoItemTriggerName>The Handle Of An Enchanted Shovel</NoItemTriggerName>
     <TriggerProbability>1</TriggerProbability>
     <InContainer>False</InContainer>
-    <MinRefractory>0</MinRefractory>
-    <MaxRefractory>0</MaxRefractory>
+    <MinRefractory>0.333333333333333</MinRefractory>
+    <MaxRefractory>0.5</MaxRefractory>
     <TODStart>0</TODStart>
     <TODEnd>0</TODEnd>
     <TODMode>0</TODMode>
@@ -140,18 +142,19 @@
     <CentreZ>3</CentreZ>
     <Range>5</Range>
     <MaxCount>3</MaxCount>
-    <MinDelay>5</MinDelay>
-    <MaxDelay>10</MaxDelay>
-    <DelayInSec>False</DelayInSec>
+    <MinDelay>3</MinDelay>
+    <MaxDelay>5</MaxDelay>
+    <DelayInSec>True</DelayInSec>
     <Duration>0</Duration>
     <DespawnTime>0</DespawnTime>
     <ProximityRange>10</ProximityRange>
     <ProximityTriggerSound>500</ProximityTriggerSound>
     <ItemTriggerName>A Magical Connection Box</ItemTriggerName>
+    <NoItemTriggerName>The Arm Of An Enchanted Shovel</NoItemTriggerName>
     <TriggerProbability>1</TriggerProbability>
     <InContainer>False</InContainer>
-    <MinRefractory>0</MinRefractory>
-    <MaxRefractory>0</MaxRefractory>
+    <MinRefractory>0.333333333333333</MinRefractory>
+    <MaxRefractory>0.5</MaxRefractory>
     <TODStart>0</TODStart>
     <TODEnd>0</TODEnd>
     <TODMode>0</TODMode>

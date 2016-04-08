@@ -12,15 +12,15 @@ namespace Server.Items
      {
         Hue = 1172;
          Name = "Abysmal Gloves";
-         ColdBonus = 3;
-         EnergyBonus = 9;
-         PhysicalBonus = 7;
-         PoisonBonus = 7;
+         ColdBonus = 13;
+         EnergyBonus = 19;
+         PhysicalBonus = 17;
+         PoisonBonus = 17;
          FireBonus = 10;
          ArmorAttributes.SelfRepair = 10;
          Attributes.BonusInt = 5;
-         Attributes.LowerManaCost = 5;
-         Attributes.LowerRegCost = 10;
+         Attributes.LowerManaCost = 15;
+         Attributes.LowerRegCost = 20;
          Attributes.SpellDamage = 35;;
          Attributes.RegenMana = 5;
      }

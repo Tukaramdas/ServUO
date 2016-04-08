@@ -10,10 +10,11 @@ namespace Server.Items
 
 		public override int BaseFireResistance{ get{ return 13; } }
 		public override int BaseColdResistance{ get{ return 11; } }
-		public override int BasePhysicalResistance{ get{ return 8; } }
+		public override int BasePhysicalResistance{ get{ return 18; } }
 		public override int BaseEnergyResistance{ get{ return 12; } }
+        public override int BasePoisonResistance { get { return 15; } }
 
-		public override int InitMinHits{ get{ return 255; } }
+        public override int InitMinHits{ get{ return 255; } }
 		public override int InitMaxHits{ get{ return 255; } }
 
 		[Constructable]

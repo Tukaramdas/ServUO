@@ -1,11 +1,15 @@
 using System;
 using Server.Items;
+using System.Collections.Generic;
+using Server;
+
+
 
 namespace Server.Mobiles
 {
     public class Paragon
     {
-        public static double ChestChance = .10;// Chance that a paragon will carry a paragon chest
+        public static double ChestChance = .25;// Chance that a paragon will carry a paragon chest
         public static double ChocolateIngredientChance = .20;// Chance that a paragon will drop a chocolatiering ingredient
         public static Map[] Maps = new Map[]                   // Maps that paragons will spawn on
         {
@@ -24,8 +28,51 @@ namespace Server.Mobiles
             typeof(ShieldOfInvulnerability), typeof(StaffOfPower),
             typeof(VioletCourage), typeof(HeartOfTheLion),
             typeof(WrathOfTheDryad), typeof(PixieSwatter),
-            typeof(GlovesOfThePugilist)
+            typeof(GlovesOfThePugilist), typeof(Futon),
+            typeof(BraveKnightOfTheBritannia), typeof(DjinnisRing),
+            typeof(MoctapotlsObsidianSword), 
+            typeof( AegisOfGrace ), typeof( BladeDance ),
+            typeof( Bonesmasher ), typeof( FeyLeggings ),
+            typeof( FleshRipper ), typeof( HelmOfSwiftness ),
+            typeof( PadsOfTheCuSidhe ), typeof( RaedsGlory ),
+            typeof( RighteousAnger ), typeof( RobeOfTheEclipse ),
+            typeof( RobeOfTheEquinox ), typeof( SoulSeeker ),
+            typeof( TalonBite ), typeof( TotemOfVoid ),
+            typeof( QuiverOfRage ), typeof( BloodwoodSpirit ),
+            typeof( QuiverOfElements ), typeof( BrightsightLenses ),
+            typeof( Boomstick ), typeof( WildfireBow ),
+            typeof( Windsong ), typeof( TotemOfVoid ),
+            typeof( AbysmalGloves), typeof (AngelicEmbrace),
+            typeof(BraceletOfTheElements), typeof(RingOfTheMagician),
+            typeof(SprintersSandals), typeof(ShadowBlade),
+            typeof(WarriorsClasp), typeof(YashimotosHatsuburi),
+            typeof(VampiricDaisho), typeof(SwiftStrike),
+            typeof(ShimmeringTalisman), typeof(SamuraiBokuto),
+            typeof(RoyalGuardsGorget), typeof(RoyalGuardsChestplate),
+            typeof(RoyalArchersBow), typeof(HeritageToken),
+            typeof(Retort), typeof(RamusNecromanticScalpel),
+            typeof(Pestilence), typeof(NoxBow),
+            typeof(MerlinsPants), typeof(MarbleShield),
+            typeof(MagiciansMempo), typeof(MagiciansIllusion),
+            typeof(MagesBand), typeof(LuckyEarrings),
+            typeof(LeggingsOfEnlightenment), typeof(KamiNarisIndestructableDoubleAxe),
+            typeof(JadeScimitar), typeof(Indecency),
+            typeof(HellForgedArms), typeof(GlovesOfRegeneration),
+            typeof(GlovesOfCorruption), typeof(Fury),
+            typeof(FurCapeOfTheSorceress), typeof(Fortifiedarms),
+            typeof(FesteringWound), typeof(FalseGodsScepter),
+            typeof(EvilMageGloves), typeof(EvilMageGloves),
+            typeof(DupresCollar), typeof(DeathsMask),
+            typeof(DarkNeck), typeof(DarkGuardiansChest),
+            typeof(CircletOfTheSorceress), typeof(BookOfKnowledge),
+            typeof(ArcanicRobe), typeof(Annihilation),
+            typeof(AngeroftheGods), typeof(AngelicEmbrace),
+            typeof(AbysmalGloves), typeof(Bloodlust),
+            typeof(WeaponRenamingTool)
+
         };
+ 
+
         public static int Hue = 0x501;// Paragon hue
 
         // Buffs
@@ -150,7 +197,8 @@ namespace Server.Mobiles
 
             double chance = 1 / Math.Round(20.0 - (fame / 3200));
 
-            return (chance > Utility.RandomDouble());
+            return (chance * 2 > Utility.RandomDouble());
+           
         }
 
         public static bool CheckArtifactChance(Mobile m, BaseCreature bc)
@@ -165,6 +213,8 @@ namespace Server.Mobiles
 
             double chance = 1 / (Math.Max(10, 100 * (0.83 - Math.Round(Math.Log(Math.Round(fame / 6000, 3) + 0.001, 10), 3))) * (100 - Math.Sqrt(m.Luck)) / 100.0);
 
+            chance *= 20; // Set your bonus chance here. 1.1 is 10%
+            Console.WriteLine("Paragon chance: " + chance + "%");
             return chance > Utility.RandomDouble();
         }
 

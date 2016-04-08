@@ -10,10 +10,10 @@ namespace Server.Items
 
 
 		public override int BaseColdResistance{ get{ return 14; } } 
-		public override int BaseEnergyResistance{ get{ return 8; } } 
-		public override int BasePhysicalResistance{ get{ return 6; } } 
-		public override int BasePoisonResistance{ get{ return 6; } } 
-		public override int BaseFireResistance{ get{ return 7; } } 
+		public override int BaseEnergyResistance{ get{ return 18; } } 
+		public override int BasePhysicalResistance{ get{ return 16; } } 
+		public override int BasePoisonResistance{ get{ return 16; } } 
+		public override int BaseFireResistance{ get{ return 17; } } 
 		public override int ArtifactRarity{ get{ return 15; } }
       
       [Constructable]
@@ -22,7 +22,7 @@ namespace Server.Items
           Name = "Merlin's Pants";
           Hue = 1265;
       ArmorAttributes.MageArmor = 1;
-      Attributes.LowerManaCost = 5;
+      Attributes.LowerManaCost = 15;
       Attributes.LowerRegCost = 15;
       Attributes.Luck = 150;
       Attributes.RegenMana = 5;
