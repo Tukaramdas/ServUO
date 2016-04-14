@@ -39,7 +39,7 @@ namespace Server.Mobiles
 			VirtualArmor = 20;
 
 			PackItem( new SavageHead() );
-			PackItem( new TreasureMap( 0, Map.Trammel ) );
+			PackItem( new TreasureMap( 1, Map.Trammel ) );
 		
 			EtherealHorse mare = new EtherealHorse();
 			mare.Rider = this;

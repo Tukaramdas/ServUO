@@ -421,7 +421,7 @@ namespace Server.Engines.XmlSpawner2
 
             double chance = ArtifactFactor / (Math.Max(10, 100 * (0.83 - Math.Round(Math.Log(Math.Round(fame / 6000, 3) + 0.001, 10), 3))) * (100 - Math.Sqrt(m.Luck)) / 100.0);
 
-            chance *= 20; // Set your bonus chance here. 1.1 is 10%
+            chance *= 10; // Set your bonus chance here. 1.1 is 10%
             Console.WriteLine("Paragon chance: " + chance + "%");
             return chance > Utility.RandomDouble();
         }

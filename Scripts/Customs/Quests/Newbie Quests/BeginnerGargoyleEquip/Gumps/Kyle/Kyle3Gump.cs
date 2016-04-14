@@ -34,7 +34,8 @@ namespace Server.Gumps
 			AddImage( 97, 49, 9005 );
 			AddImageTiled( 58, 39, 29, 390, 10460 );
 			AddImageTiled( 412, 37, 31, 389, 10460 );
-			AddLabel( 140, 60, 0x34, "Kyle Teachings" );
+            AddBackground(85, 30, 329, 408, 3500);
+            AddLabel( 140, 60, 0x34, "Kyle Teachings" );
 			
 
 			AddHtml( 107, 140, 300, 230, "<BODY>" +

@@ -245,46 +245,55 @@ namespace Server.Items
 
             this.DropItem(new TreasureMap(level + 1, (Utility.RandomBool() ? Map.Felucca : Map.Trammel)));
             //  this.DropItem(new PowerScroll(), 120);  
-            switch (Utility.Random(38))
-            {
-                case 0: DropItem(new PowerScroll(SkillName.Swords, 120)); break;
-                case 1: DropItem(new PowerScroll(SkillName.Fencing, 120)); break;
-                case 2: DropItem(new PowerScroll(SkillName.Archery, 120)); break;
-                case 3: DropItem(new PowerScroll(SkillName.Parry, 120)); break;
-                case 4: DropItem(new PowerScroll(SkillName.Tactics, 120)); break;
-                case 5: DropItem(new PowerScroll(SkillName.Anatomy, 120)); break;
-                case 6: DropItem(new PowerScroll(SkillName.Healing, 120)); break;
-                case 7: DropItem(new PowerScroll(SkillName.Magery, 120)); break;
-                case 8: DropItem(new PowerScroll(SkillName.Meditation, 120)); break;
-                case 9: DropItem(new PowerScroll(SkillName.EvalInt, 120)); break;
-                case 10: DropItem(new PowerScroll(SkillName.MagicResist, 120)); break;
-                case 11: DropItem(new PowerScroll(SkillName.AnimalTaming, 120)); break;
-                case 12: DropItem(new PowerScroll(SkillName.AnimalLore, 120)); break;
-                case 13: DropItem(new PowerScroll(SkillName.Veterinary, 120)); break;
-                case 14: DropItem(new PowerScroll(SkillName.Musicianship, 120)); break;
-                case 15: DropItem(new PowerScroll(SkillName.Provocation, 120)); break;
-                case 16: DropItem(new PowerScroll(SkillName.Discordance, 120)); break;
-                case 17: DropItem(new PowerScroll(SkillName.Peacemaking, 120)); break;
-                case 18: DropItem(new PowerScroll(SkillName.Chivalry, 120)); break;
-                case 19: DropItem(new PowerScroll(SkillName.Focus, 120)); break;
-                case 20: DropItem(new PowerScroll(SkillName.Necromancy, 120)); break;
-                case 21: DropItem(new PowerScroll(SkillName.Stealing, 120)); break;
-                case 22: DropItem(new PowerScroll(SkillName.Stealth, 120)); break;
-                case 23: DropItem(new PowerScroll(SkillName.Macing, 120)); break;
-                case 24: DropItem(new PowerScroll(SkillName.Wrestling, 120)); break;
-                case 25: DropItem(new PowerScroll(SkillName.Blacksmith, 120)); break;
-                case 26: DropItem(new PowerScroll(SkillName.Tailoring, 120)); break;
-                case 27: DropItem(new PowerScroll(SkillName.Tinkering, 120)); break;
-                case 28: DropItem(new PowerScroll(SkillName.Mining, 120)); break;
-                case 29: DropItem(new PowerScroll(SkillName.Carpentry, 120)); break;
-                case 30: DropItem(new PowerScroll(SkillName.Alchemy, 120)); break;
-                case 31: DropItem(new PowerScroll(SkillName.Fletching, 120)); break;
-                case 32: DropItem(new PowerScroll(SkillName.Inscribe, 120)); break;
-                case 33: DropItem(new PowerScroll(SkillName.Cooking, 120)); break;
-                case 34: DropItem(new PowerScroll(SkillName.Cartography, 120)); break;
-                case 35: DropItem(new PowerScroll(SkillName.Lumberjacking, 120)); break;
-                case 36: DropItem(new PowerScroll(SkillName.Lockpicking, 120)); break;
-                case 37: DropItem(new PowerScroll(SkillName.Fishing, 120)); break;
+
+            
+                switch (Utility.Random(2))
+                {
+                    case 0:   break;
+                    case 1:
+                        switch (Utility.Random(38))
+                        {
+                            case 0: DropItem(new PowerScroll(SkillName.Swords, 120)); break;
+                            case 1: DropItem(new PowerScroll(SkillName.Fencing, 120)); break;
+                            case 2: DropItem(new PowerScroll(SkillName.Archery, 120)); break;
+                            case 3: DropItem(new PowerScroll(SkillName.Parry, 120)); break;
+                            case 4: DropItem(new PowerScroll(SkillName.Tactics, 120)); break;
+                            case 5: DropItem(new PowerScroll(SkillName.Anatomy, 120)); break;
+                            case 6: DropItem(new PowerScroll(SkillName.Healing, 120)); break;
+                            case 7: DropItem(new PowerScroll(SkillName.Magery, 120)); break;
+                            case 8: DropItem(new PowerScroll(SkillName.Meditation, 120)); break;
+                            case 9: DropItem(new PowerScroll(SkillName.EvalInt, 120)); break;
+                            case 10: DropItem(new PowerScroll(SkillName.MagicResist, 120)); break;
+                            case 11: DropItem(new PowerScroll(SkillName.AnimalTaming, 120)); break;
+                            case 12: DropItem(new PowerScroll(SkillName.AnimalLore, 120)); break;
+                            case 13: DropItem(new PowerScroll(SkillName.Veterinary, 120)); break;
+                            case 14: DropItem(new PowerScroll(SkillName.Musicianship, 120)); break;
+                            case 15: DropItem(new PowerScroll(SkillName.Provocation, 120)); break;
+                            case 16: DropItem(new PowerScroll(SkillName.Discordance, 120)); break;
+                            case 17: DropItem(new PowerScroll(SkillName.Peacemaking, 120)); break;
+                            case 18: DropItem(new PowerScroll(SkillName.Chivalry, 120)); break;
+                            case 19: DropItem(new PowerScroll(SkillName.Focus, 120)); break;
+                            case 20: DropItem(new PowerScroll(SkillName.Necromancy, 120)); break;
+                            case 21: DropItem(new PowerScroll(SkillName.Stealing, 120)); break;
+                            case 22: DropItem(new PowerScroll(SkillName.Stealth, 120)); break;
+                            case 23: DropItem(new PowerScroll(SkillName.Macing, 120)); break;
+                            case 24: DropItem(new PowerScroll(SkillName.Wrestling, 120)); break;
+                            case 25: DropItem(new PowerScroll(SkillName.Blacksmith, 120)); break;
+                            case 26: DropItem(new PowerScroll(SkillName.Tailoring, 120)); break;
+                            case 27: DropItem(new PowerScroll(SkillName.Tinkering, 120)); break;
+                            case 28: DropItem(new PowerScroll(SkillName.Mining, 120)); break;
+                            case 29: DropItem(new PowerScroll(SkillName.Carpentry, 120)); break;
+                            case 30: DropItem(new PowerScroll(SkillName.Alchemy, 120)); break;
+                            case 31: DropItem(new PowerScroll(SkillName.Fletching, 120)); break;
+                            case 32: DropItem(new PowerScroll(SkillName.Inscribe, 120)); break;
+                            case 33: DropItem(new PowerScroll(SkillName.Cooking, 120)); break;
+                            case 34: DropItem(new PowerScroll(SkillName.Cartography, 120)); break;
+                            case 35: DropItem(new PowerScroll(SkillName.Lumberjacking, 120)); break;
+                            case 36: DropItem(new PowerScroll(SkillName.Lockpicking, 120)); break;
+                            case 37: DropItem(new PowerScroll(SkillName.Fishing, 120)); break;
+                        }
+                        break;
+                    
             }
 
         }

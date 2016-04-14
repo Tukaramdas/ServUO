@@ -6,6 +6,10 @@ using Server.Mobiles;
 using Server.Network;
 using Daat99MasterLooterSystem;
 using Server.Multis.Deeds;
+using System.Text;
+using Server.Commands;
+using Server.Gumps;
+
 
 
 namespace Server.Misc
@@ -57,11 +61,10 @@ namespace Server.Misc
                 m.AddItem(pack);
             }
 
-            PackItem(new RedBook("a book", m.Name, 20, true));
+            PackItem(new BankCheck(100000));
             PackItem(new Gold(10000)); // Starting gold can be customized here
             PackItem(new Scissors());
             PackItem(new Welcometotheshard());
-            PackItem(new LetterofApprenticeship());
             PackItem(new Backpack());
             PackItem(new SkillBallPlus());
             PackItem(new StatBall());
@@ -69,7 +72,6 @@ namespace Server.Misc
             PackItem(new SeaNavigator());
             PackItem(new BankStoneDeed());
             PackItem(new StonePlasterHouseDeed());
-            PackItem(new EtherealHorse());
             PackItem(new MasterLooterBackpack());
             PackItem(new TokenLedger());
             PackItem(new GoldLedger());
@@ -80,24 +82,24 @@ namespace Server.Misc
             PackItem(new BookOfBushido());	//Default ctor = full
             PackItem(new BookOfNinjitsu()); //Default ctor = full
 
-            // Runebook runebook = new Runebook(10);
-            //  runebook.CurCharges = runebook.MaxCharges;
-            //  PackItem(new  runebook());
+         /*   Runebook runebook = new Runebook(10);
+              runebook.CurCharges = runebook.MaxCharges;
+              PackItem(new  runebook());
 
-            //  for (int i = 0; i < 9; ++i)
-            //  PackItem(new RecallRune());
-
-
-            //PlaceItemIn(pack, 78, 169, cont);
-            // End bag of spell casting stuff
+              for (int i = 0; i < 9; ++i)
+              PackItem(new RecallRune());
+           */
 
             if (m.Race != Race.Gargoyle)
             {
                 PackItem(new Dagger());
+                PackItem(new LetterofApprenticeship());
+                PackItem(new EtherealHorse());
             }
             else
             {
                 PackItem(new GargishDagger());
+                PackItem(new LetterofGargoyleApprenticeship());
             }
         }
 
