@@ -33,7 +33,7 @@ namespace Server.Items
       {
          Movable = true;
          //Light = LightType.Circle300;
-         //Hue = 322;
+         Hue = 32;
          Weight = 3;  
          Name = "World Travel Atlas";
          LootType = LootType.Blessed;

@@ -29,38 +29,49 @@ namespace Server.Items
 		{
 		}
 
-      		
-		public override void OnDoubleClick( Mobile m )
 
-		{
-			Item a = m.Backpack.FindItemByType( typeof(ArrianasDiamond) );
-			if ( a != null )
-			{	
-			Item b = m.Backpack.FindItemByType( typeof(ArrianasClips) );
-			if ( b != null )
-			{
-			Item c = m.Backpack.FindItemByType( typeof(ArrianasHoops) );
-			if ( c != null )
-			{
-			
-				m.AddToBackpack( new DiamondHoopEarrings() );
-				a.Delete();
-				b.Delete();
-				c.Delete();
-				m.SendMessage( "You Combine the knowledge of Arriana's ancestry into a Heirloom" );
-				this.Delete();
-			}
-			}
-				else
-			{
-				m.SendMessage( "You are missing something..." );
-		}
-		}
-		}
-		
-		
+        public override void OnDoubleClick(Mobile m)
+        {
+            Item a = m.Backpack.FindItemByType(typeof(ArrianasDiamond));
+            if (a != null)
+            {
+                Item b = m.Backpack.FindItemByType(typeof(ArrianasClips));
+                if (b != null)
+                {
+                    Item c = m.Backpack.FindItemByType(typeof(ArrianasHoops));
+                    if (c != null)
+                    {
+                        Item d = m.Backpack.FindItemByType(typeof(AncientJewelryBox));
+                        if (d != null)
+                        {
+                            m.AddToBackpack(new DiamondHoopEarrings());
+                            a.Delete();
+                            b.Delete();
+                            c.Delete();
+                            d.Delete();
+                            Item e = m.Backpack.FindItemByType(typeof(GrandpaTamsJournal));
+                            if (e != null)
+                            {
+                                e.Delete();
+                            }
+                            Item f = m.Backpack.FindItemByType(typeof(UncleJohnsBook));
+                            if (f != null)
+                            {
+                                f.Delete();
+                            }
+                            m.SendMessage("You Combine the knowledge of Arriana's ancestry into a Heirloom");
+                            this.Delete();
+                        }
+                        else
+                        {
+                            m.SendMessage("You are missing something...");
+                        }
+                    }
+                }
+            }
+        }
 
-		public override void Serialize ( GenericWriter writer)
+        public override void Serialize ( GenericWriter writer)
 		{
 			base.Serialize ( writer );
 

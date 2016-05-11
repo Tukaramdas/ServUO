@@ -112,7 +112,7 @@ namespace Server.Mobiles
 					mobile.AddToBackpack( new ArrianasEarrings() );
 					mobile.SendMessage( "Thank you for your help!" );
                                         acct.SetTag( "DiamondHoopEarringsRecieved", "true" );
-
+                      //  Delete(AncientJewelryBox);
 				
          		        }
 				else //what to do if account has already been tagged
@@ -120,7 +120,8 @@ namespace Server.Mobiles
          				mobile.SendMessage("You are so kind to have taken the time to find our other jewelry, here is some gold for your troubles.");
          				mobile.AddToBackpack( new Gold( 1500 ) );
          				dropped.Delete();
-         			}
+                    //    Delete(AncientJewelryBox);
+                    }
          		}
          		else
          		{

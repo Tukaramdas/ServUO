@@ -1,0 +1,5 @@
+I have no idea who wrote this quest, I got it in a bundle of quests on RunUO. 
+
+
+
+Simply put the npc file in your XMLQuestNPC folder, and put the xml file in your root ServUO folder.  [xmlload denofevil.xml will load the 4 spawners, and it is done.  Read through the spawners for some good tutorials on how robust the xml spawner quests can be.  

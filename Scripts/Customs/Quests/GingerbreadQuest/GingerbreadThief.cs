@@ -93,7 +93,7 @@ namespace Server.Mobiles
 		{
  
      
-			switch(Utility.Random(3))
+			switch(Utility.Random(2))
 			{
 				case 0: PackItem(new GingerbreadDough()); break;
 			}

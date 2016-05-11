@@ -13,8 +13,8 @@ namespace Server.Mobiles
 		public Ganon () : base( AIType.AI_Melee, FightMode.Closest, 10, 1, 0.5, 0.7 ) 
          {
              Name = "Ganon";
-             Body = 796; //(was invisible, Horde Minion Large, so I changed it
-             //Body = 255;  // Yomotsu Elder
+             // Body = 796; //(was invisible, Horde Minion Large, so I changed it
+             Body = 255;  // Yomotsu Elder
              BaseSoundID = 609;
              SetStr( 850 );
              SetDex( 300 );
