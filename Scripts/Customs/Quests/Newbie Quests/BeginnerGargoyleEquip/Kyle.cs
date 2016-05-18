@@ -21,8 +21,8 @@ namespace Server.Mobiles
 		public Kyle()
 		{
 			Name = "Kyle";
-			Title = "the Youth Trainer";
-			BodyValue = 666;
+            Title = "Quest Giver";
+            BodyValue = 666;
                         Race = Race.Gargoyle;
 			Direction = Direction.South;
 			CantWalk = true;

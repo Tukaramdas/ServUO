@@ -22,8 +22,9 @@ namespace Server.Mobiles
 		public HolidayBaker ()
 		{
 			Name = "Tilly";
-                        
-			Body = 401;
+            Title = "Quest Giver";
+
+            Body = 401;
             Hue = 1002;
 			CantWalk = true;
 			Blessed = true;

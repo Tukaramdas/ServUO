@@ -19,11 +19,11 @@ namespace Server.Mobiles
         ///////////name
         Name = "Ludwig";
 
-        ///////////title
-        Title = "the master composer";
+            ///////////title
+            Title = "Quest Giver";
 
-        ///////////sex. 0x191 is female, 0x190 is male.
-        Body = 0x190;
+            ///////////sex. 0x191 is female, 0x190 is male.
+            Body = 0x190;
 
         Fame = 5000;
         Karma = 5000;

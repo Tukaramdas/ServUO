@@ -21,8 +21,8 @@ namespace Server.Mobiles
 		public OldFisherman()
 		{
 			Name = "James";
-                        Title = "the old fisherman";
-			Body = 0x190;
+            Title = "Quest Giver";
+            Body = 0x190;
 			CantWalk = true;
 			Hue = 0x83F8;
 			AddItem( new Server.Items.Boots( 1138 ) );

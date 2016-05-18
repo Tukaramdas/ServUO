@@ -17,7 +17,8 @@ namespace Server.Mobiles
 		public AncientTitanQUEST()
 		{
 			Name = "Ancient Titan";
-			Body = 76;
+            Title = "Quest Giver";
+            Body = 76;
 			BaseSoundID = 609;
                         Hue = 2101;
                         CantWalk = true;

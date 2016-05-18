@@ -22,8 +22,8 @@ namespace Server.Mobiles
 		public Steff()
 		{
 			Name = "Lady Steff";
-                        Title = "Jupiter Warrior";
-			Body = 401;
+            Title = "Quest Giver";
+            Body = 401;
 			CantWalk = true;
 			Hue = Utility.RandomSkinHue();
 			AddItem( new Server.Items.Armsofjupiter() );

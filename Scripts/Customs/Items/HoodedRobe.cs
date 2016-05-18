@@ -15,7 +15,8 @@ namespace Server.Items
          Layer = Layer.OuterTorso;
       }
 
-      public override void OnDoubleClick( Mobile m )
+
+        public override void OnDoubleClick( Mobile m )
       {
          if( Parent != m )
          {

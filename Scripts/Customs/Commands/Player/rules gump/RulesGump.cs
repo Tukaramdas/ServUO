@@ -27,7 +27,7 @@ namespace Server
 1-) ATLAS The World Travel Atlas looks like a regular rune book but acts almost like a moongate. Open the book and see all the options of where to go!  <br>
 2-) LOOT The command for the loot system is [Loot.  If you single click the MasterLootBackpack you can set options for what, and how, it loots. (Right click it in EC). If a critter has special loot, say for a quest, it is recommended you loot it by hand before using the loot command - just in case :) <br>
 3-) TOKENS The Trash4TokensBackpack is a trash bag with a 3 minute timer.  It will give Tokens for some items.  No telling how much.  It will not give Tokens for any stackable items - but will delete them!  <br>
-4-) SKILLBALL The skillball will let you choose 7 skills to GM. You may consider GM'ing tedious, or expensive, skills (hiding, lockpick, fishing, magery, taming etc). It does not reset any other skills to zero, so you can keep what you earned.<br>
+4-) SKILLBALL The skillball will let you choose 7 skills to GM. You may consider GM'ing tedious, or expensive, skills. It does not reset any other skills to zero, so you can keep what you earned - but you will lose your 'young' status.<br>
 5-) BANKSTONE You got a bankstone for bank access at home. Simply stand where you want to place the stone and double click the deed. If you double click the stone it will re-deed. You can interact with the bank stone as you would a banker. <br>
 6-) SPELLBAR Use the command [Spellbar to get your spell icons setup. You must have the spellbook in your main bag for it to be found. Better to use the Enhanced Client for the hotbars, though. :)  <br>
 7-) TOOLBAR Use the command [ShowTool to get a very handy toolbar. <br>

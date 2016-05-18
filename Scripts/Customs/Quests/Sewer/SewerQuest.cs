@@ -18,11 +18,11 @@ namespace Server.Mobiles
         ///////////name
         Name = "Brent";
 
-        ///////////title
-        Title = "The Sewer Engineer";
+            ///////////title
+            Title = "Quest Giver";
 
-        ///////////sex. 0x191 is female, 0x190 is male.
-        Body = 0x190;
+            ///////////sex. 0x191 is female, 0x190 is male.
+            Body = 0x190;
 
         Fame = 5000;
         Karma = 5000;

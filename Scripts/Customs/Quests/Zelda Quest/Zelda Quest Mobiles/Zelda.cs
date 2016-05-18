@@ -19,8 +19,8 @@ namespace Server.Mobiles
 		public Zelda()
 		{
 			Name = "Zelda";
-                        Title = "Princes of Hyrule";
-			Body = 0x191;
+            Title = "Quest Giver";
+            Body = 0x191;
 			CantWalk = true;
 			Hue = 0;
 			AddItem( new Server.Items.Cloak( 0x4F7 ) );

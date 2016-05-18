@@ -174,15 +174,15 @@ namespace Server.Items
 				case 3:
 					switch (Utility.Random( 5 ) )
 					{
-						case 0:	return "Terathan Warrior";
+						case 0:	return "Bogling";
 								//break;
-						case 1:	return "Terathan Drone";
+						case 1:	return "Black Solen Infiltrator Warrior";
 								//break;
-						case 2:	return "Terathan Avenger";
+						case 2:	return "Ettin";
 								//break;
-						case 3:	return "Terathan Matriarch";
+						case 3:	return "Lich";
 								//break;
-						case 4:	return "Dread Spider";
+						case 4:	return "Imp";
 								//break;
 						default: return "Dread Spider";
 								//break;
@@ -191,11 +191,11 @@ namespace Server.Items
 				case 4:
 					switch (Utility.Random( 5 ) )
 					{
-						case 0:	return "Ophidian Matriarch";
+						case 0:	return "Black Solen Infiltrator Queen";
 								//break;
-						case 1:	return "Ophidian Mage";
+						case 1:	return "Bogling";
 								//break;
-						case 2:	return "Ophidian ArchMage";
+						case 2:	return "Black Solen Infiltrator Warrior";
 								//break;
 						case 3:	return "Giant Snake";
 								//break;

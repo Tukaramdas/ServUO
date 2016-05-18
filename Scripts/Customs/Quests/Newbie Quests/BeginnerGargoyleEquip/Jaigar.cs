@@ -21,8 +21,8 @@ namespace Server.Mobiles
 		public Jaigar()
 		{
 			Name = "Jaigar";
-                        Title = "the Youthful Summoner";
-			BodyValue = 667;
+            Title = "Quest Giver";
+            BodyValue = 667;
                         Race = Race.Gargoyle;
                         Female = true;
                         Str = 100;

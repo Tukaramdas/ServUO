@@ -90,7 +90,7 @@
     <AllowNPCTrigger>False</AllowNPCTrigger>
     <SpeechStyle>Regular</SpeechStyle>
     <SpeechHue>-1</SpeechHue>
-    <Gump>GUMP,Anita,4/200 gold for you. Do you like them?;Ok;ok;No, thanks;no</Gump>
+    <Gump>GUMP,Anita,4/200 gold for you. Is that satisfactory?;Ok;ok;No, thanks;no</Gump>
   </SpeechEntry>
   <SpeechEntry>
     <EntryNumber>70</EntryNumber>

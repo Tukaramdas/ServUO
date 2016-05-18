@@ -20,8 +20,8 @@ namespace Server.Mobiles
 		public Arriana()
 		{
 			Name = "Arriana Loveliss";
-                        Title = "the Queens Maiden";
-			Body = 0x191;
+            Title = "Quest Giver";
+            Body = 0x191;
 			CantWalk = true;
 			Hue = Utility.RandomSkinHue();
             Blessed = true;

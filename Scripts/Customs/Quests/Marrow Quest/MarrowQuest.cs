@@ -6,9 +6,9 @@ InitStats( 100, 100, 100 );
 
 Name = "Marrow";
 
-Title = "the chemist";
+            Title = "Quest Giver";
 
-Body = 0x191;
+            Body = 0x191;
 
 Fame = 2000;
 Karma = 3000;

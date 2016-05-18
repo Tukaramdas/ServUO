@@ -22,8 +22,8 @@ namespace Server.Mobiles
 		public DeathsReaper ()
 		{
 			Name = "Deaths Reaper ";
-                        Title = "*Master Of Death*";
-			Body = 400;
+            Title = "Quest Giver";
+            Body = 400;
 			CantWalk = true;
 			Hue = 1102;
                                                 Blessed = true;

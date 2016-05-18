@@ -31,9 +31,9 @@ namespace Server.Mobiles
 			AddItem( new Boots( ) );
 			Utility.AssignRandomHair( this );
 			Direction = Direction.South;
-			Name = NameList.RandomName( "male" ); 
-			Title = "the taskmaster"; 
-			CantWalk = true;
+			Name = NameList.RandomName( "male" );
+            Title = "Quest Giver";
+            CantWalk = true;
 		}
 
 		public QuestGiver( Serial serial ) : base( serial )

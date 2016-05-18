@@ -15,15 +15,17 @@ namespace Server.Mobiles
 	[CorpseName( "Therasa corpse" )]
 	public class Therasa : Mobile
 	{
-                public virtual bool IsInvulnerable{ get{ return true; } }
+        public virtual bool IsInvulnerable { get { return true; } }
+      
 		[Constructable]
 		public Therasa()
 		{
 			Name = "Therasa";
-                        Title = "the Miners Wife";
-			Body = 0x191;
+            Title = "Quest Giver";
+            Body = 0x191;
 			CantWalk = true;
-			Hue = Utility.RandomSkinHue();
+            Blessed = true;
+            Hue = Utility.RandomSkinHue();
 
 			FancyDress fd = new FancyDress();
                         fd.Hue = 1172;
