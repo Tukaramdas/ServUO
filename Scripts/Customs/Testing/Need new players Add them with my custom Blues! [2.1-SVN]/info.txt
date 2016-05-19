@@ -1,0 +1,28 @@
+http://www.runuo.com/community/threads/need-new-players-add-them-with-my-custom-blues-2-1-svn.488880/
+
+**NEW EDITS MADE AS AT SEPT 05, PLEASE RE-DOWNLOAD IF DOWNLOADED PRIOR** Also See one of my posts for a Mercenary vendor that allows players to hire these blue mobiles.
+
+Hello! First off i'd like to say I can't program at all. All I did was to cut and paste code from different scripts and made sure it worked by making small adjustments. So this script is a collection of other scripts (playerkiller.cs, maniac.cs, wanderinghealer.cs, vile.cs mostly) so thank you to the authors of those scripts.
+
+What is it?
+
+Well, I am creating a shard for solo playing - and since there won't be any other players, I wanted to find a way to do champ spawns/doom, and essentially populate my shard with fake players! So I took a playerkiller script and turned it into 3 blue mobiles. A [young] blue mobile, a friendlyplayer mobile, and a stronger spawnhelper mobile.
+
+All 3 will:
+-Only attack "monsters" or negative karma mobiles
+-Won't attack players, or vendors, or healers and the like
+-Use bandages and potions to heal/cure when needed
+-HAve random names, clothing
+-Speak to whatever comes close to them
+-Resurrect dead players
+-Heal wounded players, and even heal other Blue mobiles around them
+-Look just like any-other anti-social real player!
+-YoungPlayer mobile is weak, on foot, FriendlyPlayer mobile is mounted, stronger, and Spawnhelpers can handle a skeletal dragon. Spawnhelpers also have random AOS type damage on their weapons, and area-type damage for champ spawns.
+-Added a merc vendor that sells the blue mobiles
+-Added an Innmaid to be placed in inns, say check in and check out to stable/claim
+
+I recommend using these with the randomencounter engine, and make them randomly appear in dungeons and have the spawnhelpers randomly appear in doom/champ spawns.
+
+Spawn them in Yew Fel with a few of the red playerkiller mobiles posted previously by others to have a semblance of a real red Vs blue war!
+
+If anyone wants to make any changes/additions, feel free to do so anything to make these fake players seem more realistic would be appreciated! 
