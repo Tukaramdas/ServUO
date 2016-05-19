@@ -31,7 +31,7 @@ namespace Server.Items
 
                         if (from != null) 
             {
-                from.MoveToWorld(new Point3D(5259, 1840, 0), Map.Trammel);   
+                from.MoveToWorld(new Point3D(5256, 1839, 0), Map.Trammel);   
                 this.Delete(); 
             }
         }
