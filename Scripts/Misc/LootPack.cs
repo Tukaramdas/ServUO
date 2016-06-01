@@ -9,6 +9,7 @@ using System;
 
 using Server.Items;
 using Server.Mobiles;
+
 #endregion
 
 namespace Server
@@ -146,15 +147,22 @@ namespace Server
 
 		public static readonly LootPackItem[] GemItems = new[] {new LootPackItem(typeof(Amber), 1)};
 
-		public static readonly LootPackItem[] PotionItems = new[]
-		{
-			new LootPackItem(typeof(AgilityPotion), 1), new LootPackItem(typeof(StrengthPotion), 1),
-			new LootPackItem(typeof(RefreshPotion), 1), new LootPackItem(typeof(LesserCurePotion), 1),
-			new LootPackItem(typeof(LesserHealPotion), 1), new LootPackItem(typeof(LesserPoisonPotion), 1)
-		};
 
-		#region Old Magic Items
-		public static readonly LootPackItem[] OldMagicItems = new[]
+     		public static readonly LootPackItem[] PotionItems = new[]
+                {
+                    new LootPackItem(typeof(AgilityPotion), 1), new LootPackItem(typeof(StrengthPotion), 1),
+                    new LootPackItem(typeof(RefreshPotion), 1), new LootPackItem(typeof(LesserCurePotion), 1),
+                    new LootPackItem(typeof(LesserHealPotion), 1), new LootPackItem(typeof(LesserPoisonPotion), 1)
+                };
+                
+        /*        public static readonly LootPackItem[] SlayerScrollItems = new[]
+        {
+                    new LootPackItem(typeof(SuperSlayerDeeds), 1), new LootPackItem(typeof(LesserSlayerDeed), 1),
+                    new LootPackItem(typeof(SlayerRemovalDeed), 1), new LootPackItem(typeof(MinorArtifactDeed), 1),
+                    };
+        */
+        #region Old Magic Items
+        public static readonly LootPackItem[] OldMagicItems = new[]
 		{
 			new LootPackItem(typeof(BaseJewel), 1), new LootPackItem(typeof(BaseArmor), 4),
 			new LootPackItem(typeof(BaseWeapon), 3), new LootPackItem(typeof(BaseRanged), 1),
@@ -274,8 +282,10 @@ namespace Server
 					new LootPackEntry(false, AosMagicItemsAverageType1, 32.80, 1, 3, 0, 50),
 					new LootPackEntry(false, AosMagicItemsAverageType1, 32.80, 1, 4, 0, 75),
 					new LootPackEntry(false, AosMagicItemsAverageType2, 19.50, 1, 5, 0, 100),
-					new LootPackEntry(false, Instruments, 0.40, 1)
-				});
+					new LootPackEntry(false, Instruments, 0.40, 1),
+               //     new LootPackEntry(true, SlayerScrollItems, 100.00, 1)
+            
+    });
 
 		public static readonly LootPack SeRich =
 			new LootPack(
@@ -359,8 +369,9 @@ namespace Server
 					new LootPackEntry(false, AosMagicItemsAverageType1, 5.00, 1, 4, 0, 20),
 					new LootPackEntry(false, AosMagicItemsAverageType1, 2.00, 1, 3, 0, 50),
 					new LootPackEntry(false, AosMagicItemsAverageType2, 0.50, 1, 5, 0, 90),
-					new LootPackEntry(false, Instruments, 0.40, 1)
-				});
+					new LootPackEntry(false, Instruments, 0.40, 1),
+                 //   new LootPackEntry(true, SlayerScrollItems, 100.00, 1)
+                });
 
 		public static readonly LootPack AosRich =
 			new LootPack(
@@ -437,8 +448,9 @@ namespace Server
 					new LootPackEntry(true, Gold, 100.00, "10d10+50"), new LootPackEntry(false, Instruments, 0.40, 1),
 					new LootPackEntry(false, OldMagicItems, 5.00, 1, 1, 20, 80),
 					new LootPackEntry(false, OldMagicItems, 2.00, 1, 1, 30, 90),
-					new LootPackEntry(false, OldMagicItems, 0.50, 1, 1, 40, 100)
-				});
+					new LootPackEntry(false, OldMagicItems, 0.50, 1, 1, 40, 100),
+                //    new LootPackEntry(true, SlayerScrollItems, 100.00, 1)
+                });
 
 		public static readonly LootPack OldRich =
 			new LootPack(
@@ -513,8 +525,11 @@ namespace Server
 
 		public static readonly LootPack Potions = new LootPack(new[] {new LootPackEntry(false, PotionItems, 100.00, 1)});
 
-		#region Mondain's Legacy
-		public static readonly LootPackItem[] ParrotItem = new[] {new LootPackItem(typeof(ParrotItem), 1)};
+     //   public static readonly LootPack SlayerScrolls = new LootPack(new[] { new LootPackEntry(false, SlayerScrollItems, 100.00, 1) }); 
+
+           
+        #region Mondain's Legacy
+        public static readonly LootPackItem[] ParrotItem = new[] {new LootPackItem(typeof(ParrotItem), 1)};
 
 		public static readonly LootPack Parrot = new LootPack(new[] {new LootPackEntry(false, ParrotItem, 10.00, 1)});
 		#endregion

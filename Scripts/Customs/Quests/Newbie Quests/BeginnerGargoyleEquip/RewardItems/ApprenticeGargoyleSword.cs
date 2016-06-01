@@ -9,6 +9,16 @@ namespace Server.Items
 				
 		public override int InitMinHits{ get{ return 150; } }
 		public override int InitMaxHits{ get{ return 150; } }
+
+        public override int AosMinDamage { get { return 20; } }
+        public override int AosMaxDamage { get { return 25; } }
+        public override int AosSpeed { get { return 56; } }
+
+        public override int OldStrengthReq { get { return 10; } }
+        public override int OldMinDamage { get { return 20; } }
+        public override int OldMaxDamage { get { return 25; } }
+        public override int OldSpeed { get { return 68; } }
+
         public override Race RequiredRace{ get { return Race.Gargoyle; } }
 		public override bool CanBeWornByGargoyles{ get{ return true; } }
 
@@ -18,7 +28,7 @@ namespace Server.Items
 			
 			Name = "Apprentice Gargoyle Sword";
             ItemID =2312;
-            Layer = Layer.OneHanded;
+          //  Layer = Layer.OneHanded;
 			Weight = 10;
 
 			WeaponAttributes.UseBestSkill = 1;
@@ -29,9 +39,12 @@ namespace Server.Items
             Slayer = SlayerName.Silver;
 
             LootType = LootType.Blessed;
-		} 
-		
-		public ApprenticeGargoyleSword( Serial serial ) : base( serial )
+		}
+
+        public override WeaponAbility PrimaryAbility { get { return WeaponAbility.WhirlwindAttack; } }
+        public override WeaponAbility SecondaryAbility { get { return WeaponAbility.Dismount; } }
+
+        public ApprenticeGargoyleSword( Serial serial ) : base( serial )
 		{
 		}
 

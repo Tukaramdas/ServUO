@@ -6,8 +6,8 @@
 
 #region References
 using System;
-
 using Server.Items;
+
 #endregion
 
 namespace Server
@@ -203,7 +203,14 @@ namespace Server
 
 		public static Type[] PotionTypes { get { return m_PotionTypes; } }
 
-		private static readonly Type[] m_SEInstrumentTypes = new[] { typeof(BambooFlute) };
+/*        private static Type[] m_SlayerScrollItems = new Type[]
+{
+            typeof(SuperSlayerDeeds),typeof(LesserSlayerDeed),
+            typeof(SlayerRemovalDeed), typeof(MinorArtifactDeed)
+    };
+        public static Type[] SlayerScrollItems { get { return m_SlayerScrollItems; } }
+*/
+        private static readonly Type[] m_SEInstrumentTypes = new[] { typeof(BambooFlute) };
 
 		public static Type[] SEInstrumentTypes { get { return m_SEInstrumentTypes; } }
 
@@ -267,8 +274,9 @@ namespace Server
         };
         public static Type[] MysticScrollTypes { get { return m_MysticScrollTypes; } }
 
-		#region Mondain's Legacy
-		private static readonly Type[] m_ArcanistScrollTypes = new[]
+
+        #region Mondain's Legacy
+        private static readonly Type[] m_ArcanistScrollTypes = new[]
 		{
 			typeof(ArcaneCircleScroll), typeof(GiftOfRenewalScroll), typeof(ImmolatingWeaponScroll), typeof(AttuneWeaponScroll),
 			typeof(ThunderstormScroll), typeof(NatureFuryScroll), /*typeof( SummonFeyScroll ),			typeof( SummonFiendScroll ),*/
@@ -854,7 +862,12 @@ namespace Server
 			return Construct(m_RegTypes);
 		}
 
-		public static Item RandomPotion()
+  /*      public static Item RandomSlayerScrollItems()
+        {
+            return Construct(m_SlayerScrollItems);
+        }
+*/
+        public static Item RandomPotion()
 		{
 			return Construct(m_PotionTypes);
 		}

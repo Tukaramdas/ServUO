@@ -10,7 +10,16 @@ namespace Server.Items
 		public override int InitMinHits{ get{ return 150; } }
 		public override int InitMaxHits{ get{ return 150; } }
 
-		[Constructable]
+        public override int AosMinDamage { get { return 20; } }
+        public override int AosMaxDamage { get { return 25; } }
+        public override int AosSpeed { get { return 56; } }
+
+        public override int OldStrengthReq { get { return 10; } }
+        public override int OldMinDamage { get { return 20; } }
+        public override int OldMaxDamage { get { return 25; } }
+        public override int OldSpeed { get { return 68; } }
+
+        [Constructable]
 		public ApprenticeSword()
 		{
 			Hue = 57;

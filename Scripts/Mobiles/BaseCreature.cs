@@ -4344,6 +4344,11 @@ namespace Server.Mobiles
         }
         #endregion
 
+    /*    public void SlayerScrollItems()
+        {
+            PackItem(Loot.RandomSlayerScrollItems());
+        }
+*/
         public void PackPotion()
 		{
 			PackItem(Loot.RandomPotion());
@@ -4999,7 +5004,8 @@ namespace Server.Mobiles
 
 		public override bool OnBeforeDeath()
 		{
-			int treasureLevel = TreasureMapLevel;
+
+            int treasureLevel = TreasureMapLevel;
 
 			if (treasureLevel == 1 && Map == Map.Trammel && TreasureMap.IsInHavenIsland(this))
 			{
@@ -5050,11 +5056,32 @@ namespace Server.Mobiles
 				}
 			}
 
-			if (!Summoned && !NoKillAwards && !m_HasGeneratedLoot)
+ /*           #region loot test
+            // if (UtilityRandomDouble() < 1.00) // 100% chance 0.05=5%
+            //{
+            switch (Utility.Random(4)) 
+            {
+                case 0: PackItem(new SuperSlayerDeeds()); break;
+                case 1: PackItem(new LesserSlayerDeed()); break;
+                case 2: PackItem(new SlayerRemovalDeed()); break;
+                case 3: PackItem(new MinorArtifactDeed()); break;
+                    // case 4: PackItem( new Pike() ); break;
+                    // case 5: PackItem( new Buckler() ); break;
+                    // case 6: PackItem( new Bandage( 50 ) ); break;
+                    // case 7: PackItem( new Shirt( Utility.RandomMinMax( 2, 2000 ) ); break;
+                    // case 8: PackItem( new Bandana( Utility.RandomList(1, 1153, 1266, 1177) ) ); break;
+                    // case 9: PackItem( new Kilt() ): break;
+            }
+            // }
+
+            #endregion
+            */
+            if (!Summoned && !NoKillAwards && !m_HasGeneratedLoot)
 			{
 				m_HasGeneratedLoot = true;
 				GenerateLoot(false);
-			}
+                ArtifactValidate.GiveArtifact(this);   //Loot System Change
+            }
 
 			if (!NoKillAwards && Region.IsPartOf("Doom"))
 			{
@@ -5082,11 +5109,14 @@ namespace Server.Mobiles
 			{
 				m_ReceivedHonorContext.OnTargetKilled();
 			}
+        
 
-			return base.OnBeforeDeath();
-		}
 
-		private bool m_NoKillAwards;
+            return base.OnBeforeDeath();
+        }
+
+
+        private bool m_NoKillAwards;
 
 		public bool NoKillAwards { get { return m_NoKillAwards; } set { m_NoKillAwards = value; } }
 
@@ -5318,7 +5348,21 @@ namespace Server.Mobiles
 			}
 		}
 
-		public virtual bool GivesSAArtifact { get { return false; } }
+
+        /*        public virtual bool GivesSlayerScroll { get { return false; } }
+
+                private static readonly Type[] m_SlayerScroll = new[]
+                {
+                    typeof(SuperSlayerDeeds), typeof(LesserSlayerDeed), typeof(SlayerRemovalDeed), typeof(MinorArtifactDeed)
+                    };
+                public static void GiveSlayerScroll(Mobile m)
+                {
+                    PackItem(new SlayerScroll());
+                }
+                */
+
+
+        public virtual bool GivesSAArtifact { get { return false; } }
 
 		private static readonly Type[] m_SAArtifacts = new[]
 		{
@@ -5543,7 +5587,7 @@ namespace Server.Mobiles
                                 fame.Add(totalFame);
                                 karma.Add(totalKarma);
                             }
-
+                            ArtifactValidate.ArtiChance(ds.m_Mobile, this); //Loot System Change
                         }
 
 						OnKilledBy(ds.m_Mobile);
@@ -5554,7 +5598,7 @@ namespace Server.Mobiles
                         GiveGold.GoldTransfer(ds.m_Mobile, c, this);
                         #endregion
 
-						if (!givenFactionKill)
+                        if (!givenFactionKill)
 						{
 							givenFactionKill = true;
 							Faction.HandleDeath(this, ds.m_Mobile);
@@ -5596,8 +5640,8 @@ namespace Server.Mobiles
 						Titles.AwardKarma(titles[i], karma[i], true);
 					}
 				}
-
-				base.OnDeath(c);
+                ArtifactValidate.MultiP(1); //Loot System Change
+                base.OnDeath(c);
 
 				if (DeleteCorpseOnDeath)
 				{

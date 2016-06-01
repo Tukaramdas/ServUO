@@ -6,8 +6,8 @@
 		<accessLevel>Owner</accessLevel>
 		<flags>2</flags>
 		<created>2016-02-07T04:41:48.392201Z</created>
-		<lastLogin>2016-05-19T08:10:18.3468203Z</lastLogin>
-		<totalGameTime>P4DT11H24M14.3009188S</totalGameTime>
+		<lastLogin>2016-06-01T14:08:03.2121799Z</lastLogin>
+		<totalGameTime>P6DT21M18.6246627S</totalGameTime>
 		<chars>
 			<char index="0">1</char>
 			<char index="1">3279</char>
@@ -89,15 +89,20 @@
 	<account>
 		<username>Tukaram</username>
 		<newCryptPassword>EE-00-AC-F5-74-7E-27-FA-31-FD-AD-11-FF-D2-3A-57-C1-FB-C5-EB</newCryptPassword>
+		<flags>2</flags>
 		<created>2016-05-19T07:44:29.757246Z</created>
-		<lastLogin>2016-05-19T08:12:00.3546548Z</lastLogin>
-		<totalGameTime>PT1H8M41.442733S</totalGameTime>
+		<lastLogin>2016-05-31T01:06:28.8623945Z</lastLogin>
+		<totalGameTime>PT23H49M24.2925909S</totalGameTime>
 		<chars>
 			<char index="0">676</char>
+			<char index="1">925</char>
 		</chars>
+		<tags>
+			<tag name="numRewardsChosen">2</tag>
+		</tags>
 		<addressList count="1">
 			<ip>127.0.0.1</ip>
 		</addressList>
-		<totalCurrency>0</totalCurrency>
+		<totalCurrency>5E-06</totalCurrency>
 	</account>
 </accounts>

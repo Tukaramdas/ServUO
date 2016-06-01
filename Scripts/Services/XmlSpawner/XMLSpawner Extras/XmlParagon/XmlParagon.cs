@@ -47,7 +47,7 @@ namespace Server.Engines.XmlSpawner2
             typeof(RoyalGuardsGorget), typeof(RoyalGuardsChestplate),
             typeof(RoyalArchersBow), typeof(HeritageToken),
             typeof(Retort), typeof(RamusNecromanticScalpel),
-            typeof(Pestilence), typeof(NoxBow),
+          //  typeof(Pestilence), typeof(NoxBow),
             typeof(MerlinsPants), typeof(MarbleShield),
             typeof(MagiciansMempo), typeof(MagiciansIllusion),
             typeof(MagesBand), typeof(LuckyEarrings),

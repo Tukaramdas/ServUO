@@ -54,8 +54,9 @@ namespace Server.Mobiles
                 case 3: PackItem(new VengefulSpiritScroll()); break;
 				case 4: PackItem(new WitherScroll()); break;
 			}
+       
 
-
+           
             this.PackItem(new GnarledStaff());
             this.PackNecroReg(17, 24);
         }
@@ -105,6 +106,19 @@ namespace Server.Mobiles
             this.AddLoot(LootPack.Rich);
             this.AddLoot(LootPack.MedScrolls, 2);
         }
+
+        public override bool OnBeforeDeath()
+        {
+            switch (Utility.Random(4))
+            {
+                case 0: this.PackItem(new SuperSlayerDeeds()); break;
+                case 1: this.PackItem(new MinorArtifactDeed()); break;
+                case 2: this.PackItem(new SlayerRemovalDeed()); break;
+                case 3: this.PackItem(new LesserSlayerDeed()); break;
+            }
+            return base.OnBeforeDeath();
+        }
+        
 
         public override void Serialize(GenericWriter writer)
         {

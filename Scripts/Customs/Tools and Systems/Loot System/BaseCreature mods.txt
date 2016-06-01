@@ -1,0 +1,76 @@
+Open BaseCreature.cs.
+
+Find 
+-----------------------------------------------------------
+if ( !Summoned && !NoKillAwards && !m_HasGeneratedLoot )
+{
+	m_HasGeneratedLoot = true;
+	GenerateLoot( false );
+}
+-----------------------------------------------------------
+Replace with 
+
+if ( !Summoned && !NoKillAwards && !m_HasGeneratedLoot )
+{
+	m_HasGeneratedLoot = true;
+	GenerateLoot( false );
+	ArtifactValidate.GiveArtifact(this);
+}
+-----------------------------------------------------------
+Find
+
+public override void OnDeath( Container c )
+-----------------------------------------------------------
+Inside of that, down a bit is this
+
+else
+{
+	titles.Add( ds.m_Mobile );
+	fame.Add( totalFame );
+	karma.Add( totalKarma );
+}
+-----------------------------------------------------------
+replace that with 
+
+else
+{
+	titles.Add( ds.m_Mobile );
+	fame.Add( totalFame );
+	karma.Add( totalKarma );
+}
+						
+ArtifactValidate.ArtiChance(ds.m_Mobile, this);
+-----------------------------------------------------------
+down a bit further is
+
+base.OnDeath( c );
+-----------------------------------------------------------
+
+replace that with
+
+
+ArtifactValidate.MultiP( 1 );
+base.OnDeath( c );
+-----------------------------------------------------------
+
+Comments on RunUO
+
+Also you can do this to increase chance of drop:
+In this snippit, change the 5500 number to a smaller number. The smaller it is the better chance to drop.
+Code:
+
+float artichance = multip*( 20*(hits+stam+mana) / 5500);
+
+
+
+
+
+Nevermind Guys. I figured it out, In case anyone else reads this..
+
+Edit these:
+if( artichance < 100 )
+artichance = 100;
+
+I have a 100% arti chance atm. 
+
+
