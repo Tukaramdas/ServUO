@@ -6,8 +6,8 @@
 		<accessLevel>Owner</accessLevel>
 		<flags>2</flags>
 		<created>2016-02-07T04:41:48.392201Z</created>
-		<lastLogin>2016-06-01T14:08:03.2121799Z</lastLogin>
-		<totalGameTime>P6DT21M18.6246627S</totalGameTime>
+		<lastLogin>2016-06-07T04:12:48.212681Z</lastLogin>
+		<totalGameTime>P6DT11H58M59.7807332S</totalGameTime>
 		<chars>
 			<char index="0">1</char>
 			<char index="1">3279</char>
@@ -42,7 +42,7 @@
 		<addressList count="1">
 			<ip>127.0.0.1</ip>
 		</addressList>
-		<totalCurrency>0.00073989199999999992</totalCurrency>
+		<totalCurrency>0.00074483199999999985</totalCurrency>
 	</account>
 	<account>
 		<username>radheya</username>
@@ -91,8 +91,8 @@
 		<newCryptPassword>EE-00-AC-F5-74-7E-27-FA-31-FD-AD-11-FF-D2-3A-57-C1-FB-C5-EB</newCryptPassword>
 		<flags>2</flags>
 		<created>2016-05-19T07:44:29.757246Z</created>
-		<lastLogin>2016-05-31T01:06:28.8623945Z</lastLogin>
-		<totalGameTime>PT23H49M24.2925909S</totalGameTime>
+		<lastLogin>2016-06-07T04:18:50.6964139Z</lastLogin>
+		<totalGameTime>P1DT5H32M49.3226784S</totalGameTime>
 		<chars>
 			<char index="0">676</char>
 			<char index="1">925</char>
@@ -103,6 +103,6 @@
 		<addressList count="1">
 			<ip>127.0.0.1</ip>
 		</addressList>
-		<totalCurrency>5E-06</totalCurrency>
+		<totalCurrency>5.611E-06</totalCurrency>
 	</account>
 </accounts>
