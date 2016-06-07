@@ -19,7 +19,7 @@ namespace Server.Items
 		public SuperSlayerDeeds() : base( 0x14F0 )
 		{
 			Weight = 1.0;
-			LootType = LootType.Blessed;
+		//	LootType = LootType.Blessed;
 			Name = "Super Slayer Deeds Picker";
 		}
 

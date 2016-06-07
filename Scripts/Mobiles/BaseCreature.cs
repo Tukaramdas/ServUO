@@ -5005,6 +5005,99 @@ namespace Server.Mobiles
 		public override bool OnBeforeDeath()
 		{
 
+            #region animal statues
+          
+            {
+                switch (Utility.Random(830))
+                {
+                    case 0: PackItem(new ImpStatue()); break;
+                    case 1: PackItem(new CorpserStatue()); break;
+                    case 2: PackItem(new CyclopsStatue()); break;
+                    case 3: PackItem(new DaemonStatue()); break;
+                    case 4: PackItem(new SquirrelStatue()); break;
+                    case 5: PackItem(new SnowLeopardStatue()); break;
+                    case 6: PackItem(new SilverbackGorillaStatue()); break;
+                    case 7: PackItem(new SilverWolfStatue()); break;
+                    case 8: PackItem(new RuneBeetleStatue()); break;
+                    case 9: PackItem(new SeaHorseStatue()); break;
+                    case 10: PackItem(new TimberWolfStatue()); break;
+                    case 11: PackItem(new VampireBatStatue()); break;
+                    case 12: PackItem(new HellcatStatue()); break;
+                    case 13: PackItem(new HellHoundStatue()); break;
+                    case 14: PackItem(new NightmareStatue()); break;
+                    case 15: PackItem(new PantherStatue()); break;
+                    case 16: PackItem(new GiantSilverSnakeStatue()); break;
+                    case 17: PackItem(new GiantSnakeStatue()); break;
+                    case 18: PackItem(new GiantSpiderStatue()); break;
+                    case 19: PackItem(new GrayWolfStatue()); break;
+                    case 20: PackItem(new GiantFrogStatue()); break;
+                    case 21: PackItem(new GiantIceSnakeStatue()); break;
+                    case 22: PackItem(new GiantLavaSnakeStatue()); break;
+                    case 23: PackItem(new GiantScorpionStatue()); break;
+                    case 24: PackItem(new DogHoundStatue()); break;
+                    case 25: PackItem(new DreadSpiderStatue()); break;
+                    case 26: PackItem(new FerretStatue()); break;
+                    case 27: PackItem(new FrostSpiderStatue()); break;
+                    case 28: PackItem(new BillyGoatStatue()); break;
+                    case 29: PackItem(new BlackWidowSpiderStatue()); break;
+                    case 30: PackItem(new CougarStatue()); break;
+                    case 31: PackItem(new DireWolfStatue()); break;
+                    case 32: PackItem(new PoisonElementalStatue()); break;
+                    case 33: PackItem(new SandVortexStatue()); break;
+                    case 34: PackItem(new SnowElementalStatue()); break;
+                    case 35: PackItem(new WaterElementalStatue()); break;
+                    case 36: PackItem(new AcidElementalStatue()); break;
+                    case 37: PackItem(new BloodElementalStatue()); break;
+                    case 38: PackItem(new FireElementalStatue()); break;
+                    case 39: PackItem(new IceElementalStatue()); break;
+                    case 40: PackItem(new SkeletonStatue()); break;
+                    case 41: PackItem(new ZombieStatue()); break;
+                    case 42: PackItem(new LordBlackthornStatue()); break;
+                    case 43: PackItem(new EvilMageStatue()); break;
+                    case 44: PackItem(new MummyStatue()); break;
+                    case 45: PackItem(new RottingCorpseStatue()); break;
+                    case 46: PackItem(new SkeletonKnightStatue()); break;
+                    case 47: PackItem(new SkeletonMageStatue()); break;
+                    case 48: PackItem(new GhoulStatue()); break;
+                    case 49: PackItem(new HeadlessStatue()); break;
+                    case 50: PackItem(new LicheLordStatue()); break;
+                    case 51: PackItem(new LicheStatue()); break;
+                    case 52: PackItem(new TerathanWarriorStatue()); break;
+                    case 53: PackItem(new TitanStatue()); break;
+                    case 54: PackItem(new WyvernStatue()); break;
+                    case 55: PackItem(new GhostStatue()); break;
+                    case 56: PackItem(new SwampTentaclesStatue()); break;
+                    case 57: PackItem(new TerathanAvengerStatue()); break;
+                    case 58: PackItem(new TerathanDroneStatue()); break;
+                    case 59: PackItem(new TerathanQueenStatue()); break;
+                    case 60: PackItem(new SolenWarriorStatue()); break;
+                    case 61: PackItem(new SolenWorkerStatue()); break;
+                    case 62: PackItem(new StoneGargoyleStatue()); break;
+                    case 63: PackItem(new StoneHarpyStatue()); break;
+                    case 64: PackItem(new OrcStatue()); break;
+                    case 65: PackItem(new RatmanStatue()); break;
+                    case 66: PackItem(new SlimeStatue()); break;
+                    case 67: PackItem(new SolenQueenStatue()); break;
+                    case 68: PackItem(new OphidianWarriorStatue()); break;
+                    case 69: PackItem(new OrcCaptainStatue()); break;
+                    case 70: PackItem(new OrcLordStatue()); break;
+                    case 71: PackItem(new OrcShamanStatue()); break;
+                    case 72: PackItem(new OphidianArchmageStatue()); break;
+                    case 73: PackItem(new OphidianKnightStatue()); break;
+                    case 74: PackItem(new OphidianMageStatue()); break;
+                    case 75: PackItem(new OphidianQueenStatue()); break;
+                    case 76: PackItem(new ElderDaemonStatue()); break;
+                    case 77: PackItem(new KrakenStatue()); break;
+                    case 78: PackItem(new MongbatStatue()); break;
+                    case 79: PackItem(new OgreLordStatue()); break;
+                    case 80: PackItem(new DragonStatue()); break;
+                    case 81: PackItem(new GazerStatue()); break;
+                    case 82: PackItem(new IceFiendDaemonStatue()); break;
+                    
+                }
+            }
+
+            #endregion
             int treasureLevel = TreasureMapLevel;
 
 			if (treasureLevel == 1 && Map == Map.Trammel && TreasureMap.IsInHavenIsland(this))

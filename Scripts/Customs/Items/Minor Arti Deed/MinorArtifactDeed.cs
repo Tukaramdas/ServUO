@@ -19,7 +19,7 @@ namespace Server.Items
 		public MinorArtifactDeed ( string name ) : base ( 0x14F0 )
 		{
 			Name = "Minor Artifact Deed";
-			LootType = LootType.Blessed;
+		//	LootType = LootType.Blessed;
 			Hue = 1173;
 		}
 

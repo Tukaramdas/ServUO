@@ -21,6 +21,10 @@ namespace Server
 
 		public static Type[] ArtifactTypes = new Type[]
         {
+            typeof( SuperSlayerDeeds ),typeof( LesserSlayerDeed ),typeof( SlayerRemovalDeed ),typeof( RAD ),
+            typeof(ArtifactDeed),typeof(RandomArtifactDeed),typeof(AllDyeTubsAll),typeof(MinorArtifactDeed)
+
+            /*
  typeof( SquirrelStatue ),typeof( SnowLeopardStatue ),typeof( SilverbackGorillaStatue ),typeof( SilverWolfStatue ),
  typeof( RuneBeetleStatue ),typeof( SeaHorseStatue ),typeof( TimberWolfStatue ),typeof( VampireBatStatue ),
  typeof( HellcatStatue ),typeof( HellHoundStatue ),typeof( NightmareStatue ),typeof( PantherStatue ),
@@ -42,7 +46,7 @@ namespace Server
  typeof( ElderDaemonStatue ),typeof( KrakenStatue ),typeof( MongbatStatue ),typeof( OgreLordStatue ),
  typeof( DragonStatue ),typeof( GazerStatue ),typeof( IceFiendDaemonStatue ),typeof( ImpStatue ),
  typeof( CorpserStatue ),typeof( CyclopsStatue ),typeof( DaemonStatue )
- 
+ */
             /*
 		//Paragon
 			typeof( ), 

@@ -305,7 +305,8 @@ namespace Server.Multis
 
             list = new ArrayList(this.PlayerBarkeepers);
 
-            foreach (PlayerBarkeeper barkeeper in list)
+             foreach (PlayerBarkeeper barkeeper in list)
+           // foreach (MobileBarkeeper barkeeper in list)  //Squire System addition
                 barkeeper.Delete();
         }
 

@@ -21,12 +21,12 @@ namespace Server.Gumps
          m_Mobile = from;
 	     m_Deed = deed; 
 	
-	 AddPage( 1 ); 
+	 AddPage( 1 );
 
-		 AddBackground( 0, 0, 300, 400, 3000 ); 
-         AddBackground( 8, 8, 284, 384, 5054 ); 
+            AddBackground(0, 0, 300, 400, 5054);
+            AddBackground(8, 8, 284, 384, 3000);
 
-         AddLabel( 40, 12, 37, "Minor Artifact List" );  
+            AddLabel( 40, 12, 37, "Minor Artifact List" );  
 
          Account a = from.Account as Account; 
 
@@ -48,30 +48,8 @@ namespace Server.Gumps
          AddBackground( 0, 0, 300, 400, 5054 ); 
          AddBackground( 8, 8, 284, 384, 3000 ); 
 
-	 AddLabel( 40, 12, 0, "Weapons" );
+	 AddLabel( 40, 12, 0, "Weapons List" );
         	
-          
-
-         AddLabel( 52, 40, 37, "Weapons Menu" ); 
-         AddButton( 12, 40, 4005, 4007, 0, GumpButtonType.Page, 2 ); 
-         AddLabel( 52, 60, 37, "Misc" ); 
-         AddButton( 12, 60, 4005, 4007, 0, GumpButtonType.Page, 3 ); 
-         AddLabel( 52, 80, 37, "Jewelery Menu" ); 
-         AddButton( 12, 80, 4005, 4007, 10, GumpButtonType.Page, 4 ); 
-         AddLabel( 52, 100, 37, "Shields Menu" ); 
-         AddButton( 12, 100, 4005, 4007, 0, GumpButtonType.Page, 5 );
-         AddLabel( 52, 360, 37, "Close" ); 
-         AddButton( 12, 360, 4005, 4007, 0, GumpButtonType.Reply, 0 ); 
-	
-
-	 AddPage( 2 ); 
-
-         AddBackground( 0, 0, 300, 400, 3000 ); 
-         AddBackground( 8, 8, 284, 384, 5054 ); 
-
-	 AddLabel( 40, 12, 37, "Weapons List" );
-        	
-          
 
          AddLabel( 52, 40, 37, "Arctic Death Dealer" ); 
          AddButton( 12, 40, 4005, 4007, 1, GumpButtonType.Reply, 1 ); 
@@ -79,7 +57,7 @@ namespace Server.Gumps
          AddButton( 12, 60, 4005, 4007, 2, GumpButtonType.Reply, 2 ); 
          AddLabel( 52, 80, 37, "Bow of the Juka King" ); 
          AddButton( 12, 80, 4005, 4007, 3, GumpButtonType.Reply, 3 ); 
-         AddLabel( 52, 100, 37, "Captain Quackle bushs Cutlass" ); 
+         AddLabel( 52, 100, 37, "Captain Quacklebush's Cutlass" ); 
          AddButton( 12, 100, 4005, 4007, 4, GumpButtonType.Reply, 4 ); 
          AddLabel( 52, 120, 37, "Cavorting Club" ); 
          AddButton( 12, 120, 4005, 4007, 5, GumpButtonType.Reply, 5 ); 
@@ -104,12 +82,12 @@ namespace Server.Gumps
          AddButton( 12, 360, 4005, 4007, 0, GumpButtonType.Page, 1 ); 
 	
 
-         AddPage( 3 ); 
+         AddPage( 3 );
 
-         AddBackground( 0, 0, 300, 400, 3000 ); 
-         AddBackground( 8, 8, 284, 384, 5054 ); 
+            AddBackground(0, 0, 300, 400, 5054);
+            AddBackground(8, 8, 284, 384, 3000);
 
-         AddLabel( 40, 12, 37, "Armor List" ); 
+            AddLabel( 40, 12, 37, "Armor List" ); 
 
          
          AddLabel( 52, 40, 37, "Burglars Bandana" ); 
@@ -132,12 +110,12 @@ namespace Server.Gumps
          AddButton( 12, 360, 4005, 4007, 0, GumpButtonType.Page, 1 );
 	 
 
-	 AddPage( 4 ); 
+	 AddPage( 4 );
 
-         AddBackground( 0, 0, 300, 400, 3000 ); 
-         AddBackground( 8, 8, 284, 384, 5054 );  
+            AddBackground(0, 0, 300, 400, 5054);
+            AddBackground(8, 8, 284, 384, 3000);
 
-         AddLabel( 40, 12, 37, "Misc List" ); 
+            AddLabel( 40, 12, 37, "Misc List" ); 
 
          
 
@@ -152,12 +130,12 @@ namespace Server.Gumps
          AddButton( 12, 360, 4005, 4007, 0, GumpButtonType.Page, 1 );
 	  
 
-	 AddPage( 5 ); 
-  
-         AddBackground( 0, 0, 300, 400, 3000 ); 
-         AddBackground( 8, 8, 284, 384, 5054 );
+	 AddPage( 5 );
 
-         AddLabel( 40, 12, 37, "Shields List" ); 
+            AddBackground(0, 0, 300, 400, 5054);
+            AddBackground(8, 8, 284, 384, 3000);
+
+            AddLabel( 40, 12, 37, "Shields List" ); 
 
          
 

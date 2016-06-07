@@ -15,7 +15,7 @@ namespace Server.Items
 		public LesserSlayerDeed() : base( 0x14F0 )
 		{
 			Weight = 1.0;
-			LootType = LootType.Blessed;
+		//	LootType = LootType.Blessed;
 			Name = "Lesser Slayer Deeds Picker";
 		}
 

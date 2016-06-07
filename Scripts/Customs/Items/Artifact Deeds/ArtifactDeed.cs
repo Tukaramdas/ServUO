@@ -27,7 +27,7 @@ namespace Server.Items
 		public ArtifactDeed ( string name ) : base ( 0x14F0 )
 		{
 			Name = "Artifact Deed";
-			LootType = LootType.Blessed;
+		//	LootType = LootType.Blessed;
 			Hue = 1172;
 		}
 
@@ -78,8 +78,8 @@ namespace Server.Gumps
 	
 	 AddPage( 1 ); 
 
-	 AddBackground( 0, 0, 300, 400, 3000 ); 
-         AddBackground( 8, 8, 284, 384, 5120 ); 
+	 AddBackground( 0, 0, 300, 400, 5120 ); 
+         AddBackground( 8, 8, 284, 384, 3000 ); 
 
          AddLabel( 40, 12, 37, "Artifact List" );  
 
@@ -101,8 +101,8 @@ namespace Server.Gumps
 	
 	 AddPage( 2 ); 
 
-         AddBackground( 0, 0, 300, 400, 3000 ); 
-         AddBackground( 8, 8, 284, 384, 5120 ); 
+         AddBackground( 0, 0, 300, 400, 5120 ); 
+         AddBackground( 8, 8, 284, 384, 3000 ); 
 
 	 AddLabel( 40, 12, 37, "Weapons List" );
         	
@@ -146,8 +146,8 @@ namespace Server.Gumps
 
          AddPage( 3 ); 
 
-         AddBackground( 0, 0, 300, 400, 3000 ); 
-         AddBackground( 8, 8, 284, 384, 5120 ); 
+         AddBackground( 0, 0, 300, 400, 5120 ); 
+         AddBackground( 8, 8, 284, 384, 3000 ); 
 
          AddLabel( 40, 12, 37, "Armor List" ); 
 
@@ -184,8 +184,8 @@ namespace Server.Gumps
 
 	 AddPage( 4 ); 
 
-         AddBackground( 0, 0, 300, 400, 3000 ); 
-         AddBackground( 8, 8, 284, 384, 5120 );  
+         AddBackground( 0, 0, 300, 400, 5120 ); 
+         AddBackground( 8, 8, 284, 384, 3000 );  
 
          AddLabel( 40, 12, 37, "Jewelery List" ); 
 
@@ -206,8 +206,8 @@ namespace Server.Gumps
 
 	 AddPage( 5 ); 
   
-         AddBackground( 0, 0, 300, 400, 3000 ); 
-         AddBackground( 8, 8, 284, 384, 5120 );
+         AddBackground( 0, 0, 300, 400, 5120 ); 
+         AddBackground( 8, 8, 284, 384, 3000 );
 
          AddLabel( 40, 12, 37, "Shields List" ); 
 
@@ -224,8 +224,8 @@ namespace Server.Gumps
 
 	 AddPage( 6 ); 
 
-         AddBackground( 0, 0, 300, 400, 3000 ); 
-         AddBackground( 8, 8, 284, 384, 5120 );  
+         AddBackground( 0, 0, 300, 400, 5120 ); 
+         AddBackground( 8, 8, 284, 384, 3000 );  
 
          AddLabel( 40, 12, 37, "Hats & Masks List" ); 
 

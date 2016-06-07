@@ -148,28 +148,6 @@ namespace Server.Mobiles
             return m_Table.Contains(m);
         }
 
-        #region loot test
-        public override void OnDeath(Container c) // (random chance)
-
-        {
-            base.OnDeath(c);
-            if (0.10 > Utility.RandomDouble()) // 10% chance to drop
-                switch (Utility.Random(10))
-            {
-                case 0: c.DropItem(new SuperSlayerDeeds()); break;
-                case 1: c.DropItem(new LesserSlayerDeed()); break;
-                case 2: c.DropItem(new SlayerRemovalDeed()); break;
-                case 3: c.DropItem(new MinorArtifactDeed()); break;
-                case 4: c.DropItem(new ArtifactDeed()); break;
-                case 5: c.DropItem(new RandomArtifactDeed()); break;
-                case 6: c.DropItem(new AllDyeTubsAll()); break;
-                case 7: c.DropItem(new AllDyeTubsAll()); break;
-                case 8: c.DropItem(new AllDyeTubsAll()); break;
-                case 9: c.DropItem(new AllDyeTubsAll()); break;
-            }
-        }
-        #endregion
-
         public override void Serialize(GenericWriter writer)
         {
             base.Serialize(writer);

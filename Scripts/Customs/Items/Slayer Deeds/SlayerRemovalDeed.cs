@@ -123,7 +123,7 @@ namespace Server.Items
 		{
 			Weight = 1.0;
 			Name = "Slayer Removal Deed";
-			LootType = LootType.Blessed;
+		//	LootType = LootType.Blessed;
 			Hue = 1175;
 
 			SlayerOne = true;
