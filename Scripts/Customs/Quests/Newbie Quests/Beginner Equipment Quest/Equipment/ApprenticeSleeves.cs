@@ -23,10 +23,10 @@ namespace Server.Items
 		{
 			Hue = 57;
 			Name = "Apprentice Sleeves";
-			Weight = 5;
+			Weight = 1;
 			
 			Attributes.BonusMana = 10;
-			Attributes.Luck = 50;
+			Attributes.Luck = 500;
             Attributes.LowerRegCost = 10;
 			
 			PhysicalBonus = 10;

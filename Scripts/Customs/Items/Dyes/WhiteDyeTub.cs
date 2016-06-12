@@ -12,15 +12,15 @@ namespace Server.Items
 		
 		public override void OnDoubleClick( Mobile from )
 		{
-			if ( from.Skills.Tailoring.Value < 70.0 )
+			/*if ( from.Skills.Tailoring.Value < 70.0 )
 			{
 				from.SendLocalizedMessage( 1063013, "70\tTailoring" ); // You need at least ~1_SKILL_REQUIREMENT~ ~2_SKILL_NAME~ skill to use that ability.
             }
 
-			else
-			{
+			else */
+			//{
 				base.OnDoubleClick( from );
-			}
+			//}
 		}
 
 		public WhiteDyeTub( Serial serial ) : base( serial )

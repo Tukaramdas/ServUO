@@ -5005,7 +5005,7 @@ namespace Server.Mobiles
 		public override bool OnBeforeDeath()
 		{
 
-            #region animal statues
+ #region animal statues
           
             {
                 switch (Utility.Random(830))
@@ -5097,7 +5097,7 @@ namespace Server.Mobiles
                 }
             }
 
-            #endregion
+ #endregion
             int treasureLevel = TreasureMapLevel;
 
 			if (treasureLevel == 1 && Map == Map.Trammel && TreasureMap.IsInHavenIsland(this))

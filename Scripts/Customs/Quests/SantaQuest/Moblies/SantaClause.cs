@@ -14,12 +14,12 @@ using System.Collections.Generic;
 namespace Server.Mobiles
 {
 	[CorpseName( "santa claus Corpse" )]
-	public class SantaClaus : Mobile
+	public class Santa : Mobile
 	{
         public virtual bool IsInvulnerable{ get{ return true; } }
 		
 		[Constructable]
-		public SantaClaus ()
+		public Santa ()
 		{
 			Name = "SantaClaus";
             Title = "Quest Giver";
@@ -72,7 +72,7 @@ namespace Server.Mobiles
            
 		}
 
-        public SantaClaus(Serial serial)
+        public Santa(Serial serial)
             : base(serial)
 		{
 		}
