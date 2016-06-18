@@ -1,11 +1,15 @@
 ﻿//////////////////////////////////
-//				                //
-//				                //
-//				                //
-// Just testing gump settings   //
-//				                //
-//	                        	//
-//				                //
+//				                
+//				                
+//				                
+// Just testing gump settings   
+//				               
+//	      For changes to gumps etc....
+//
+//  AddBackground(85, 30, 329, 408, 3500);
+//
+//  AddBackground(int x, int y, int width, int height, int gumpID)                  	
+//				             
 //////////////////////////////////	
 
 
@@ -33,7 +37,7 @@ namespace Server.Gumps
 
             this.AddLabel(195, 65, 0, @"Player Guide");//Gump Title
             this.AddLabel(85, 90, 0, @"Commands");//Button1 
-            this.AddLabel(85, 120, 0, @"Server Info");//Button2 
+            this.AddLabel(85, 120, 0, @"Shard Info");//Button2 
             this.AddLabel(85, 150, 0, @"Getting Started");//Button3 
             this.AddLabel(225, 90, 0, @"Skills I");// Button 4
             this.AddLabel(225, 120, 0, @"Skills II");//Button 5
@@ -51,10 +55,11 @@ namespace Server.Gumps
             this.AddBackground(23, 50, 525, 303, 302);
 
             this.AddLabel(195, 65, 0, @"Skill Part II");//Gump Title
-            this.AddButton(35, 320, 4014, 4014, (int)Buttons.BackButton1, GumpButtonType.Page, 1);//Back to page 1
+            this.AddButton(35, 320, 4014, 4015, (int)Buttons.BackButton1, GumpButtonType.Page, 1);//Back to page 1
             this.AddImage(455, 71, 9000);
             this.AddHtml(42, 85, 407, 224, @"The following is basic information on the skills available
-,", (bool)true, (bool)true);
+Put stuff here", (bool)true, (bool)true);
+
 
             ////////////////////////////////////////////Page Break/////////////////////////////////////////////////////////
             this.AddPage(6);

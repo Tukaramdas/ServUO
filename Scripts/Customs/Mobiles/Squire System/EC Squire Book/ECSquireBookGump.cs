@@ -74,7 +74,7 @@ Squires will automatically use bandages to heal themselves and their masters whe
             this.AddLabel(195, 65, 0, @"Combat");//Gump Title
             this.AddButton(35, 320, 4014, 4014, (int)Buttons.BackButton1, GumpButtonType.Page, 1);//Back to page 1
             this.AddImage(455, 71, 9000);
-            this.AddHtml(42, 85, 407, 224, @"Arm: orders your squire to arm themselves with what is in their inventory.  
+            this.AddHtml(42, 85, 407, 224, @"Squire name Arm: orders your squire to arm themselves with what is in their inventory.  
 Attack: orders your squire to attack a target using weapon abilities.  
 Kill: see Attack.  
 Guard: orders your squire to guard you from any aggressive enemy and use their weapon skills.  
