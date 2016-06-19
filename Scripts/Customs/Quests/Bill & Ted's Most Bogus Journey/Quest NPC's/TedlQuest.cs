@@ -37,7 +37,7 @@ namespace Server.Mobiles
             ////////clothing and other apperance
             AddItem(new ShortHair(hairHue));
             AddItem(new Server.Items.HoodedShroudOfShadows());
-            AddItem(new Server.Items.ShortPants(5));
+            AddItem(new Server.Items.ShortPants(5)); ;
             AddItem(new Server.Items.Boots());
             Blessed = true;
             CantWalk = true;

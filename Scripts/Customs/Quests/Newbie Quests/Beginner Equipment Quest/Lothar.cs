@@ -112,92 +112,203 @@ namespace Server.Mobiles
 				}
 				else if( dropped is DiseasedRatMeat )
 				{
-					dropped.Delete();
-					mobile.AddToBackpack( new ApprenticeRing() );
-					mobile.AddToBackpack( new Level2Recommendation() );
-					mobile.SendGump( new Lothar1Gump( mobile ));
-					return true;
-				}
+                    dropped.Delete();
+                    mobile.SendGump(new Lothar1Gump(mobile));
+                    if (m.Race != Race.Gargoyle)
+                    {
+                        mobile.AddToBackpack(new ApprenticeRing());
+                        mobile.AddToBackpack(new Level2Recommendation());
+                    }
+                    else
+                    {
+                        mobile.AddToBackpack(new ApprenticeGargoyleRing());
+                        mobile.AddToBackpack(new Level2GargoyleRecommendation());
+                    }
+                    return true;
+                }
 				else if( dropped is BloodyBatWing )
 				{
-					dropped.Delete();
-					mobile.AddToBackpack( new ApprenticeBracelet() );
-					mobile.AddToBackpack( new Level3Recommendation() );
+					dropped.Delete();	
 					mobile.SendGump( new Lothar2Gump( mobile ));
-					return true;
+                    if (m.Race != Race.Gargoyle)
+                    {
+                        mobile.AddToBackpack(new ApprenticeBracelet());
+                        mobile.AddToBackpack( new Level3Recommendation() );
+                    }
+                    else
+                    {
+                        mobile.AddToBackpack(new ApprenticeGargoyleBracelet());
+                        mobile.AddToBackpack(new Level3GargoyleRecommendation());
+                    }
+                    return true;
 				}
 				else if( dropped is ToadEye )
 				{
 					dropped.Delete();
-					mobile.AddToBackpack( new ApprenticeEarrings() );
-					mobile.AddToBackpack( new Level4Recommendation() );
 					mobile.SendGump( new Lothar3Gump( mobile ));
-					return true;
+                    if (m.Race != Race.Gargoyle)
+                    {
+                        mobile.AddToBackpack(new ApprenticeEarrings());
+                        mobile.AddToBackpack(new Level4Recommendation());
+                    }
+                    else
+                    {
+
+                        mobile.AddToBackpack(new ApprenticeGargoyleEarrings());
+                        mobile.AddToBackpack(new Level4GargoyleRecommendation());
+                    }
+                        return true;
 				}
 				else if( dropped is WhiteSnakeEgg )
 				{
 					dropped.Delete();
-					mobile.AddToBackpack( new ApprenticeGorget() );
-					mobile.AddToBackpack( new Level5Recommendation() );
 					mobile.SendGump( new Lothar4Gump( mobile ));
-					return true;
-				}
+
+                    if (m.Race != Race.Gargoyle)
+                    {
+                        mobile.AddToBackpack(new ApprenticeGorget());
+                        mobile.AddToBackpack(new Level5Recommendation());
+                    }
+                    else
+                    {
+                        mobile.AddToBackpack(new ApprenticeGargoyleApron());
+                        mobile.AddToBackpack(new Level5GargoyleRecommendation());
+                    }
+                    return true;
+                }
 				else if( dropped is BearFur )
 				{
 					dropped.Delete();
-					mobile.AddToBackpack( new ApprenticeGloves() );
-					mobile.AddToBackpack( new Level6Recommendation() );
 					mobile.SendGump( new Lothar5Gump( mobile ));
-					return true;
-				}
+
+                    if (m.Race != Race.Gargoyle)
+                    {
+
+                        mobile.AddToBackpack(new ApprenticeGloves());
+                        mobile.AddToBackpack(new Level6Recommendation());
+                    }
+                    else
+                    {
+
+                        mobile.AddToBackpack(new ApprenticeGargoyleWingArmor());
+                        mobile.AddToBackpack(new Level6GargoyleRecommendation());
+                    }
+                    return true;
+                }
 				else if( dropped is DarkFeather )
 				{
 					dropped.Delete();
-					mobile.AddToBackpack( new ApprenticeCap() );
-					mobile.AddToBackpack( new Level7Recommendation() );
-					mobile.SendGump( new Lothar6Gump( mobile ));
-					return true;
-				}
+                    mobile.SendGump( new Lothar6Gump( mobile ));
+
+                    if (m.Race != Race.Gargoyle)
+                    {
+                        mobile.AddToBackpack(new ApprenticeCap());
+                        mobile.AddToBackpack(new Level7Recommendation());
+                    }
+                    else
+                    {
+                        mobile.AddToBackpack(new Level7GargoyleRecommendation());
+                        if (mobile.Female)
+                            from.AddToBackpack(new ApprenticeFemaleGargoyleKilt());
+
+                        else
+
+                            from.AddToBackpack(new ApprenticeMaleGargoyleKilt());
+                    }
+                    return true;
+                }
 				else if( dropped is RodentBlood )
 				{
 					dropped.Delete();
-					mobile.AddToBackpack( new ApprenticeSleeves() );
-					mobile.AddToBackpack( new Level8Recommendation() );
-					mobile.SendGump( new Lothar7Gump( mobile ));
-					return true;
-				}
+                    mobile.SendGump( new Lothar7Gump( mobile ));
+                    if (m.Race != Race.Gargoyle)
+                    {
+                        mobile.AddToBackpack(new ApprenticeSleeves());
+                        mobile.AddToBackpack(new Level8Recommendation());
+                    }
+                    else
+                    {
+                        mobile.AddToBackpack(new Level8GargoyleRecommendation());
+                        if (mobile.Female)
+                            from.AddToBackpack(new ApprenticeFemaleGargoyleSleeves());
+                        else
+                            from.AddToBackpack(new ApprenticeMaleGargoyleSleeves());
+                    }
+                    return true;
+                }
 				else if( dropped is ScaledLeather )
 				{
 					dropped.Delete();
-					mobile.AddToBackpack( new ApprenticeLegs() );
-					mobile.AddToBackpack( new Level9Recommendation() );
-					mobile.SendGump( new Lothar8Gump( mobile ));
-					return true;
+                    mobile.SendGump( new Lothar8Gump( mobile ));
+                    if (m.Race != Race.Gargoyle)
+                    {
+                        mobile.AddToBackpack(new ApprenticeLegs());
+                        mobile.AddToBackpack(new Level9Recommendation());
+                    }
+                    else
+                    {
+                        mobile.AddToBackpack(new Level9GargoyleRecommendation());
+                        if (mobile.Female)
+                            from.AddToBackpack(new ApprenticeFemaleGargoyleLegs());
+                        else
+                            from.AddToBackpack(new ApprenticeMaleGargoyleLegs());
+                    }
+                    return true;
 				}
 				else if( dropped is GlowingSkull )
 				{
 					dropped.Delete();
-					mobile.AddToBackpack( new ApprenticeTunic() );
-					mobile.AddToBackpack( new Level10Recommendation() );
-					mobile.SendGump( new Lothar9Gump( mobile ));
-					return true;
+                    mobile.SendGump( new Lothar9Gump( mobile ));
+
+                    if (m.Race != Race.Gargoyle)
+                    {
+                        mobile.AddToBackpack(new ApprenticeTunic());
+                        mobile.AddToBackpack(new Level10Recommendation());
+                    }
+                    else
+                    {
+                        mobile.AddToBackpack(new Level10GargoyleRecommendation());
+                        if (mobile.Female)
+                            from.AddToBackpack(new ApprenticeFemaleGargoyleChest());
+                        else
+                            from.AddToBackpack(new ApprenticeMaleGargoyleChest());
+                    }
+                    return true;
 				}
 				else if( dropped is MagicOrcHelm )
 				{
 					dropped.Delete();
-					mobile.AddToBackpack( new ApprenticeShield() );
-					mobile.AddToBackpack( new MasterRecommendation() );
-					mobile.AddToBackpack( new BankCheck( 5000 ) );
+                    mobile.AddToBackpack( new BankCheck( 5000 ) );
 					mobile.SendGump( new Lothar10Gump( mobile ));
-					return true;
+
+                    if (m.Race != Race.Gargoyle)
+                    {
+                        mobile.AddToBackpack(new ApprenticeShield());
+                        mobile.AddToBackpack(new MasterRecommendation());
+                    }
+                    else
+                    {
+                        mobile.AddToBackpack(new ApprenticeGargoyleShield());
+                        mobile.AddToBackpack(new MasterGargoyleRecommendation());
+                    }
+                        return true;
 				}
 				else if( dropped is SavageHead )
 				{
 					dropped.Delete();
-					mobile.AddToBackpack( new ApprenticeSword() );
-					mobile.AddToBackpack( new BankCheck( 10000 ) );
+                    mobile.AddToBackpack( new BankCheck( 10000 ) );
 					mobile.SendGump( new LotharFinishGump( mobile ));
-					return true;
+
+                    if (m.Race != Race.Gargoyle)
+                    {
+                        mobile.AddToBackpack(new ApprenticeSword());
+                    }
+                    else
+                    {
+                        mobile.AddToBackpack(new ApprenticeGargoyleSword());
+                    }
+
+                    return true;
 				}
 					else
 					{

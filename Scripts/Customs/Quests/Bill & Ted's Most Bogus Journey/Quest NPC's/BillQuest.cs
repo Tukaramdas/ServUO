@@ -35,11 +35,14 @@ namespace Server.Mobiles
             int hairHue = 0x47E;
             ////////clothing and other apperance
             AddItem(new ShortHair(hairHue));
-            AddItem(new Server.Items.HoodedShroudOfShadows());
+            AddItem(new Server.Items.HoodedShroudOfShadows(2118));
+            //AddItem(new Server.Items.HoodedShroudOfShadows(Hue = 2118));
             AddItem(new Server.Items.ShortPants(5));
             AddItem(new Server.Items.Boots());
-            Blessed = true; CantWalk = true;
+            Blessed = true;
+            CantWalk = true;
         }
+
         public Bill(Serial serial) : base(serial) { }
         public override void GetContextMenuEntries(Mobile from, List<ContextMenuEntry> list)
         {
