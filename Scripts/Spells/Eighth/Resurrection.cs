@@ -1,6 +1,8 @@
 using System;
 using Server.Gumps;
 using Server.Targeting;
+using Server.Network; // Added References
+using Server.Mobiles; // Added
 
 namespace Server.Spells.Eighth
 {
@@ -54,19 +56,19 @@ namespace Server.Spells.Eighth
             else if (!this.Caster.Alive)
             {
                 this.Caster.SendLocalizedMessage(501040); // The resurrecter must be alive.
-            }
+            }/* REMOVED CHECK
             else if (m.Alive)
             {
                 this.Caster.SendLocalizedMessage(501041); // Target is not dead.
-            }
+            }*/
             else if (!this.Caster.InRange(m, 1))
             {
                 this.Caster.SendLocalizedMessage(501042); // Target is not close enough.
-            }
+            }/* REMOVED CHECK
             else if (!m.Player)
             {
                 this.Caster.SendLocalizedMessage(501043); // Target is not a being.
-            }
+            }*/
             else if (m.Map == null || !m.Map.CanFit(m.Location, 16, false, false))
             {
                 this.Caster.SendLocalizedMessage(501042); // Target can not be resurrected at that location.
@@ -76,7 +78,11 @@ namespace Server.Spells.Eighth
             {
                 this.Caster.SendLocalizedMessage(1010395); // The veil of death in this area is too strong and resists thy efforts to restore life.
             }
-            else if (this.CheckBSequence(m, true))
+			else if ( m is PlayerMobile && m.Alive ) // Added check, check if PlayerMobile AND Alive instead of each
+			{
+				Caster.SendLocalizedMessage( 501041 ); // Target is not dead.
+			}
+			else if ( m is PlayerMobile && CheckBSequence( m, true ) ) // Added Check for PlayerMobile
             {
                 SpellHelper.Turn(this.Caster, m);
 
@@ -85,6 +91,21 @@ namespace Server.Spells.Eighth
 
                 m.CloseGump(typeof(ResurrectGump));
                 m.SendGump(new ResurrectGump(m, this.Caster));
+            }
+            else if ( m is BaseCreature && CheckBSequence( m, true ) ) // Added Check for BaseCreature, if they ARE, send this.
+			{
+				BaseCreature pet = (BaseCreature)m;
+				Mobile master = pet.GetMaster();
+                SpellHelper.Turn( Caster, m );
+ 
+                m.PlaySound( 0x214 );
+                m.FixedEffect( 0x376A, 10, 16 );
+ 
+				if( master != null ) // Added safety check to avoid crashes with ghost pets without owners, yes they're supposed to disappear before this would be possible, but this would make it safe. I haven't checked this on my own server, remove the IF statement, not the bit inside if it crashes your server.
+				{
+					master.CloseGump(typeof(PetResurrectGump));
+					master.SendGump(new PetResurrectGump(master, pet));
+				}
             }
 
             this.FinishSequence();
