@@ -6,8 +6,8 @@
 		<accessLevel>Owner</accessLevel>
 		<flags>2</flags>
 		<created>2016-02-07T04:41:48.392201Z</created>
-		<lastLogin>2016-07-26T03:50:37.9616406Z</lastLogin>
-		<totalGameTime>P8DT3H48M13.7365592S</totalGameTime>
+		<lastLogin>2017-06-16T12:06:31.6685441Z</lastLogin>
+		<totalGameTime>P8DT7H41M58.8935648S</totalGameTime>
 		<chars>
 			<char index="0">1</char>
 			<char index="1">3279</char>
@@ -43,22 +43,22 @@
 		<addressList count="1">
 			<ip>127.0.0.1</ip>
 		</addressList>
-		<totalCurrency>0.00074480199999999981</totalCurrency>
+		<totalCurrency>0.00075860199999999982</totalCurrency>
 	</account>
 	<account>
 		<username>radheya</username>
 		<newCryptPassword>11-60-FC-0D-12-41-A7-A0-86-56-20-A3-6A-89-10-73-C3-CC-27-2F</newCryptPassword>
 		<flags>2</flags>
 		<created>2016-02-08T12:30:45.449192Z</created>
-		<lastLogin>2016-06-18T12:32:33.090716Z</lastLogin>
-		<totalGameTime>PT17H3.6024201S</totalGameTime>
+		<lastLogin>2017-06-10T08:03:07.9928865Z</lastLogin>
+		<totalGameTime>PT18H12M28.5685153S</totalGameTime>
 		<chars>
 			<char index="0">1999</char>
 			<char index="1">3969</char>
 			<char index="2">342</char>
 			<char index="3">213</char>
 			<char index="4">21</char>
-			<char index="5">16</char>
+			<char index="5">867</char>
 		</chars>
 		<comments>
 			<comment addedBy="System" lastModified="2016-02-14T00:13:00.3035226Z">Character #2 0x11 "Tim" deleted by 127.0.0.1</comment>
@@ -66,6 +66,7 @@
 			<comment addedBy="System" lastModified="2016-02-22T04:50:03.9839918Z">Character #3 0x8 "test" deleted by 127.0.0.1</comment>
 			<comment addedBy="System" lastModified="2016-04-08T08:14:56.4599647Z">Character #3 0xA "test" deleted by 127.0.0.1</comment>
 			<comment addedBy="System" lastModified="2016-06-08T08:57:40.1139097Z">Character #2 0x23 "Tim" deleted by 127.0.0.1</comment>
+			<comment addedBy="System" lastModified="2017-02-26T10:22:39.0829834Z">Character #6 0x10 "test" deleted by 127.0.0.1</comment>
 		</comments>
 		<tags>
 			<tag name="VoidEffect">no</tag>
@@ -93,8 +94,8 @@
 		<newCryptPassword>EE-00-AC-F5-74-7E-27-FA-31-FD-AD-11-FF-D2-3A-57-C1-FB-C5-EB</newCryptPassword>
 		<flags>2</flags>
 		<created>2016-05-19T07:44:29.757246Z</created>
-		<lastLogin>2016-07-19T12:18:23.9553389Z</lastLogin>
-		<totalGameTime>P1DT9H14M3.0214456S</totalGameTime>
+		<lastLogin>2017-06-10T08:04:29.7405622Z</lastLogin>
+		<totalGameTime>P1DT9H18M39.9592856S</totalGameTime>
 		<chars>
 			<char index="0">676</char>
 			<char index="1">925</char>

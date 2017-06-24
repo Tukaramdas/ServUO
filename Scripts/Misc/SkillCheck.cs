@@ -9,69 +9,69 @@ namespace Server.Misc
         private static readonly bool AntiMacroCode = !Core.ML;		//Change this to false to disable anti-macro code
 
         public static TimeSpan AntiMacroExpire = TimeSpan.FromMinutes(5.0); //How long do we remember targets/locations?
-        public const int Allowance = 3;	//How many times may we use the same location/target for gain
+        public const int Allowance = 10;	//How many times may we use the same location/target for gain
         private const int LocationSize = 5; //The size of eeach location, make this smaller so players dont have to move as far
         private static readonly bool[] UseAntiMacro = new bool[]
         {
             // true if this skill uses the anti-macro code, false if it does not
             false, // Alchemy = 0,
-            true, // Anatomy = 1,
-            true, // AnimalLore = 2,
-            true, // ItemID = 3,
-            true, // ArmsLore = 4,
+            false, // Anatomy = 1,
+            false, // AnimalLore = 2,
+            false, // ItemID = 3,
+            false, // ArmsLore = 4,
             false, // Parry = 5,
-            true, // Begging = 6,
+            false, // Begging = 6,
             false, // Blacksmith = 7,
             false, // Fletching = 8,
-            true, // Peacemaking = 9,
-            true, // Camping = 10,
+            false, // Peacemaking = 9,
+            false, // Camping = 10,
             false, // Carpentry = 11,
             false, // Cartography = 12,
             false, // Cooking = 13,
-            true, // DetectHidden = 14,
-            true, // Discordance = 15,
-            true, // EvalInt = 16,
-            true, // Healing = 17,
-            true, // Fishing = 18,
-            true, // Forensics = 19,
-            true, // Herding = 20,
-            true, // Hiding = 21,
-            true, // Provocation = 22,
+            false, // DetectHidden = 14,
+            false, // Discordance = 15,
+            false, // EvalInt = 16,
+            false, // Healing = 17,
+            false, // Fishing = 18,
+            false, // Forensics = 19,
+            false, // Herding = 20,
+            false, // Hiding = 21,
+            false, // Provocation = 22,
             false, // Inscribe = 23,
-            true, // Lockpicking = 24,
-            true, // Magery = 25,
-            true, // MagicResist = 26,
+            false, // Lockpicking = 24,
+            false, // Magery = 25,
+            false, // MagicResist = 26,
             false, // Tactics = 27,
-            true, // Snooping = 28,
-            true, // Musicianship = 29,
-            true, // Poisoning = 30,
+            false, // Snooping = 28,
+            false, // Musicianship = 29,
+            false, // Poisoning = 30,
             false, // Archery = 31,
-            true, // SpiritSpeak = 32,
-            true, // Stealing = 33,
+            false, // SpiritSpeak = 32,
+            false, // Stealing = 33,
             false, // Tailoring = 34,
-            true, // AnimalTaming = 35,
-            true, // TasteID = 36,
+            false, // AnimalTaming = 35,
+            false, // TasteID = 36,
             false, // Tinkering = 37,
-            true, // Tracking = 38,
-            true, // Veterinary = 39,
+            false, // Tracking = 38,
+            false, // Veterinary = 39,
             false, // Swords = 40,
             false, // Macing = 41,
             false, // Fencing = 42,
             false, // Wrestling = 43,
-            true, // Lumberjacking = 44,
-            true, // Mining = 45,
-            true, // Meditation = 46,
-            true, // Stealth = 47,
-            true, // RemoveTrap = 48,
-            true, // Necromancy = 49,
+            false, // Lumberjacking = 44,
+            false, // Mining = 45,
+            false, // Meditation = 46,
+            false, // Stealth = 47,
+            false, // RemoveTrap = 48,
+            false, // Necromancy = 49,
             false, // Focus = 50,
-            true, // Chivalry = 51
-            true, // Bushido = 52
-            true, //Ninjitsu = 53
-            true, // Spellweaving = 54
+            false, // Chivalry = 51
+            false, // Bushido = 52
+            false, //Ninjitsu = 53
+            false, // Spellweaving = 54
             #region Stygian Abyss
-            true, // Mysticism = 55
-            true, // Imbuing = 56
+            false, // Mysticism = 55
+            false, // Imbuing = 56
             false// Throwing = 57
             #endregion
         };
@@ -310,11 +310,11 @@ namespace Server.Misc
             switch ( stat )
             {
                 case Stat.Str:
-                    return (from.StrLock == StatLockType.Up && from.RawStr < 125);
+                    return (from.StrLock == StatLockType.Up && from.RawStr < 250);
                 case Stat.Dex:
-                    return (from.DexLock == StatLockType.Up && from.RawDex < 125);
+                    return (from.DexLock == StatLockType.Up && from.RawDex < 250);
                 case Stat.Int:
-                    return (from.IntLock == StatLockType.Up && from.RawInt < 125);
+                    return (from.IntLock == StatLockType.Up && from.RawInt < 250);
             }
 
             return false;
@@ -374,7 +374,7 @@ namespace Server.Misc
             }
         }
 
-        private static readonly TimeSpan m_StatGainDelay = TimeSpan.FromMinutes(15.0);
+        private static readonly TimeSpan m_StatGainDelay = TimeSpan.FromMinutes(10.0);
         private static readonly TimeSpan m_PetStatGainDelay = TimeSpan.FromMinutes(5.0);
 
         public static void GainStat(Mobile from, Stat stat)
